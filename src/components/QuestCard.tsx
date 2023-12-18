@@ -1,107 +1,63 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import styles from "../app/page.module.css";
 import { IQuests } from "../../types";
+import Image from "next/image";
+import Link from "next/link";
+import GlobalContext from "@/context/GlobalContext";
+import tarkovDataQuery from "@/util/tarkovDataQuery";
 
 const QuestCard = () => {
   const [missions, setMissions] = useState<IQuests[]>([]);
-  const [visibleMissions, setVisibleMissions] = useState<IQuests[]>([]);
-  const [pageNumber, setPageNumber] = useState(1);
-  const itemsPerPage = 10;
+  const { playerLevel } = useContext(GlobalContext);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://api.tarkov.dev/graphql", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            query: `{
-              tasks {
-                  id
-                  name
-                  trader{
-                      id
-                      name
-                  }
-                  experience
-                  kappaRequired
-                  wikiLink
-                  objectives{
-                      id
-                      description
-                  }
-                  map{
-                      id
-                      name
-                  }
-              }
-          }`,
-          }),
-        });
+    try {
+      (async () => {
+        const { tasks } = await tarkovDataQuery();
 
-        const json = await response.json();
-        const { data } = await json;
-        setMissions(data.tasks);
-        setVisibleMissions(data.tasks.slice(0, itemsPerPage));
-      } catch (error) {
-        console.error("Error fetching missions:", error);
+        const filteredMissions = tasks.filter(
+          (data: IQuests) =>
+            data.minPlayerLevel > 0 && data.minPlayerLevel <= playerLevel
+        );
+
+        setMissions(filteredMissions);
+      })();
+    } catch (error) {
+      if (error instanceof Error) {
+        console.log("Error fetching missions", error.message);
       }
-    };
-
-    fetchData();
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (
-        window.innerHeight + document.documentElement.scrollTop ===
-        document.documentElement.offsetHeight
-      ) {
-        const nextPage = pageNumber + 1;
-        const startIndex = (nextPage - 1) * itemsPerPage;
-        const endIndex = nextPage * itemsPerPage;
-
-        if (endIndex <= missions.length) {
-          setVisibleMissions((prevMissions) => [
-            ...prevMissions,
-            ...missions.slice(startIndex, endIndex),
-          ]);
-          setPageNumber(nextPage);
-        }
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [missions, pageNumber]);
+    }
+  }, [playerLevel]);
 
   return (
     <div className={styles.grid}>
-      {visibleMissions.map((task) => (
+      {missions.map((task) => (
         <div key={task.id} className={styles.card}>
           <section className={styles.cardHeader}>
-            <p>avatar</p>
+            <Image
+              src={task.trader.imageLink}
+              alt={task.trader.name}
+              width={30}
+              height={30}
+            />
             <h3>{task.name}</h3>
+            <p>{task.trader.name}</p>
+            <Link href={task.wikiLink} target="_blank">
+              Wiki
+            </Link>
           </section>
           <section>
             <ul>
               {task.objectives.map((data) => (
-                <li key={data.id}>{data.description}</li>
+                <div key={data.id}>
+                  <li>{data.description}</li>
+                  <p>{data.count}</p>
+                </div>
               ))}
             </ul>
           </section>
-
-          {/* <p>{task.experience}</p>
-          <p>{task.kappaRequired}</p>
-          <p>{task.wikiLink}</p>
-          <p>{task.map?.name}</p>
-          <p>{task.trader.name}</p> */}
         </div>
       ))}
     </div>

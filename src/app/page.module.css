@@ -15,6 +15,15 @@
   top: 0;
   width: 100%;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerLevel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid {
@@ -22,6 +31,12 @@
   grid-template-columns: repeat(2, minmax(25%, auto));
   max-width: 100%;
   width: 100%;
+  gap: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -34,17 +49,21 @@
   max-width: 800px;
   min-height: 300px;
 }
-
-.cardHeader {
-  display: flex;
-}
-
-.card p,
-li {
+.card p {
   margin: 0;
   color: #9a8866;
   font-size: 0.9rem;
   line-height: 2;
+}
+.card li {
+  margin: 0;
+  color: #9a8866;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.cardHeader {
+  display: flex;
 }
 
 /* Mobile */

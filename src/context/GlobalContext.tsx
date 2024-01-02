@@ -10,13 +10,13 @@ import React, {
 } from "react";
 
 interface IGlobalContext {
-  playerLevel: number;
-  setPlayerLevel: Dispatch<SetStateAction<number>>;
+  playerLevel: number | null;
+  setPlayerLevel: Dispatch<SetStateAction<number | null>>;
 }
 
 const GlobalContext = createContext<IGlobalContext>({
-  playerLevel: 0,
-  setPlayerLevel: () => 0,
+  playerLevel: null,
+  setPlayerLevel: () => null,
 });
 
 interface GlobalContextProviderProps {
@@ -26,7 +26,7 @@ interface GlobalContextProviderProps {
 export const GlobalContextProvider: FC<GlobalContextProviderProps> = ({
   children,
 }) => {
-  const [playerLevel, setPlayerLevel] = useState<number>(1);
+  const [playerLevel, setPlayerLevel] = useState<number | null>(null);
 
   return (
     <GlobalContext.Provider

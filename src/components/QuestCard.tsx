@@ -9,20 +9,64 @@ import GlobalContext from "@/context/GlobalContext";
 import tarkovDataQuery from "@/util/tarkovDataQuery";
 
 const QuestCard = () => {
-  const [missions, setMissions] = useState<IQuests[]>([]);
+  const [availableMissions, setAvailableMissions] = useState<IQuests[]>([]);
+  const [completeMissions, setCompleteMissions] = useState<IQuests[]>([]);
+
   const { playerLevel } = useContext(GlobalContext);
 
   useEffect(() => {
     try {
       (async () => {
-        const { tasks } = await tarkovDataQuery();
+        if (playerLevel) {
+          const { tasks } = await tarkovDataQuery();
 
-        const filteredMissions = tasks.filter(
-          (data: IQuests) =>
-            data.minPlayerLevel > 0 && data.minPlayerLevel <= playerLevel
-        );
+          // console.log(tasks);
 
-        setMissions(filteredMissions);
+          const storedCompleteMissions =
+            localStorage.getItem("completeMissions");
+          const completeMissionsFromStorage = storedCompleteMissions
+            ? JSON.parse(storedCompleteMissions)
+            : [];
+          const completedMissionIds = completeMissionsFromStorage.map(
+            (mission: { id: string[] }) => mission.id
+          );
+
+          setCompleteMissions(completeMissionsFromStorage);
+
+          const filteredMissions = tasks.filter((data: IQuests) => {
+            const isLevelRequirement =
+              data.minPlayerLevel > 0 && data.minPlayerLevel <= playerLevel;
+
+            const hasTaskRequirements =
+              data.taskRequirements && data.taskRequirements.length > 0;
+
+            if (!hasTaskRequirements) {
+              return isLevelRequirement;
+            }
+
+            const areTaskRequirements = data.taskRequirements.every((req) => {
+              return (
+                req.status.includes("complete") &&
+                completedMissionIds.includes(req.task.id)
+              );
+            });
+
+            return isLevelRequirement && areTaskRequirements;
+          });
+
+          const filteredAvailableMissions = filteredMissions.filter(
+            (mission: any) =>
+              !completeMissionsFromStorage.some(
+                (completeMissions: any) => completeMissions.id === mission.id
+              )
+          );
+
+          setAvailableMissions(filteredAvailableMissions);
+          localStorage.setItem(
+            "tasks",
+            JSON.stringify(filteredAvailableMissions)
+          );
+        }
       })();
     } catch (error) {
       if (error instanceof Error) {
@@ -31,9 +75,39 @@ const QuestCard = () => {
     }
   }, [playerLevel]);
 
+  const handleComplete = (id: string) => {
+    const completedMission = availableMissions.find(
+      (mission) => mission.id === id
+    );
+
+    if (completedMission) {
+      const storedCompleteMissions = localStorage.getItem("completeMissions");
+      const completeMissionsFromStorage = storedCompleteMissions
+        ? JSON.parse(storedCompleteMissions)
+        : [];
+
+      const updatedCompleteMissions = [
+        ...completeMissionsFromStorage,
+        completedMission,
+      ];
+
+      setCompleteMissions(updatedCompleteMissions);
+      localStorage.setItem(
+        "completeMissions",
+        JSON.stringify(updatedCompleteMissions)
+      );
+
+      const updatedAvailableMissions = availableMissions.filter(
+        (mission) => mission.id !== id
+      );
+      setAvailableMissions(updatedAvailableMissions);
+      localStorage.setItem("tasks", JSON.stringify(updatedAvailableMissions));
+    }
+  };
+
   return (
     <div className={styles.grid}>
-      {missions.map((task) => (
+      {availableMissions.map((task) => (
         <div key={task.id} className={styles.card}>
           <section className={styles.cardHeader}>
             <Image
@@ -57,6 +131,15 @@ const QuestCard = () => {
                 </div>
               ))}
             </ul>
+          </section>
+          <section>
+            <button
+              onClick={() => {
+                handleComplete(task.id);
+              }}
+            >
+              Complete
+            </button>
           </section>
         </div>
       ))}

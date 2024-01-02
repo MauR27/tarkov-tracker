@@ -66,6 +66,10 @@
   display: flex;
 }
 
+.loading {
+  color: white;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
   .content {

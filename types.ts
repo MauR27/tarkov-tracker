@@ -1,5 +1,5 @@
 export interface IQuests {
-  id: number;
+  id: string;
   tarkovDataId: number;
   name: string;
   trader: {
@@ -12,6 +12,15 @@ export interface IQuests {
     name: string;
   } | null;
   experience: number;
+  taskRequirements: [
+    {
+      status: string[];
+      task: {
+        id: string;
+        name: string;
+      };
+    }
+  ];
   kappaRequired: boolean;
   lightkeeperRequired: boolean;
   wikiLink: string;

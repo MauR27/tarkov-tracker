@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import styles from "../app/page.module.css";
 import GlobalContext from "@/context/GlobalContext";
@@ -11,33 +11,32 @@ const PlayerLevel = () => {
   useEffect(() => {
     const storedLevel = localStorage.getItem("playerLevel");
     if (storedLevel) {
-      setPlayerLevel(parseInt(storedLevel, 10));
+      setPlayerLevel(parseInt(storedLevel));
     }
   }, [setPlayerLevel]);
 
   const handlePlayerLevelUp = () => {
+    if (!playerLevel) return;
     if (playerLevel < 79) {
       setPlayerLevel((prev) => {
-        const newLevel = prev + 1;
+        const newLevel = prev! + 1;
         localStorage.setItem("playerLevel", newLevel.toString());
         return newLevel;
       });
     }
   };
   const handlePlayerLevelDown = () => {
+    if (!playerLevel) return;
     if (playerLevel > 1) {
       setPlayerLevel((prev) => {
-        const newLevel = prev - 1;
+        const newLevel = prev! - 1;
         localStorage.setItem("playerLevel", newLevel.toString());
         return newLevel;
       });
     }
   };
 
-  // const a = localStorage.getItem("playerLevel");
-
-  // console.log(a);
-
+  if (!playerLevel) return <div>Loading...</div>;
   return (
     <div className={styles.playerLevel}>
       <section>

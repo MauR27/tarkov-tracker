@@ -13,6 +13,7 @@ const PlayerLevel = () => {
     if (storedLevel) {
       setPlayerLevel(parseInt(storedLevel));
     }
+    setPlayerLevel(parseInt(storedLevel || "1"));
   }, [setPlayerLevel]);
 
   const handlePlayerLevelUp = () => {

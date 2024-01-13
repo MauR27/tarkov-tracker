@@ -1,5 +1,6 @@
 import GlobalContext from "@/context/GlobalContext";
 import React, { FC, useContext } from "react";
+import styles from "../app/page.module.css";
 
 type TIdProps = {
   id: string;
@@ -47,7 +48,7 @@ const RemoveCompletedMissions: FC<TIdProps> = ({ id }) => {
   };
 
   return (
-    <div>
+    <div className={styles.HandleCompleteMissionsBox}>
       <button
         onClick={() => {
           handleComplete(id);

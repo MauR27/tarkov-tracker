@@ -3,9 +3,9 @@ import MissionsUpdater from "./MissionsUpdater";
 
 const MissionsMainPage = () => {
   return (
-    <div>
+    <>
       <MissionsUpdater />
-    </div>
+    </>
   );
 };
 

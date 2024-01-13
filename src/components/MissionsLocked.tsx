@@ -1,16 +1,14 @@
-import HandleCompleteMissions from "@/util/HandleCompleteMissions";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useContext } from "react";
 import styles from "../app/page.module.css";
 import GlobalContext from "@/context/GlobalContext";
-import RemoveCompletedMissions from "@/util/RemoveCompletedMissions";
 
 const MissionsLocked = () => {
   const { missionsLocked } = useContext(GlobalContext);
 
   return (
-    <div className={styles.grid}>
+    <div className={styles.flex}>
       {missionsLocked.map((task) => (
         <div key={task.id} className={styles.card}>
           <section className={styles.cardHeader}>
@@ -30,15 +28,24 @@ const MissionsLocked = () => {
             <ul>
               {task.objectives.map((data) => (
                 <div key={data.id}>
-                  <li>{data.description}</li>
-                  <p>{data.count}</p>
+                  <div className={styles.missionsDescription}>
+                    <li>{data.description}</li>
+                  </div>
+                  {data.type === "giveItem" && data.item && (
+                    <div className={styles.itemMissionDescription}>
+                      <Image
+                        src={data.item.iconLink}
+                        alt={data.item.name}
+                        width={35}
+                        height={35}
+                      />
+                      <p>{data.count}</p>
+                      <p>{data.item.shortName}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </ul>
-          </section>
-          <section>
-            {/* <HandleCompleteMissions id={task.id} /> */}
-            {/* <RemoveCompletedMissions id={task.id} /> */}
           </section>
         </div>
       ))}

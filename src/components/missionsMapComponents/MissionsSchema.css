@@ -1,6 +1,6 @@
 .tree-container .link-quests {
   stroke: red;
-  stroke-width: 5px;
+  stroke-width: 2px;
 }
 .tree-container .rd3t-node {
   cursor: grab;

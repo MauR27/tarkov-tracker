@@ -123,8 +123,6 @@ const MissionsUpdater = () => {
     setMissionsLocked,
   ]);
 
-  console.log(missionsSelector);
-
   return (
     <>
       {missionsSelector === "available" && <AvailableMissions />}

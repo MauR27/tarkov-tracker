@@ -8,8 +8,6 @@ import HandleCompleteMissions from "../util/HandleCompleteMissions";
 const AvailableMissionsPage = () => {
   const { availableMissions } = useContext(GlobalContext);
 
-  const handleCompleteSingleMission = () => {};
-
   return (
     <div className={styles.flex}>
       {availableMissions.map((task) => (

@@ -28,7 +28,7 @@ export interface IQuests {
   objectives: TaskObjectiveType[];
 }
 
-interface TaskObjectiveType
+export interface TaskObjectiveType
   extends ITaskObjectiveBuildItem,
     ITaskObjectiveExperience,
     ITaskObjectiveExtract,

@@ -1,22 +1,51 @@
 "use client";
 
 import React, { useContext } from "react";
-import styles from "../app/page.module.css";
 import GlobalContext from "@/context/GlobalContext";
+import { Button, Flex } from "@chakra-ui/react";
 
 const HandleMissionsSelector = () => {
   const { setMissionsSelector } = useContext(GlobalContext);
 
   return (
-    <section className={styles.missionsSelector}>
-      <button onClick={() => setMissionsSelector("available")}>
+    <Flex
+      minW="100%"
+      justifyContent="center"
+      align="center"
+      gap={5}
+      bg="#447c92"
+    >
+      <Button
+        color="white"
+        _hover={{ color: "black", bg: "white" }}
+        variant="ghost"
+        size={"sm"}
+        minW="20%"
+        onClick={() => setMissionsSelector("available")}
+      >
         Available
-      </button>
-      <button onClick={() => setMissionsSelector("completed")}>
+      </Button>
+      <Button
+        color="white"
+        _hover={{ color: "black", bg: "white" }}
+        variant="ghost"
+        size={"sm"}
+        minW="20%"
+        onClick={() => setMissionsSelector("completed")}
+      >
         Completed
-      </button>
-      <button onClick={() => setMissionsSelector("locked")}>Locked</button>
-    </section>
+      </Button>
+      <Button
+        color="white"
+        _hover={{ color: "black", bg: "white" }}
+        variant="ghost"
+        size={"sm"}
+        minW="20%"
+        onClick={() => setMissionsSelector("locked")}
+      >
+        Locked
+      </Button>
+    </Flex>
   );
 };
 

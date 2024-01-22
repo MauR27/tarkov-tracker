@@ -1,6 +1,7 @@
 import GlobalContext from "@/context/GlobalContext";
 import React, { FC, useContext } from "react";
 import styles from "../app/page.module.css";
+import { Box, Button, Flex } from "@chakra-ui/react";
 
 type TIdProps = {
   id: string;
@@ -48,15 +49,19 @@ const HandleCompleteMissions: FC<TIdProps> = ({ id }) => {
   };
 
   return (
-    <div className={styles.HandleCompleteMissionsBox}>
-      <button
+    <Flex minW="100%" justify="center">
+      <Button
+        size="sm"
+        minW="100%"
+        fontWeight="xs"
+        borderRadius="none"
         onClick={() => {
           handleComplete(id);
         }}
       >
         Complete
-      </button>
-    </div>
+      </Button>
+    </Flex>
   );
 };
 

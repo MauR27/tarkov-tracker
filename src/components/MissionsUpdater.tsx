@@ -7,6 +7,7 @@ import tarkovDataQuery from "@/util/tarkovDataQuery";
 import AvailableMissions from "./AvailableMissions";
 import CompletedMissions from "./CompletedMissions";
 import MissionsLocked from "./MissionsLocked";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 
 const MissionsUpdater = () => {
   const {

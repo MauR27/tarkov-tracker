@@ -1,60 +1,87 @@
 import GlobalContext from "@/context/GlobalContext";
-import Image from "next/image";
 import Link from "next/link";
-import styles from "../app/page.module.css";
 import React, { useContext } from "react";
 import RemoveCompletedMissions from "@/util/RemoveCompletedMissions";
+import {
+  Box,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Flex,
+  List,
+  ListItem,
+  Text,
+  Image,
+} from "@chakra-ui/react";
 
 const CompletedMissions = () => {
   const { completeMissions } = useContext(GlobalContext);
   return (
-    <div className={styles.flex}>
+    <Flex gap={2} m="0 5px 0 5px" justify="center" flexDir="column">
       {completeMissions.map((task) => (
-        <div key={task.id} className={styles.missionsCompletedCard}>
-          <div className={styles.cardFlex}>
-            <section className={styles.cardHeader}>
+        <Card
+          as={Flex}
+          bg="blue.500"
+          key={task.id}
+          overflow="hidden"
+          variant="outline"
+          borderRadius="none"
+          p="1rem"
+          flexDir="row"
+          minH="250px"
+          minW="100%"
+        >
+          <CardHeader
+            bg="red"
+            as={Flex}
+            flexDir="column"
+            justify="space-around"
+            minW="25%"
+          >
+            <Flex gap={2}>
               <Image
+                boxSize="30px"
+                objectFit="cover"
                 src={task.trader.imageLink}
                 alt={task.trader.name}
-                width={30}
-                height={30}
               />
-              <h3>{task.name}</h3>
-              <p>{task.trader.name}</p>
-              <Link href={task.wikiLink} target="_blank">
-                Wiki
-              </Link>
-            </section>
-            <section className={styles.sectionCardFlex}>
-              <ul>
-                {task.objectives.map((data) => (
-                  <div key={data.id}>
-                    <div className={styles.missionsDescription}>
-                      <li>{data.description}</li>
-                    </div>
-                    {data.type === "giveItem" && data.item && (
-                      <div className={styles.itemMissionDescription}>
-                        <Image
-                          src={data.item.iconLink}
-                          alt={data.item.name}
-                          width={35}
-                          height={35}
-                        />
-                        <p>{data.count}</p>
-                        <p>{data.item.shortName}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </ul>
-            </section>
-            <section className={styles.sectionCardFlex}>
-              <RemoveCompletedMissions id={task.id} />
-            </section>
-          </div>
-        </div>
+              <Text>{task.trader.name}</Text>
+            </Flex>
+            <Text>{task.name}</Text>
+            <Link href={task.wikiLink} target="_blank">
+              Wiki
+            </Link>
+          </CardHeader>
+          <CardBody bg={"green"} as={Flex} align="flex-start">
+            <List>
+              {task.objectives.map((data) => (
+                <Box key={data.id}>
+                  <Box mb={3}>
+                    <ListItem>{data.description}</ListItem>
+                  </Box>
+                  {data.type === "giveItem" && data.item && (
+                    <Flex gap={2} align="center">
+                      <Image
+                        src={data.item.iconLink}
+                        alt={data.item.name}
+                        width={35}
+                        height={35}
+                      />
+                      <Text>{data.count}</Text>
+                      <Text>{data.item.shortName}</Text>
+                    </Flex>
+                  )}
+                </Box>
+              ))}
+            </List>
+          </CardBody>
+          <CardFooter bg={"yellow"} alignItems="center" minW="15%">
+            <RemoveCompletedMissions id={task.id} />
+          </CardFooter>
+        </Card>
       ))}
-    </div>
+    </Flex>
   );
 };
 

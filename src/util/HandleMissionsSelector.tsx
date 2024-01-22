@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import GlobalContext from "@/context/GlobalContext";
-import { Button, Flex } from "@chakra-ui/react";
+import { Button, Flex, Text } from "@chakra-ui/react";
 
 const HandleMissionsSelector = () => {
   const { setMissionsSelector } = useContext(GlobalContext);
@@ -20,6 +20,7 @@ const HandleMissionsSelector = () => {
         _hover={{ color: "black", bg: "white" }}
         variant="ghost"
         size={"sm"}
+        fontWeight="sm"
         minW="20%"
         onClick={() => setMissionsSelector("available")}
       >
@@ -30,6 +31,7 @@ const HandleMissionsSelector = () => {
         _hover={{ color: "black", bg: "white" }}
         variant="ghost"
         size={"sm"}
+        fontWeight="sm"
         minW="20%"
         onClick={() => setMissionsSelector("completed")}
       >
@@ -40,6 +42,7 @@ const HandleMissionsSelector = () => {
         _hover={{ color: "black", bg: "white" }}
         variant="ghost"
         size={"sm"}
+        fontWeight="sm"
         minW="20%"
         onClick={() => setMissionsSelector("locked")}
       >

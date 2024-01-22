@@ -18,6 +18,7 @@ const Navbar = () => {
       position="fixed"
       flexDir="column"
       gap={5}
+      zIndex={1}
     >
       {/* Header */}
       <Flex minW="100%" bg="#447c92" minH="2rem" align="center" pl="10px">

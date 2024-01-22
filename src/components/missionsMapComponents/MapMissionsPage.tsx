@@ -1,5 +1,5 @@
 import React from "react";
-import MissionsSchema from "./MissionsSchema";
+import MissionsSchema from "./MissionsRD3Tree";
 
 const MapMissionsPage = () => {
   return (

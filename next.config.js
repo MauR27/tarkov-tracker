@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "assets.tarkov.dev",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };

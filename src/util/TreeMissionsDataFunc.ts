@@ -16,6 +16,7 @@ export const treeDataFunc: any = async () => {
   }, {});
 
   const treeStructure: ITreeData = {
+    taskRequired: "",
     id: "",
     trader: "",
     name: "Traders",
@@ -27,6 +28,7 @@ export const treeDataFunc: any = async () => {
     },
     children: [
       {
+        taskRequired: "",
         id: "",
         trader: "",
         name: "Prapor",
@@ -40,6 +42,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Prapor[28].id,
             trader: "Prapor",
             name: filterTasksByTrader.Prapor[28].name,
@@ -52,6 +55,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             trader: "Prapor",
             id: filterTasksByTrader.Prapor[13].id,
             name: filterTasksByTrader.Prapor[13].name,
@@ -63,6 +67,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 trader: "Prapor",
                 id: filterTasksByTrader.Prapor[14].id,
                 name: filterTasksByTrader.Prapor[14].name,
@@ -77,6 +82,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             trader: "Prapor",
             id: filterTasksByTrader.Prapor[12].id,
             name: filterTasksByTrader.Prapor[12].name,
@@ -88,6 +94,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 trader: "Prapor",
                 id: filterTasksByTrader.Prapor[40].id,
                 name: filterTasksByTrader.Prapor[40].name,
@@ -102,6 +109,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             trader: "Prapor",
             id: filterTasksByTrader.Prapor[0].id,
             name: filterTasksByTrader.Prapor[0].name,
@@ -113,6 +121,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 trader: "Prapor",
                 id: filterTasksByTrader.Prapor[1].id,
                 name: filterTasksByTrader.Prapor[1].name,
@@ -124,6 +133,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     trader: "Prapor",
                     id: filterTasksByTrader.Prapor[2].id,
                     name: filterTasksByTrader.Prapor[2].name,
@@ -136,6 +146,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         trader: "Prapor",
                         id: filterTasksByTrader.Prapor[3].id,
                         name: filterTasksByTrader.Prapor[3].name,
@@ -148,6 +159,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             trader: "Prapor",
                             id: filterTasksByTrader.Prapor[4].id,
                             name: filterTasksByTrader.Prapor[4].name,
@@ -163,6 +175,7 @@ export const treeDataFunc: any = async () => {
                             children: [],
                           },
                           {
+                            taskRequired: "",
                             trader: "Prapor",
                             id: filterTasksByTrader.Prapor[6].id,
                             name: filterTasksByTrader.Prapor[6].name,
@@ -177,6 +190,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 trader: "Prapor",
                                 id: filterTasksByTrader.Prapor[7].id,
                                 name: filterTasksByTrader.Prapor[7].name,
@@ -193,6 +207,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Prapor[8].id,
                                     trader: "Prapor",
                                     name: filterTasksByTrader.Prapor[8].name,
@@ -211,6 +226,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Prapor[9].id,
                                         trader: "Prapor",
                                         name: filterTasksByTrader.Prapor[9]
@@ -231,6 +247,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Prapor[11]
                                               .id,
                                             trader: "Prapor",
@@ -252,6 +269,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[17].id,
                                                 trader: "Prapor",
@@ -274,6 +292,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Prapor[20].id,
                                                     trader: "Prapor",
@@ -298,6 +317,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Prapor[37].id,
                                                         trader: "Prapor",
@@ -323,6 +343,7 @@ export const treeDataFunc: any = async () => {
                                                         },
                                                         children: [
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Prapor[39].id,
                                                             trader: "Prapor",
@@ -357,6 +378,7 @@ export const treeDataFunc: any = async () => {
                                             ],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Prapor[15]
                                               .id,
                                             trader: "Prapor",
@@ -378,6 +400,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[18].id,
                                                 trader: "Prapor",
@@ -400,6 +423,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Prapor[21].id,
                                                     trader: "Prapor",
@@ -424,6 +448,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Prapor[26].id,
                                                         trader: "Prapor",
@@ -449,6 +474,7 @@ export const treeDataFunc: any = async () => {
                                                         },
                                                         children: [
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Prapor[29].id,
                                                             trader: "Prapor",
@@ -474,6 +500,8 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [
                                                               {
+                                                                taskRequired:
+                                                                  "",
                                                                 id: filterTasksByTrader
                                                                   .Prapor[30]
                                                                   .id,
@@ -502,6 +530,8 @@ export const treeDataFunc: any = async () => {
                                                                 },
                                                                 children: [
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Prapor[33]
                                                                       .id,
@@ -531,6 +561,8 @@ export const treeDataFunc: any = async () => {
                                                                       },
                                                                     children: [
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Prapor[46]
                                                                           .id,
@@ -562,6 +594,8 @@ export const treeDataFunc: any = async () => {
                                                                           [],
                                                                       },
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Prapor[47]
                                                                           .id,
@@ -593,6 +627,8 @@ export const treeDataFunc: any = async () => {
                                                                           [],
                                                                       },
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Prapor[48]
                                                                           .id,
@@ -624,6 +660,8 @@ export const treeDataFunc: any = async () => {
                                                                           [],
                                                                       },
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Prapor[34]
                                                                           .id,
@@ -654,6 +692,8 @@ export const treeDataFunc: any = async () => {
                                                                         children:
                                                                           [
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Prapor[35]
                                                                                 .id,
@@ -684,6 +724,8 @@ export const treeDataFunc: any = async () => {
                                                                               children:
                                                                                 [
                                                                                   {
+                                                                                    taskRequired:
+                                                                                      "",
                                                                                     id: filterTasksByTrader
                                                                                       .Prapor[36]
                                                                                       .id,
@@ -721,6 +763,8 @@ export const treeDataFunc: any = async () => {
                                                                     ],
                                                                   },
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Prapor[31]
                                                                       .id,
@@ -754,6 +798,8 @@ export const treeDataFunc: any = async () => {
                                                                 ],
                                                               },
                                                               {
+                                                                taskRequired:
+                                                                  "",
                                                                 id: filterTasksByTrader
                                                                   .Prapor[38]
                                                                   .id,
@@ -782,6 +828,8 @@ export const treeDataFunc: any = async () => {
                                                                 },
                                                                 children: [
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Prapor[41]
                                                                       .id,
@@ -819,6 +867,7 @@ export const treeDataFunc: any = async () => {
                                                         ],
                                                       },
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Prapor[22].id,
                                                         trader: "Prapor",
@@ -844,6 +893,7 @@ export const treeDataFunc: any = async () => {
                                                         },
                                                         children: [
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Prapor[23].id,
                                                             trader: "Prapor",
@@ -870,6 +920,7 @@ export const treeDataFunc: any = async () => {
                                                             children: [],
                                                           },
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Prapor[24].id,
                                                             trader: "Prapor",
@@ -902,6 +953,7 @@ export const treeDataFunc: any = async () => {
                                                 ],
                                               },
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[45].id,
                                                 trader: "Prapor",
@@ -925,6 +977,7 @@ export const treeDataFunc: any = async () => {
                                                 children: [],
                                               },
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[32].id,
                                                 trader: "Prapor",
@@ -954,6 +1007,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Prapor[27].id,
                                     trader: "Prapor",
                                     name: filterTasksByTrader.Prapor[27].name,
@@ -972,6 +1026,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Prapor[42].id,
                                         trader: "Prapor",
                                         name: filterTasksByTrader.Prapor[42]
@@ -992,6 +1047,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Prapor[43]
                                               .id,
                                             trader: "Prapor",
@@ -1013,6 +1069,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[44].id,
                                                 trader: "Prapor",
@@ -1042,6 +1099,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Prapor[10].id,
                                     trader: "Prapor",
                                     name: filterTasksByTrader.Prapor[10].name,
@@ -1060,6 +1118,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Prapor[16].id,
                                         trader: "Prapor",
                                         name: filterTasksByTrader.Prapor[16]
@@ -1080,6 +1139,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Prapor[19]
                                               .id,
                                             trader: "Prapor",
@@ -1101,6 +1161,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Prapor[25].id,
                                                 trader: "Prapor",
@@ -1138,6 +1199,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Prapor[5].id,
                     trader: "Prapor",
                     name: filterTasksByTrader.Prapor[5].name,
@@ -1158,6 +1220,7 @@ export const treeDataFunc: any = async () => {
       },
 
       {
+        taskRequired: "",
         id: "",
         trader: "Therapist",
         name: "Therapist",
@@ -1171,6 +1234,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Therapist[36].id,
             trader: "Therapist",
             name: filterTasksByTrader.Therapist[36].name,
@@ -1183,6 +1247,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Therapist[8].id,
             trader: "Therapist",
             name: filterTasksByTrader.Therapist[8].name,
@@ -1195,6 +1260,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Therapist[11].id,
             trader: "Therapist",
             name: filterTasksByTrader.Therapist[11].name,
@@ -1206,6 +1272,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Therapist[12].id,
                 trader: "Therapist",
                 name: filterTasksByTrader.Therapist[12].name,
@@ -1221,6 +1288,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Therapist[0].id,
             trader: "Therapist",
             name: filterTasksByTrader.Therapist[0].name,
@@ -1233,6 +1301,7 @@ export const treeDataFunc: any = async () => {
 
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Therapist[1].id,
                 trader: "Therapist",
                 name: filterTasksByTrader.Therapist[1].name,
@@ -1244,6 +1313,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Therapist[2].id,
                     trader: "Therapist",
                     name: filterTasksByTrader.Therapist[2].name,
@@ -1256,6 +1326,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Therapist[5].id,
                         trader: "Therapist",
                         name: filterTasksByTrader.Therapist[5].name,
@@ -1270,6 +1341,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Therapist[6].id,
                             trader: "Therapist",
                             name: filterTasksByTrader.Therapist[6].name,
@@ -1285,6 +1357,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Therapist[7].id,
                                 trader: "Therapist",
                                 name: filterTasksByTrader.Therapist[7].name,
@@ -1302,6 +1375,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[9].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[9].name,
@@ -1321,6 +1395,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[30]
                                           .id,
                                         trader: "Therapist",
@@ -1342,6 +1417,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Therapist[31].id,
                                             trader: "Therapist",
@@ -1363,6 +1439,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Therapist[32].id,
                                                 trader: "Therapist",
@@ -1393,6 +1470,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[10].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[10]
@@ -1415,6 +1493,7 @@ export const treeDataFunc: any = async () => {
                                   },
 
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[13].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[13]
@@ -1435,6 +1514,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[14]
                                           .id,
                                         trader: "Therapist",
@@ -1456,6 +1536,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Therapist[15].id,
                                             trader: "Therapist",
@@ -1480,6 +1561,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[19]
                                           .id,
                                         trader: "Therapist",
@@ -1501,6 +1583,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Therapist[21].id,
                                             trader: "Therapist",
@@ -1527,6 +1610,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[16].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[16]
@@ -1547,6 +1631,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[18]
                                           .id,
                                         trader: "Therapist",
@@ -1571,6 +1656,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[17].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[17]
@@ -1591,6 +1677,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[20]
                                           .id,
                                         trader: "Therapist",
@@ -1615,6 +1702,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Therapist[22].id,
                                     trader: "Therapist",
                                     name: filterTasksByTrader.Therapist[22]
@@ -1635,6 +1723,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Therapist[23]
                                           .id,
                                         trader: "Therapist",
@@ -1656,6 +1745,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Therapist[24].id,
                                             trader: "Therapist",
@@ -1677,6 +1767,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Therapist[25].id,
                                                 trader: "Therapist",
@@ -1700,6 +1791,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Therapist[26].id,
                                                     trader: "Therapist",
@@ -1725,6 +1817,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Therapist[35].id,
                                                         trader: "Therapist",
@@ -1754,6 +1847,7 @@ export const treeDataFunc: any = async () => {
                                                   },
 
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Therapist[33].id,
                                                     trader: "Therapist",
@@ -1780,6 +1874,7 @@ export const treeDataFunc: any = async () => {
                                                     children: [],
                                                   },
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Therapist[34].id,
                                                     trader: "Therapist",
@@ -1808,6 +1903,7 @@ export const treeDataFunc: any = async () => {
                                                 ],
                                               },
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Therapist[27].id,
                                                 trader: "Therapist",
@@ -1834,6 +1930,7 @@ export const treeDataFunc: any = async () => {
                                             ],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Therapist[28].id,
                                             trader: "Therapist",
@@ -1855,6 +1952,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Therapist[29].id,
                                                 trader: "Therapist",
@@ -1893,6 +1991,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Therapist[3].id,
                     trader: "Therapist",
                     name: filterTasksByTrader.Therapist[3].name,
@@ -1905,6 +2004,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Therapist[4].id,
                         trader: "Therapist",
                         name: filterTasksByTrader.Therapist[4].name,
@@ -1928,6 +2028,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Skier",
         name: "Skier",
@@ -1941,6 +2042,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Skier[17].id,
             trader: "Skier",
             name: filterTasksByTrader.Skier[17].name,
@@ -1952,6 +2054,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Skier[35].id,
                 trader: "Skier",
                 name: filterTasksByTrader.Skier[35].name,
@@ -1966,6 +2069,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Skier[13].id,
             trader: "Skier",
             name: filterTasksByTrader.Skier[13].name,
@@ -1978,6 +2082,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Skier[0].id,
             trader: "Skier",
             name: filterTasksByTrader.Skier[0].name,
@@ -1989,6 +2094,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Skier[1].id,
                 trader: "Skier",
                 name: filterTasksByTrader.Skier[1].name,
@@ -2000,6 +2106,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Skier[2].id,
                     trader: "Skier",
                     name: filterTasksByTrader.Skier[2].name,
@@ -2011,6 +2118,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Skier[4].id,
                         trader: "Skier",
                         name: filterTasksByTrader.Skier[4].name,
@@ -2023,6 +2131,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Skier[5].id,
                             trader: "Skier",
                             name: filterTasksByTrader.Skier[5].name,
@@ -2037,6 +2146,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Skier[8].id,
                                 trader: "Skier",
                                 name: filterTasksByTrader.Skier[8].name,
@@ -2052,6 +2162,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Skier[9].id,
                                     trader: "Skier",
                                     name: filterTasksByTrader.Skier[9].name,
@@ -2069,6 +2180,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Skier[10].id,
                                         trader: "Skier",
                                         name: filterTasksByTrader.Skier[10]
@@ -2089,6 +2201,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Skier[11]
                                               .id,
                                             trader: "Skier",
@@ -2110,6 +2223,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Skier[14].id,
                                                 trader: "Skier",
@@ -2133,6 +2247,7 @@ export const treeDataFunc: any = async () => {
                                                 children: [],
                                               },
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Skier[12].id,
                                                 trader: "Skier",
@@ -2157,6 +2272,7 @@ export const treeDataFunc: any = async () => {
                                             ],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Skier[18]
                                               .id,
                                             trader: "Skier",
@@ -2178,6 +2294,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Skier[19].id,
                                                 trader: "Skier",
@@ -2199,6 +2316,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Skier[20].id,
                                                     trader: "Skier",
@@ -2222,6 +2340,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Skier[21].id,
                                                         trader: "Skier",
@@ -2250,6 +2369,7 @@ export const treeDataFunc: any = async () => {
                                                     ],
                                                   },
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Skier[27].id,
                                                     trader: "Skier",
@@ -2290,6 +2410,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Skier[3].id,
                     trader: "Skier",
                     name: filterTasksByTrader.Skier[3].name,
@@ -2302,6 +2423,7 @@ export const treeDataFunc: any = async () => {
                     children: [],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Skier[6].id,
                     trader: "Skier",
                     name: filterTasksByTrader.Skier[6].name,
@@ -2313,6 +2435,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Skier[7].id,
                         trader: "Skier",
                         name: filterTasksByTrader.Skier[7].name,
@@ -2325,6 +2448,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Skier[16].id,
                             trader: "Skier",
                             name: filterTasksByTrader.Skier[16].name,
@@ -2339,6 +2463,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Skier[28].id,
                                 trader: "Skier",
                                 name: filterTasksByTrader.Skier[28].name,
@@ -2355,6 +2480,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Skier[34].id,
                                     trader: "Skier",
                                     name: filterTasksByTrader.Skier[34].name,
@@ -2378,6 +2504,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Skier[25].id,
                             trader: "Skier",
                             name: filterTasksByTrader.Skier[25].name,
@@ -2393,6 +2520,7 @@ export const treeDataFunc: any = async () => {
                             children: [],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Skier[15].id,
                             trader: "Skier",
                             name: filterTasksByTrader.Skier[15].name,
@@ -2407,6 +2535,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Skier[22].id,
                                 trader: "Skier",
                                 name: filterTasksByTrader.Skier[22].name,
@@ -2423,6 +2552,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Skier[23].id,
                                     trader: "Skier",
                                     name: filterTasksByTrader.Skier[23].name,
@@ -2441,6 +2571,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Skier[33].id,
                                         trader: "Skier",
                                         name: filterTasksByTrader.Skier[33]
@@ -2462,6 +2593,7 @@ export const treeDataFunc: any = async () => {
                                         children: [],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Skier[30].id,
                                         trader: "Skier",
                                         name: filterTasksByTrader.Skier[30]
@@ -2482,6 +2614,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Skier[31]
                                               .id,
                                             trader: "Skier",
@@ -2503,6 +2636,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Skier[32].id,
                                                 trader: "Skier",
@@ -2529,6 +2663,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Skier[26].id,
                                         trader: "Skier",
                                         name: filterTasksByTrader.Skier[26]
@@ -2549,6 +2684,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Skier[29]
                                               .id,
                                             trader: "Skier",
@@ -2573,6 +2709,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Skier[24].id,
                                         trader: "Skier",
                                         name: filterTasksByTrader.Skier[24]
@@ -2610,6 +2747,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Peacekeeper",
         name: "Peacekeeper",
@@ -2623,6 +2761,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Peacekeeper[36].id,
             trader: "Peacekeeper",
             name: filterTasksByTrader.Peacekeeper[36].name,
@@ -2634,6 +2773,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Peacekeeper[37].id,
                 trader: "Peacekeeper",
                 name: filterTasksByTrader.Peacekeeper[37].name,
@@ -2649,6 +2789,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Peacekeeper[0].id,
             trader: "Peacekeeper",
             name: filterTasksByTrader.Peacekeeper[0].name,
@@ -2660,6 +2801,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Peacekeeper[41].id,
                 trader: "Peacekeeper",
                 name: filterTasksByTrader.Peacekeeper[41].name,
@@ -2672,6 +2814,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Peacekeeper[42].id,
                     trader: "Peacekeeper",
                     name: filterTasksByTrader.Peacekeeper[42].name,
@@ -2688,6 +2831,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Peacekeeper[1].id,
                 trader: "Peacekeeper",
                 name: filterTasksByTrader.Peacekeeper[1].name,
@@ -2700,6 +2844,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Peacekeeper[2].id,
                     trader: "Peacekeeper",
                     name: filterTasksByTrader.Peacekeeper[2].name,
@@ -2712,6 +2857,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Peacekeeper[3].id,
                         trader: "Peacekeeper",
                         name: filterTasksByTrader.Peacekeeper[3].name,
@@ -2726,6 +2872,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Peacekeeper[4].id,
                             trader: "Peacekeeper",
                             name: filterTasksByTrader.Peacekeeper[4].name,
@@ -2743,6 +2890,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Peacekeeper[6].id,
                                 trader: "Peacekeeper",
                                 name: filterTasksByTrader.Peacekeeper[6].name,
@@ -2761,6 +2909,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[29].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[29]
@@ -2784,6 +2933,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Peacekeeper[5].id,
                                 trader: "Peacekeeper",
                                 name: filterTasksByTrader.Peacekeeper[5].name,
@@ -2802,6 +2952,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[7].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[7]
@@ -2822,6 +2973,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Peacekeeper[8]
                                           .id,
                                         trader: "Peacekeeper",
@@ -2843,6 +2995,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Peacekeeper[9].id,
                                             trader: "Peacekeeper",
@@ -2865,6 +3018,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Peacekeeper[10].id,
                                                 trader: "Peacekeeper",
@@ -2889,6 +3043,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Peacekeeper[11].id,
                                                     trader: "Peacekeeper",
@@ -2914,6 +3069,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Peacekeeper[12].id,
                                                         trader: "Peacekeeper",
@@ -2939,6 +3095,7 @@ export const treeDataFunc: any = async () => {
                                                         },
                                                         children: [
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Peacekeeper[13]
                                                               .id,
@@ -2967,6 +3124,8 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [
                                                               {
+                                                                taskRequired:
+                                                                  "",
                                                                 id: filterTasksByTrader
                                                                   .Peacekeeper[14]
                                                                   .id,
@@ -2995,6 +3154,8 @@ export const treeDataFunc: any = async () => {
                                                                 },
                                                                 children: [
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Peacekeeper[15]
                                                                       .id,
@@ -3024,6 +3185,8 @@ export const treeDataFunc: any = async () => {
                                                                       },
                                                                     children: [
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Peacekeeper[16]
                                                                           .id,
@@ -3054,6 +3217,8 @@ export const treeDataFunc: any = async () => {
                                                                         children:
                                                                           [
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Peacekeeper[33]
                                                                                 .id,
@@ -3085,6 +3250,8 @@ export const treeDataFunc: any = async () => {
                                                                                 [],
                                                                             },
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Peacekeeper[38]
                                                                                 .id,
@@ -3124,6 +3291,7 @@ export const treeDataFunc: any = async () => {
                                                             ],
                                                           },
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Peacekeeper[18]
                                                               .id,
@@ -3152,6 +3320,8 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [
                                                               {
+                                                                taskRequired:
+                                                                  "",
                                                                 id: filterTasksByTrader
                                                                   .Peacekeeper[19]
                                                                   .id,
@@ -3180,6 +3350,8 @@ export const treeDataFunc: any = async () => {
                                                                 },
                                                                 children: [
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Peacekeeper[20]
                                                                       .id,
@@ -3209,6 +3381,8 @@ export const treeDataFunc: any = async () => {
                                                                       },
                                                                     children: [
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Peacekeeper[21]
                                                                           .id,
@@ -3239,6 +3413,8 @@ export const treeDataFunc: any = async () => {
                                                                         children:
                                                                           [
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Peacekeeper[22]
                                                                                 .id,
@@ -3269,6 +3445,8 @@ export const treeDataFunc: any = async () => {
                                                                               children:
                                                                                 [
                                                                                   {
+                                                                                    taskRequired:
+                                                                                      "",
                                                                                     id: filterTasksByTrader
                                                                                       .Peacekeeper[23]
                                                                                       .id,
@@ -3299,6 +3477,8 @@ export const treeDataFunc: any = async () => {
                                                                                     children:
                                                                                       [
                                                                                         {
+                                                                                          taskRequired:
+                                                                                            "",
                                                                                           id: filterTasksByTrader
                                                                                             .Peacekeeper[39]
                                                                                             .id,
@@ -3329,6 +3509,8 @@ export const treeDataFunc: any = async () => {
                                                                                           children:
                                                                                             [
                                                                                               {
+                                                                                                taskRequired:
+                                                                                                  "",
                                                                                                 id: filterTasksByTrader
                                                                                                   .Peacekeeper[40]
                                                                                                   .id,
@@ -3364,6 +3546,8 @@ export const treeDataFunc: any = async () => {
                                                                                       ],
                                                                                   },
                                                                                   {
+                                                                                    taskRequired:
+                                                                                      "",
                                                                                     id: filterTasksByTrader
                                                                                       .Peacekeeper[34]
                                                                                       .id,
@@ -3397,6 +3581,8 @@ export const treeDataFunc: any = async () => {
                                                                                 ],
                                                                             },
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Peacekeeper[24]
                                                                                 .id,
@@ -3436,6 +3622,7 @@ export const treeDataFunc: any = async () => {
                                                             ],
                                                           },
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Peacekeeper[30]
                                                               .id,
@@ -3473,6 +3660,7 @@ export const treeDataFunc: any = async () => {
                                             ],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Peacekeeper[35].id,
                                             trader: "Peacekeeper",
@@ -3501,6 +3689,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[27].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[27]
@@ -3524,6 +3713,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Peacekeeper[17].id,
                                 trader: "Peacekeeper",
                                 name: filterTasksByTrader.Peacekeeper[17].name,
@@ -3543,6 +3733,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[25].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[25]
@@ -3564,6 +3755,7 @@ export const treeDataFunc: any = async () => {
                                     children: [],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[26].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[26]
@@ -3585,6 +3777,7 @@ export const treeDataFunc: any = async () => {
                                     children: [],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[28].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[28]
@@ -3616,6 +3809,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Peacekeeper[31].id,
                 trader: "Peacekeeper",
                 name: filterTasksByTrader.Peacekeeper[31].name,
@@ -3628,6 +3822,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Peacekeeper[32].id,
                     trader: "Peacekeeper",
                     name: filterTasksByTrader.Peacekeeper[32].name,
@@ -3648,6 +3843,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Mechanic",
         name: "Mechanic",
@@ -3661,6 +3857,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Mechanic[55].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[55].name,
@@ -3672,6 +3869,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Mechanic[56].id,
                 trader: "Mechanic",
                 name: filterTasksByTrader.Mechanic[56].name,
@@ -3683,6 +3881,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[57].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[57].name,
@@ -3696,6 +3895,7 @@ export const treeDataFunc: any = async () => {
                     children: [],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[58].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[58].name,
@@ -3708,6 +3908,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Mechanic[59].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[59].name,
@@ -3729,6 +3930,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Mechanic[60].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[60].name,
@@ -3740,6 +3942,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Mechanic[48].id,
                 trader: "Mechanic",
                 name: filterTasksByTrader.Mechanic[48].name,
@@ -3751,6 +3954,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[49].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[49].name,
@@ -3763,6 +3967,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Mechanic[50].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[50].name,
@@ -3777,6 +3982,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[51].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[51].name,
@@ -3792,6 +3998,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[52].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[52].name,
@@ -3809,6 +4016,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[53].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[53].name,
@@ -3828,6 +4036,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Mechanic[54].id,
                                         trader: "Mechanic",
                                         name: filterTasksByTrader.Mechanic[54]
@@ -3863,6 +4072,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Mechanic[46].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[46].name,
@@ -3875,6 +4085,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Mechanic[33].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[33].name,
@@ -3886,6 +4097,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Mechanic[68].id,
                 trader: "Mechanic",
                 name: filterTasksByTrader.Mechanic[68].name,
@@ -3897,6 +4109,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[69].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[69].name,
@@ -3914,6 +4127,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Mechanic[0].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[0].name,
@@ -3925,6 +4139,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Mechanic[1].id,
                 trader: "Mechanic",
                 name: filterTasksByTrader.Mechanic[1].name,
@@ -3936,6 +4151,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[3].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[3].name,
@@ -3948,6 +4164,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Mechanic[5].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[5].name,
@@ -3961,6 +4178,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[6].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[6].name,
@@ -3976,6 +4194,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[15].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[15].name,
@@ -3993,6 +4212,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[23].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[23].name,
@@ -4012,6 +4232,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Mechanic[28].id,
                                         trader: "Mechanic",
                                         name: filterTasksByTrader.Mechanic[28]
@@ -4032,6 +4253,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Mechanic[29]
                                               .id,
                                             trader: "Mechanic",
@@ -4053,6 +4275,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Mechanic[31].id,
                                                 trader: "Mechanic",
@@ -4076,6 +4299,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Mechanic[32].id,
                                                     trader: "Mechanic",
@@ -4101,6 +4325,7 @@ export const treeDataFunc: any = async () => {
                                                     },
                                                     children: [
                                                       {
+                                                        taskRequired: "",
                                                         id: filterTasksByTrader
                                                           .Mechanic[34].id,
                                                         trader: "Mechanic",
@@ -4126,6 +4351,7 @@ export const treeDataFunc: any = async () => {
                                                         },
                                                         children: [
                                                           {
+                                                            taskRequired: "",
                                                             id: filterTasksByTrader
                                                               .Mechanic[36].id,
                                                             trader: "Mechanic",
@@ -4152,6 +4378,8 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [
                                                               {
+                                                                taskRequired:
+                                                                  "",
                                                                 id: filterTasksByTrader
                                                                   .Mechanic[40]
                                                                   .id,
@@ -4180,6 +4408,8 @@ export const treeDataFunc: any = async () => {
                                                                 },
                                                                 children: [
                                                                   {
+                                                                    taskRequired:
+                                                                      "",
                                                                     id: filterTasksByTrader
                                                                       .Mechanic[41]
                                                                       .id,
@@ -4209,6 +4439,8 @@ export const treeDataFunc: any = async () => {
                                                                       },
                                                                     children: [
                                                                       {
+                                                                        taskRequired:
+                                                                          "",
                                                                         id: filterTasksByTrader
                                                                           .Mechanic[43]
                                                                           .id,
@@ -4239,6 +4471,8 @@ export const treeDataFunc: any = async () => {
                                                                         children:
                                                                           [
                                                                             {
+                                                                              taskRequired:
+                                                                                "",
                                                                               id: filterTasksByTrader
                                                                                 .Mechanic[44]
                                                                                 .id,
@@ -4269,6 +4503,8 @@ export const treeDataFunc: any = async () => {
                                                                               children:
                                                                                 [
                                                                                   {
+                                                                                    taskRequired:
+                                                                                      "",
                                                                                     id: filterTasksByTrader
                                                                                       .Mechanic[45]
                                                                                       .id,
@@ -4299,6 +4535,8 @@ export const treeDataFunc: any = async () => {
                                                                                     children:
                                                                                       [
                                                                                         {
+                                                                                          taskRequired:
+                                                                                            "",
                                                                                           id: filterTasksByTrader
                                                                                             .Mechanic[61]
                                                                                             .id,
@@ -4329,6 +4567,8 @@ export const treeDataFunc: any = async () => {
                                                                                           children:
                                                                                             [
                                                                                               {
+                                                                                                taskRequired:
+                                                                                                  "",
                                                                                                 id: filterTasksByTrader
                                                                                                   .Mechanic[62]
                                                                                                   .id,
@@ -4359,6 +4599,8 @@ export const treeDataFunc: any = async () => {
                                                                                                 children:
                                                                                                   [
                                                                                                     {
+                                                                                                      taskRequired:
+                                                                                                        "",
                                                                                                       id: filterTasksByTrader
                                                                                                         .Mechanic[63]
                                                                                                         .id,
@@ -4389,6 +4631,8 @@ export const treeDataFunc: any = async () => {
                                                                                                       children:
                                                                                                         [
                                                                                                           {
+                                                                                                            taskRequired:
+                                                                                                              "",
                                                                                                             id: filterTasksByTrader
                                                                                                               .Mechanic[64]
                                                                                                               .id,
@@ -4419,6 +4663,8 @@ export const treeDataFunc: any = async () => {
                                                                                                             children:
                                                                                                               [
                                                                                                                 {
+                                                                                                                  taskRequired:
+                                                                                                                    "",
                                                                                                                   id: filterTasksByTrader
                                                                                                                     .Mechanic[65]
                                                                                                                     .id,
@@ -4449,6 +4695,8 @@ export const treeDataFunc: any = async () => {
                                                                                                                   children:
                                                                                                                     [
                                                                                                                       {
+                                                                                                                        taskRequired:
+                                                                                                                          "",
                                                                                                                         id: filterTasksByTrader
                                                                                                                           .Mechanic[66]
                                                                                                                           .id,
@@ -4479,6 +4727,8 @@ export const treeDataFunc: any = async () => {
                                                                                                                         children:
                                                                                                                           [
                                                                                                                             {
+                                                                                                                              taskRequired:
+                                                                                                                                "",
                                                                                                                               id: filterTasksByTrader
                                                                                                                                 .Mechanic[67]
                                                                                                                                 .id,
@@ -4552,6 +4802,7 @@ export const treeDataFunc: any = async () => {
                         ],
                       },
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Mechanic[8].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[8].name,
@@ -4565,6 +4816,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[10].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[10].name,
@@ -4580,6 +4832,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[21].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[21].name,
@@ -4597,6 +4850,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[24].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[24].name,
@@ -4616,6 +4870,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Mechanic[26].id,
                                         trader: "Mechanic",
                                         name: filterTasksByTrader.Mechanic[26]
@@ -4641,6 +4896,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[12].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[12].name,
@@ -4658,6 +4914,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[17].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[17].name,
@@ -4677,6 +4934,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Mechanic[20].id,
                                         trader: "Mechanic",
                                         name: filterTasksByTrader.Mechanic[20]
@@ -4702,6 +4960,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[25].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[25].name,
@@ -4722,6 +4981,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[14].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[14].name,
@@ -4742,6 +5002,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[4].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[4].name,
@@ -4755,6 +5016,7 @@ export const treeDataFunc: any = async () => {
                     children: [],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[7].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[7].name,
@@ -4767,6 +5029,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Mechanic[9].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[9].name,
@@ -4780,6 +5043,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[16].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[16].name,
@@ -4795,6 +5059,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[19].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[19].name,
@@ -4813,6 +5078,7 @@ export const treeDataFunc: any = async () => {
                                 children: [],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[18].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[18].name,
@@ -4830,6 +5096,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[35].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[35].name,
@@ -4850,6 +5117,7 @@ export const treeDataFunc: any = async () => {
                                     children: [],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[42].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[42].name,
@@ -4870,6 +5138,7 @@ export const treeDataFunc: any = async () => {
                                     children: [],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[47].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[47].name,
@@ -4893,6 +5162,7 @@ export const treeDataFunc: any = async () => {
                               },
 
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[27].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[27].name,
@@ -4913,6 +5183,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[11].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[11].name,
@@ -4929,6 +5200,7 @@ export const treeDataFunc: any = async () => {
                             children: [],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Mechanic[13].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[13].name,
@@ -4944,6 +5216,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Mechanic[22].id,
                                 trader: "Mechanic",
                                 name: filterTasksByTrader.Mechanic[22].name,
@@ -4961,6 +5234,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[39].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[39].name,
@@ -4980,6 +5254,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Mechanic[37].id,
                                         trader: "Mechanic",
                                         name: filterTasksByTrader.Mechanic[37]
@@ -5000,6 +5275,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Mechanic[38]
                                               .id,
                                             trader: "Mechanic",
@@ -5026,6 +5302,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[30].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[30].name,
@@ -5054,6 +5331,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Mechanic[2].id,
                     trader: "Mechanic",
                     name: filterTasksByTrader.Mechanic[2].name,
@@ -5073,6 +5351,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Ragman",
         name: "Ragman",
@@ -5086,6 +5365,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Ragman[32].id,
             trader: "Ragman",
             name: filterTasksByTrader.Ragman[32].name,
@@ -5098,6 +5378,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Ragman[0].id,
             trader: "Ragman",
             name: filterTasksByTrader.Ragman[0].name,
@@ -5109,6 +5390,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Ragman[1].id,
                 trader: "Ragman",
                 name: filterTasksByTrader.Ragman[1].name,
@@ -5120,6 +5402,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Ragman[9].id,
                     trader: "Ragman",
                     name: filterTasksByTrader.Ragman[9].name,
@@ -5132,6 +5415,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Ragman[7].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[7].name,
@@ -5144,6 +5428,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Ragman[6].id,
                             trader: "Ragman",
                             name: filterTasksByTrader.Ragman[6].name,
@@ -5161,6 +5446,7 @@ export const treeDataFunc: any = async () => {
                         ],
                       },
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Ragman[4].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[4].name,
@@ -5176,6 +5462,7 @@ export const treeDataFunc: any = async () => {
                     ],
                   },
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Ragman[10].id,
                     trader: "Ragman",
                     name: filterTasksByTrader.Ragman[10].name,
@@ -5188,6 +5475,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Ragman[5].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[5].name,
@@ -5200,6 +5488,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Ragman[11].id,
                             trader: "Ragman",
                             name: filterTasksByTrader.Ragman[11].name,
@@ -5214,6 +5503,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Ragman[24].id,
                                 trader: "Ragman",
                                 name: filterTasksByTrader.Ragman[24].name,
@@ -5231,6 +5521,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Ragman[25].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[25].name,
@@ -5252,6 +5543,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Ragman[27].id,
                                 trader: "Ragman",
                                 name: filterTasksByTrader.Ragman[27].name,
@@ -5269,6 +5561,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Ragman[33].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[33].name,
@@ -5287,6 +5580,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Ragman[38].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[38]
@@ -5307,6 +5601,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Ragman[39]
                                               .id,
                                             trader: "Ragman",
@@ -5337,6 +5632,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Ragman[14].id,
                             trader: "Ragman",
                             name: filterTasksByTrader.Ragman[14].name,
@@ -5351,6 +5647,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Ragman[15].id,
                                 trader: "Ragman",
                                 name: filterTasksByTrader.Ragman[15].name,
@@ -5368,6 +5665,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Ragman[19].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[16].name,
@@ -5386,6 +5684,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Ragman[17].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[17]
@@ -5406,6 +5705,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Ragman[18]
                                               .id,
                                             trader: "Ragman",
@@ -5428,6 +5728,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Ragman[34]
                                               .id,
                                             trader: "Ragman",
@@ -5449,6 +5750,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Ragman[36].id,
                                                 trader: "Ragman",
@@ -5476,6 +5778,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Ragman[23].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[23]
@@ -5496,6 +5799,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Ragman[30]
                                               .id,
                                             trader: "Ragman",
@@ -5522,6 +5826,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Ragman[21].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[21].name,
@@ -5540,6 +5845,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Ragman[27].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[22]
@@ -5561,6 +5867,7 @@ export const treeDataFunc: any = async () => {
                                         children: [],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Ragman[29].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[29]
@@ -5586,6 +5893,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Ragman[19].id,
                                 trader: "Ragman",
                                 name: filterTasksByTrader.Ragman[19].name,
@@ -5603,6 +5911,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Ragman[28].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[28].name,
@@ -5626,6 +5935,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Ragman[13].id,
                             trader: "Ragman",
                             name: filterTasksByTrader.Ragman[13].name,
@@ -5647,6 +5957,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Ragman[2].id,
                 trader: "Ragman",
                 name: filterTasksByTrader.Ragman[2].name,
@@ -5658,6 +5969,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Ragman[8].id,
                     trader: "Ragman",
                     name: filterTasksByTrader.Ragman[8].name,
@@ -5673,6 +5985,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Ragman[3].id,
                 trader: "Ragman",
                 name: filterTasksByTrader.Ragman[3].name,
@@ -5684,6 +5997,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Ragman[12].id,
                     trader: "Ragman",
                     name: filterTasksByTrader.Ragman[12].name,
@@ -5696,6 +6010,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Ragman[31].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[31].name,
@@ -5709,6 +6024,7 @@ export const treeDataFunc: any = async () => {
                         children: [],
                       },
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Ragman[20].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[20].name,
@@ -5730,6 +6046,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Jaeger",
         name: "Jaeger",
@@ -5743,6 +6060,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Jaeger[37].id,
             trader: "Jaeger",
             name: filterTasksByTrader.Jaeger[37].name,
@@ -5754,6 +6072,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[51].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[51].name,
@@ -5766,6 +6085,7 @@ export const treeDataFunc: any = async () => {
                 children: [],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[52].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[52].name,
@@ -5780,6 +6100,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Jaeger[32].id,
             trader: "Jaeger",
             name: filterTasksByTrader.Jaeger[32].name,
@@ -5791,6 +6112,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[41].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[41].name,
@@ -5802,6 +6124,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Jaeger[42].id,
                     trader: "Jaeger",
                     name: filterTasksByTrader.Jaeger[42].name,
@@ -5819,6 +6142,7 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Jaeger[8].id,
             trader: "Jaeger",
             name: filterTasksByTrader.Jaeger[8].name,
@@ -5830,6 +6154,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[31].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[31].name,
@@ -5841,6 +6166,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Jaeger[40].id,
                     trader: "Jaeger",
                     name: filterTasksByTrader.Jaeger[40].name,
@@ -5856,6 +6182,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[9].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[9].name,
@@ -5867,6 +6194,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Jaeger[10].id,
                     trader: "Jaeger",
                     name: filterTasksByTrader.Jaeger[10].name,
@@ -5879,6 +6207,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Jaeger[11].id,
                         trader: "Jaeger",
                         name: filterTasksByTrader.Jaeger[11].name,
@@ -5891,6 +6220,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Jaeger[12].id,
                             trader: "Jaeger",
                             name: filterTasksByTrader.Jaeger[12].name,
@@ -5905,6 +6235,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Jaeger[13].id,
                                 trader: "Jaeger",
                                 name: filterTasksByTrader.Jaeger[13].name,
@@ -5922,6 +6253,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[29].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[29].name,
@@ -5940,6 +6272,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[43].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[43]
@@ -5960,6 +6293,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[44]
                                               .id,
                                             trader: "Jaeger",
@@ -5986,6 +6320,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[35].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[35].name,
@@ -6005,6 +6340,7 @@ export const treeDataFunc: any = async () => {
                                     children: [],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[15].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[15].name,
@@ -6023,6 +6359,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[16].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[16]
@@ -6043,6 +6380,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[22]
                                               .id,
                                             trader: "Jaeger",
@@ -6069,6 +6407,7 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[23].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[23].name,
@@ -6087,6 +6426,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[17].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[17]
@@ -6107,6 +6447,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[49]
                                               .id,
                                             trader: "Jaeger",
@@ -6131,6 +6472,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[20].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[20]
@@ -6152,6 +6494,7 @@ export const treeDataFunc: any = async () => {
                                         children: [],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[27].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[27]
@@ -6172,6 +6515,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[47]
                                               .id,
                                             trader: "Jaeger",
@@ -6194,6 +6538,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[48]
                                               .id,
                                             trader: "Jaeger",
@@ -6218,6 +6563,7 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[18].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[18]
@@ -6238,6 +6584,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[28]
                                               .id,
                                             trader: "Jaeger",
@@ -6260,6 +6607,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[19]
                                               .id,
                                             trader: "Jaeger",
@@ -6282,6 +6630,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[26]
                                               .id,
                                             trader: "Jaeger",
@@ -6304,6 +6653,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[21]
                                               .id,
                                             trader: "Jaeger",
@@ -6326,6 +6676,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[36]
                                               .id,
                                             trader: "Jaeger",
@@ -6348,6 +6699,7 @@ export const treeDataFunc: any = async () => {
                                             children: [],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[38]
                                               .id,
                                             trader: "Jaeger",
@@ -6369,6 +6721,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Jaeger[50].id,
                                                 trader: "Jaeger",
@@ -6392,6 +6745,7 @@ export const treeDataFunc: any = async () => {
                                                 children: [],
                                               },
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Jaeger[39].id,
                                                 trader: "Jaeger",
@@ -6417,6 +6771,7 @@ export const treeDataFunc: any = async () => {
                                             ],
                                           },
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[46]
                                               .id,
                                             trader: "Jaeger",
@@ -6445,6 +6800,7 @@ export const treeDataFunc: any = async () => {
                                 ],
                               },
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Jaeger[14].id,
                                 trader: "Jaeger",
                                 name: filterTasksByTrader.Jaeger[14].name,
@@ -6467,6 +6823,7 @@ export const treeDataFunc: any = async () => {
                         ],
                       },
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Jaeger[24].id,
                         trader: "Jaeger",
                         name: filterTasksByTrader.Jaeger[24].name,
@@ -6479,6 +6836,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Jaeger[30].id,
                             trader: "Jaeger",
                             name: filterTasksByTrader.Jaeger[30].name,
@@ -6493,6 +6851,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Jaeger[34].id,
                                 trader: "Jaeger",
                                 name: filterTasksByTrader.Jaeger[34].name,
@@ -6510,6 +6869,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[33].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[33].name,
@@ -6528,6 +6888,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[45].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[45]
@@ -6555,6 +6916,7 @@ export const treeDataFunc: any = async () => {
                             ],
                           },
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Jaeger[25].id,
                             trader: "Jaeger",
                             name: filterTasksByTrader.Jaeger[25].name,
@@ -6576,6 +6938,7 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Jaeger[0].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[0].name,
@@ -6587,6 +6950,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Jaeger[1].id,
                     trader: "Jaeger",
                     name: filterTasksByTrader.Jaeger[1].name,
@@ -6599,6 +6963,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Jaeger[2].id,
                         trader: "Jaeger",
                         name: filterTasksByTrader.Jaeger[2].name,
@@ -6611,6 +6976,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Jaeger[3].id,
                             trader: "Jaeger",
                             name: filterTasksByTrader.Jaeger[3].name,
@@ -6625,6 +6991,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Jaeger[4].id,
                                 trader: "Jaeger",
                                 name: filterTasksByTrader.Jaeger[4].name,
@@ -6641,6 +7008,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Jaeger[5].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[5].name,
@@ -6659,6 +7027,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Jaeger[6].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[6]
@@ -6679,6 +7048,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader.Jaeger[7]
                                               .id,
                                             trader: "Jaeger",
@@ -6719,6 +7089,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Fence",
         name: "Fence",
@@ -6732,6 +7103,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Fence[0].id,
             trader: "Fence",
             name: filterTasksByTrader.Fence[0].name,
@@ -6744,6 +7116,7 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
+            taskRequired: "",
             id: filterTasksByTrader.Fence[1].id,
             trader: "Fence",
             name: filterTasksByTrader.Fence[1].name,
@@ -6755,6 +7128,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Fence[2].id,
                 trader: "Fence",
                 name: filterTasksByTrader.Fence[2].name,
@@ -6766,6 +7140,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Fence[3].id,
                     trader: "Fence",
                     name: filterTasksByTrader.Fence[3].name,
@@ -6777,6 +7152,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Fence[4].id,
                         trader: "Fence",
                         name: filterTasksByTrader.Fence[4].name,
@@ -6789,6 +7165,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Fence[5].id,
                             trader: "Fence",
                             name: filterTasksByTrader.Fence[5].name,
@@ -6802,6 +7179,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Fence[6].id,
                                 trader: "Fence",
                                 name: filterTasksByTrader.Fence[6].name,
@@ -6829,6 +7207,7 @@ export const treeDataFunc: any = async () => {
         ],
       },
       {
+        taskRequired: "",
         id: "",
         trader: "Lightkeeper",
         name: "Lightkeeper",
@@ -6842,6 +7221,7 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
+            taskRequired: "",
             id: filterTasksByTrader.Lightkeeper[0].id,
             trader: "Lightkeeper",
             name: filterTasksByTrader.Lightkeeper[0].name,
@@ -6853,6 +7233,7 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
+                taskRequired: "",
                 id: filterTasksByTrader.Lightkeeper[1].id,
                 trader: "Lightkeeper",
                 name: filterTasksByTrader.Lightkeeper[1].name,
@@ -6865,6 +7246,7 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
+                    taskRequired: "",
                     id: filterTasksByTrader.Lightkeeper[2].id,
                     trader: "Lightkeeper",
                     name: filterTasksByTrader.Lightkeeper[2].name,
@@ -6877,6 +7259,7 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
+                        taskRequired: "",
                         id: filterTasksByTrader.Lightkeeper[4].id,
                         trader: "Lightkeeper",
                         name: filterTasksByTrader.Lightkeeper[4].name,
@@ -6891,6 +7274,7 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
+                            taskRequired: "",
                             id: filterTasksByTrader.Lightkeeper[3].id,
                             trader: "Lightkeeper",
                             name: filterTasksByTrader.Lightkeeper[3].name,
@@ -6908,6 +7292,7 @@ export const treeDataFunc: any = async () => {
                             },
                             children: [
                               {
+                                taskRequired: "",
                                 id: filterTasksByTrader.Lightkeeper[5].id,
                                 trader: "Lightkeeper",
                                 name: filterTasksByTrader.Lightkeeper[5].name,
@@ -6926,6 +7311,7 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Lightkeeper[6].id,
                                     trader: "Lightkeeper",
                                     name: filterTasksByTrader.Lightkeeper[6]
@@ -6946,6 +7332,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
+                                        taskRequired: "",
                                         id: filterTasksByTrader.Lightkeeper[7]
                                           .id,
                                         trader: "Lightkeeper",
@@ -6967,6 +7354,7 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
+                                            taskRequired: "",
                                             id: filterTasksByTrader
                                               .Lightkeeper[8].id,
                                             trader: "Lightkeeper",
@@ -6989,6 +7377,7 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
+                                                taskRequired: "",
                                                 id: filterTasksByTrader
                                                   .Lightkeeper[9].id,
                                                 trader: "Lightkeeper",
@@ -7013,6 +7402,7 @@ export const treeDataFunc: any = async () => {
                                                 },
                                                 children: [
                                                   {
+                                                    taskRequired: "",
                                                     id: filterTasksByTrader
                                                       .Lightkeeper[10].id,
                                                     trader: "Lightkeeper",

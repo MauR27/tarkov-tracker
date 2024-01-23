@@ -2,32 +2,32 @@
   background-color: white;
 }
 
-.quest-map-trader-card_Prapor {
-  background-color: aqua;
+.chakra-card.quest-map-trader-card_Prapor {
+  background-color: #157a58;
 }
 
-.quest-map-trader-card_Therapist {
-  background-color: blueviolet;
+.chakra-card.quest-map-trader-card_Therapist {
+  background-color: #371a60;
 }
 
-.quest-map-trader-card_Skier {
-  background-color: chartreuse;
+.chakra-card.quest-map-trader-card_Skier {
+  background-color: #8c2f18;
 }
-.quest-map-trader-card_Mechanic {
-  background-color: cadetblue;
+.chakra-card.quest-map-trader-card_Mechanic {
+  background-color: #3c6e35;
 }
-.quest-map-trader-card_Ragman {
-  background-color: coral;
+.chakra-card.quest-map-trader-card_Ragman {
+  background-color: #453d66;
 }
-.quest-map-trader-card_Fence {
-  background-color: darkkhaki;
+.chakra-card.quest-map-trader-card_Fence {
+  background-color: #22236d;
 }
-.quest-map-trader-card_Lightkeeper {
-  background-color: darkturquoise;
+.chakra-card.quest-map-trader-card_Lightkeeper {
+  background-color: #636600;
 }
-.quest-map-trader-card_Jaeger {
-  background-color: darkblue;
+.chakra-card.quest-map-trader-card_Jaeger {
+  background-color: #3d0000;
 }
-.quest-map-trader-card_Peacekeeper {
-  background-color: darkred;
+.chakra-card.quest-map-trader-card_Peacekeeper {
+  background-color: #005361;
 }

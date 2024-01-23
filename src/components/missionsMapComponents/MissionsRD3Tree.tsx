@@ -13,6 +13,7 @@ import {
   initialTreeData,
 } from "@/lib/TreeObjectOptions";
 import { treeDataFunc } from "@/util/TreeMissionsDataFunc";
+import { Box } from "@chakra-ui/react";
 
 const MissionsSchema: React.FC = () => {
   const [translate, containerRef]: any = useCenteredTree();
@@ -38,14 +39,14 @@ const MissionsSchema: React.FC = () => {
     return <h1>Loading</h1>;
   }
   return (
-    <div className="tree-container" style={containerStyles} ref={containerRef}>
+    <Box className="tree-container" style={containerStyles} ref={containerRef}>
       <Tree
         data={treeData as RawNodeDatum}
         orientation="vertical"
         translate={translate}
         zoom={0.1}
         scaleExtent={{ min: 0.1, max: 2 }}
-        separation={{ siblings: 1, nonSiblings: 2 }}
+        separation={{ siblings: 2, nonSiblings: 3 }}
         collapsible={false}
         pathClassFunc={() => "link-quests"}
         pathFunc={pathFuncOptions}
@@ -54,7 +55,7 @@ const MissionsSchema: React.FC = () => {
           renderForeignObjectNode({ ...props, foreignObjectProps })
         }
       />
-    </div>
+    </Box>
   );
 };
 

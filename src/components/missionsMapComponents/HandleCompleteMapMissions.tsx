@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@chakra-ui/react";
 import React, { FC, useEffect, useState } from "react";
 
 type TIdNode = {
@@ -7,7 +8,6 @@ type TIdNode = {
 
 const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
   const [completeMission, setCompleteMission] = useState<boolean>(false);
-  const [missions, setMissions] = useState([]);
 
   useEffect(() => {
     const currentID: any = id;
@@ -53,9 +53,15 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
   };
 
   return (
-    <button onClick={() => handleClick(id)}>
+    <Button
+      size="sm"
+      minW="100%"
+      fontWeight="xs"
+      borderRadius="5px"
+      onClick={() => handleClick(id)}
+    >
       {!completeMission ? "complete" : "uncomplete"}
-    </button>
+    </Button>
   );
 };
 

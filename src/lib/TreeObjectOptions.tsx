@@ -1,10 +1,21 @@
-import Image from "next/image";
 import React from "react";
 import "./ForeignObjectNode.css";
-import Link from "next/link";
 import HandleCompleteMapMissions from "@/components/missionsMapComponents/HandleCompleteMapMissions";
+import {
+  Box,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Divider,
+  Flex,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 
 export interface ITreeData<T = Record<string, unknown>> {
+  taskRequired: string;
   id: string;
   trader: string;
   name: string;
@@ -13,6 +24,7 @@ export interface ITreeData<T = Record<string, unknown>> {
 }
 
 export const initialTreeData: ITreeData = {
+  taskRequired: "",
   id: "",
   trader: "",
   name: "Traders",
@@ -97,12 +109,12 @@ export const containerStyles = {
 
 // Edit all nodes and properties from customs nodes
 
-const nodeSize = { x: 350, y: 480 };
+const nodeSize = { x: 375, y: 480 };
 export const foreignObjectProps = {
   width: nodeSize.x,
   height: nodeSize.y,
   y: -30,
-  x: -175,
+  x: -190,
 };
 
 // Custom nodes objects
@@ -119,37 +131,61 @@ export const renderForeignObjectNode = ({
       {nodeDatum.attributes.level >= 0 &&
       nodeClassName !== "quest-map-trader-card" ? (
         <foreignObject {...foreignObjectProps} style={{ overflow: "visible" }}>
-          <div className={traderTreeClassName}>
-            <section className="quest-map-card_header">
-              <Link href={nodeDatum.attributes.wikiLink} target="_blank">
-                wiki
+          <Card
+            className={traderTreeClassName}
+            borderRadius="5px"
+            boxShadow="2px 2px 20px black"
+            color="white"
+          >
+            <CardHeader
+              className="quest-map-card_header"
+              as={Flex}
+              gap={4}
+              p="10px"
+            >
+              <Link
+                textDecoration="underline"
+                fontSize="xs"
+                href={nodeDatum.attributes.wikiLink}
+                target="_blank"
+                _hover={{ textDecoration: "none" }}
+              >
+                Wiki
               </Link>
-              <p style={{ textAlign: "center" }}>{nodeDatum.name}</p>
-            </section>
-
-            {nodeDatum.attributes.objectives.map((data: any) => (
-              <section className="quest-map-card_body" key={data.id}>
-                <div>
-                  <p style={{ fontSize: "10px" }}>{data.description}</p>
+              <Text>{nodeDatum.name}</Text>
+              <Text>{nodeDatum.attributes.level} Lvl</Text>
+              <Text>{nodeDatum.taskRequired}</Text>
+            </CardHeader>
+            <Divider />
+            <CardBody
+              className="quest-map-card_body"
+              p="10px"
+              fontSize="x-small"
+            >
+              {nodeDatum.attributes.objectives.map((data: any) => (
+                <Flex key={data.id} align="center">
+                  <Box w="80%" mb="10px">
+                    <Text>{data.description}</Text>
+                  </Box>
                   {data.type === "giveItem" && data.item && (
-                    <div>
+                    <Flex flexDir="row" gap={2} minH="100%" align="center">
                       <Image
                         src={data.item.iconLink}
                         alt={data.item.name}
-                        width={35}
-                        height={35}
+                        width={30}
+                        height={30}
                       />
-                      <p>{data.count}</p>
-                    </div>
+                      <Text>{data.count}</Text>
+                    </Flex>
                   )}
-                </div>
-              </section>
-            ))}
+                </Flex>
+              ))}
+            </CardBody>
 
-            <section className="quest-map-card_footer">
+            <CardFooter className="quest-map-card_footer" p={0}>
               <HandleCompleteMapMissions id={nodeDatum.id} />
-            </section>
-          </div>
+            </CardFooter>
+          </Card>
         </foreignObject>
       ) : (
         <>
@@ -158,14 +194,14 @@ export const renderForeignObjectNode = ({
               {...foreignObjectProps}
               style={{ overflow: "visible" }}
             >
-              <div className={nodeClassName}>
+              <Box className={nodeClassName}>
                 <Image
                   src={nodeDatum.attributes.traderImage}
                   alt={nodeDatum.name}
                   width={350}
                   height={300}
                 />
-              </div>
+              </Box>
             </foreignObject>
           )}
         </>

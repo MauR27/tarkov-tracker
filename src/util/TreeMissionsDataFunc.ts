@@ -15,6 +15,8 @@ export const treeDataFunc: any = async () => {
     return acc;
   }, {});
 
+  console.log(filterTasksByTrader.Therapist);
+
   const treeStructure: ITreeData = {
     taskRequired: "",
     id: "",
@@ -43,6 +45,81 @@ export const treeDataFunc: any = async () => {
         children: [
           {
             taskRequired: "",
+            id: filterTasksByTrader.Prapor[27].id,
+            trader: "Prapor",
+            name: filterTasksByTrader.Prapor[27].name,
+            attributes: {
+              level: filterTasksByTrader.Prapor[27].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Prapor[27].kappaRequired,
+              objectives: filterTasksByTrader.Prapor[27].objectives,
+              wikiLink: filterTasksByTrader.Prapor[27].wikiLink,
+            },
+            children: [
+              {
+                taskRequired: "",
+                id: filterTasksByTrader.Prapor[42].id,
+                trader: "Prapor",
+                name: filterTasksByTrader.Prapor[42].name,
+                attributes: {
+                  level: filterTasksByTrader.Prapor[42].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Prapor[42].kappaRequired,
+                  objectives: filterTasksByTrader.Prapor[42].objectives,
+                  wikiLink: filterTasksByTrader.Prapor[42].wikiLink,
+                },
+                children: [
+                  {
+                    taskRequired: "",
+                    id: filterTasksByTrader.Prapor[43].id,
+                    trader: "Prapor",
+                    name: filterTasksByTrader.Prapor[43].name,
+                    attributes: {
+                      level: filterTasksByTrader.Prapor[43].minPlayerLevel,
+                      kappaRequired:
+                        filterTasksByTrader.Prapor[43].kappaRequired,
+                      objectives: filterTasksByTrader.Prapor[43].objectives,
+                      wikiLink: filterTasksByTrader.Prapor[43].wikiLink,
+                    },
+                    children: [
+                      {
+                        taskRequired: "",
+                        id: filterTasksByTrader.Prapor[44].id,
+                        trader: "Prapor",
+                        name: filterTasksByTrader.Prapor[44].name,
+                        attributes: {
+                          level: filterTasksByTrader.Prapor[44].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Prapor[44].kappaRequired,
+                          objectives: filterTasksByTrader.Prapor[44].objectives,
+                          wikiLink: filterTasksByTrader.Prapor[44].wikiLink,
+                        },
+                        children: [
+                          {
+                            taskRequired: "",
+                            id: filterTasksByTrader.Prapor[45].id,
+                            trader: "Prapor",
+                            name: filterTasksByTrader.Prapor[45].name,
+                            attributes: {
+                              level:
+                                filterTasksByTrader.Prapor[45].minPlayerLevel,
+                              kappaRequired:
+                                filterTasksByTrader.Prapor[45].kappaRequired,
+                              objectives:
+                                filterTasksByTrader.Prapor[45].objectives,
+                              wikiLink: filterTasksByTrader.Prapor[45].wikiLink,
+                            },
+                            children: [],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            taskRequired:
+              "To unlock this quest, you also need to complete, Spa Tour - Part 7 from Peacekeeper",
             id: filterTasksByTrader.Prapor[28].id,
             trader: "Prapor",
             name: filterTasksByTrader.Prapor[28].name,
@@ -55,7 +132,8 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Chemical - Part 4 from Skier or Out of Curiosity from Therapist",
             trader: "Prapor",
             id: filterTasksByTrader.Prapor[13].id,
             name: filterTasksByTrader.Prapor[13].name,
@@ -65,24 +143,25 @@ export const treeDataFunc: any = async () => {
               objectives: filterTasksByTrader.Prapor[13].objectives,
               wikiLink: filterTasksByTrader.Prapor[13].wikiLink,
             },
-            children: [
-              {
-                taskRequired: "",
-                trader: "Prapor",
-                id: filterTasksByTrader.Prapor[14].id,
-                name: filterTasksByTrader.Prapor[14].name,
-                attributes: {
-                  level: filterTasksByTrader.Prapor[14].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Prapor[14].kappaRequired,
-                  objectives: filterTasksByTrader.Prapor[14].objectives,
-                  wikiLink: filterTasksByTrader.Prapor[14].wikiLink,
-                },
-                children: [],
-              },
-            ],
+            children: [],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Chemical - Part 3 from Skier",
+            trader: "Prapor",
+            id: filterTasksByTrader.Prapor[14].id,
+            name: filterTasksByTrader.Prapor[14].name,
+            attributes: {
+              level: filterTasksByTrader.Prapor[14].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Prapor[14].kappaRequired,
+              objectives: filterTasksByTrader.Prapor[14].objectives,
+              wikiLink: filterTasksByTrader.Prapor[14].wikiLink,
+            },
+            children: [],
+          },
+          {
+            taskRequired:
+              "To unlock this quest, you also need to complete, Chemical - Part 1 from Skier",
             trader: "Prapor",
             id: filterTasksByTrader.Prapor[12].id,
             name: filterTasksByTrader.Prapor[12].name,
@@ -95,14 +174,14 @@ export const treeDataFunc: any = async () => {
             children: [
               {
                 taskRequired: "",
+                id: filterTasksByTrader.Prapor[39].id,
                 trader: "Prapor",
-                id: filterTasksByTrader.Prapor[40].id,
-                name: filterTasksByTrader.Prapor[40].name,
+                name: filterTasksByTrader.Prapor[39].name,
                 attributes: {
-                  level: filterTasksByTrader.Prapor[40].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Prapor[40].kappaRequired,
-                  objectives: filterTasksByTrader.Prapor[40].objectives,
-                  wikiLink: filterTasksByTrader.Prapor[40].wikiLink,
+                  level: filterTasksByTrader.Prapor[39].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Prapor[39].kappaRequired,
+                  objectives: filterTasksByTrader.Prapor[39].objectives,
+                  wikiLink: filterTasksByTrader.Prapor[39].wikiLink,
                 },
                 children: [],
               },
@@ -319,52 +398,52 @@ export const treeDataFunc: any = async () => {
                                                       {
                                                         taskRequired: "",
                                                         id: filterTasksByTrader
-                                                          .Prapor[37].id,
+                                                          .Prapor[36].id,
                                                         trader: "Prapor",
                                                         name: filterTasksByTrader
-                                                          .Prapor[37].name,
+                                                          .Prapor[36].name,
                                                         attributes: {
                                                           level:
                                                             filterTasksByTrader
-                                                              .Prapor[37]
+                                                              .Prapor[36]
                                                               .minPlayerLevel,
                                                           kappaRequired:
                                                             filterTasksByTrader
-                                                              .Prapor[37]
+                                                              .Prapor[36]
                                                               .kappaRequired,
                                                           objectives:
                                                             filterTasksByTrader
-                                                              .Prapor[37]
+                                                              .Prapor[36]
                                                               .objectives,
                                                           wikiLink:
                                                             filterTasksByTrader
-                                                              .Prapor[37]
+                                                              .Prapor[36]
                                                               .wikiLink,
                                                         },
                                                         children: [
                                                           {
                                                             taskRequired: "",
                                                             id: filterTasksByTrader
-                                                              .Prapor[39].id,
+                                                              .Prapor[38].id,
                                                             trader: "Prapor",
                                                             name: filterTasksByTrader
-                                                              .Prapor[39].name,
+                                                              .Prapor[38].name,
                                                             attributes: {
                                                               level:
                                                                 filterTasksByTrader
-                                                                  .Prapor[39]
+                                                                  .Prapor[38]
                                                                   .minPlayerLevel,
                                                               kappaRequired:
                                                                 filterTasksByTrader
-                                                                  .Prapor[39]
+                                                                  .Prapor[38]
                                                                   .kappaRequired,
                                                               objectives:
                                                                 filterTasksByTrader
-                                                                  .Prapor[39]
+                                                                  .Prapor[38]
                                                                   .objectives,
                                                               wikiLink:
                                                                 filterTasksByTrader
-                                                                  .Prapor[39]
+                                                                  .Prapor[38]
                                                                   .wikiLink,
                                                             },
                                                             children: [],
@@ -399,6 +478,54 @@ export const treeDataFunc: any = async () => {
                                                   .wikiLink,
                                             },
                                             children: [
+                                              {
+                                                taskRequired: "",
+                                                id: filterTasksByTrader
+                                                  .Prapor[31].id,
+                                                trader: "Prapor",
+                                                name: filterTasksByTrader
+                                                  .Prapor[31].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Prapor[31]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Prapor[31].kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Prapor[31].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Prapor[31].wikiLink,
+                                                },
+                                                children: [],
+                                              },
+                                              {
+                                                taskRequired: "",
+                                                id: filterTasksByTrader
+                                                  .Prapor[46].id,
+                                                trader: "Prapor",
+                                                name: filterTasksByTrader
+                                                  .Prapor[46].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Prapor[46]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Prapor[46].kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Prapor[46].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Prapor[46].wikiLink,
+                                                },
+                                                children: [],
+                                              },
                                               {
                                                 taskRequired: "",
                                                 id: filterTasksByTrader
@@ -533,30 +660,30 @@ export const treeDataFunc: any = async () => {
                                                                     taskRequired:
                                                                       "",
                                                                     id: filterTasksByTrader
-                                                                      .Prapor[33]
+                                                                      .Prapor[32]
                                                                       .id,
                                                                     trader:
                                                                       "Prapor",
                                                                     name: filterTasksByTrader
-                                                                      .Prapor[33]
+                                                                      .Prapor[32]
                                                                       .name,
                                                                     attributes:
                                                                       {
                                                                         level:
                                                                           filterTasksByTrader
-                                                                            .Prapor[33]
+                                                                            .Prapor[32]
                                                                             .minPlayerLevel,
                                                                         kappaRequired:
                                                                           filterTasksByTrader
-                                                                            .Prapor[33]
+                                                                            .Prapor[32]
                                                                             .kappaRequired,
                                                                         objectives:
                                                                           filterTasksByTrader
-                                                                            .Prapor[33]
+                                                                            .Prapor[32]
                                                                             .objectives,
                                                                         wikiLink:
                                                                           filterTasksByTrader
-                                                                            .Prapor[33]
+                                                                            .Prapor[32]
                                                                             .wikiLink,
                                                                       },
                                                                     children: [
@@ -564,35 +691,36 @@ export const treeDataFunc: any = async () => {
                                                                         taskRequired:
                                                                           "",
                                                                         id: filterTasksByTrader
-                                                                          .Prapor[46]
+                                                                          .Prapor[49]
                                                                           .id,
                                                                         trader:
                                                                           "Prapor",
                                                                         name: filterTasksByTrader
-                                                                          .Prapor[46]
+                                                                          .Prapor[49]
                                                                           .name,
                                                                         attributes:
                                                                           {
                                                                             level:
                                                                               filterTasksByTrader
-                                                                                .Prapor[46]
+                                                                                .Prapor[49]
                                                                                 .minPlayerLevel,
                                                                             kappaRequired:
                                                                               filterTasksByTrader
-                                                                                .Prapor[46]
+                                                                                .Prapor[49]
                                                                                 .kappaRequired,
                                                                             objectives:
                                                                               filterTasksByTrader
-                                                                                .Prapor[46]
+                                                                                .Prapor[49]
                                                                                 .objectives,
                                                                             wikiLink:
                                                                               filterTasksByTrader
-                                                                                .Prapor[46]
+                                                                                .Prapor[49]
                                                                                 .wikiLink,
                                                                           },
                                                                         children:
                                                                           [],
                                                                       },
+
                                                                       {
                                                                         taskRequired:
                                                                           "",
@@ -663,30 +791,30 @@ export const treeDataFunc: any = async () => {
                                                                         taskRequired:
                                                                           "",
                                                                         id: filterTasksByTrader
-                                                                          .Prapor[34]
+                                                                          .Prapor[33]
                                                                           .id,
                                                                         trader:
                                                                           "Prapor",
                                                                         name: filterTasksByTrader
-                                                                          .Prapor[34]
+                                                                          .Prapor[33]
                                                                           .name,
                                                                         attributes:
                                                                           {
                                                                             level:
                                                                               filterTasksByTrader
-                                                                                .Prapor[34]
+                                                                                .Prapor[33]
                                                                                 .minPlayerLevel,
                                                                             kappaRequired:
                                                                               filterTasksByTrader
-                                                                                .Prapor[34]
+                                                                                .Prapor[33]
                                                                                 .kappaRequired,
                                                                             objectives:
                                                                               filterTasksByTrader
-                                                                                .Prapor[34]
+                                                                                .Prapor[33]
                                                                                 .objectives,
                                                                             wikiLink:
                                                                               filterTasksByTrader
-                                                                                .Prapor[34]
+                                                                                .Prapor[33]
                                                                                 .wikiLink,
                                                                           },
                                                                         children:
@@ -695,30 +823,30 @@ export const treeDataFunc: any = async () => {
                                                                               taskRequired:
                                                                                 "",
                                                                               id: filterTasksByTrader
-                                                                                .Prapor[35]
+                                                                                .Prapor[34]
                                                                                 .id,
                                                                               trader:
                                                                                 "Prapor",
                                                                               name: filterTasksByTrader
-                                                                                .Prapor[35]
+                                                                                .Prapor[34]
                                                                                 .name,
                                                                               attributes:
                                                                                 {
                                                                                   level:
                                                                                     filterTasksByTrader
-                                                                                      .Prapor[35]
+                                                                                      .Prapor[34]
                                                                                       .minPlayerLevel,
                                                                                   kappaRequired:
                                                                                     filterTasksByTrader
-                                                                                      .Prapor[35]
+                                                                                      .Prapor[34]
                                                                                       .kappaRequired,
                                                                                   objectives:
                                                                                     filterTasksByTrader
-                                                                                      .Prapor[35]
+                                                                                      .Prapor[34]
                                                                                       .objectives,
                                                                                   wikiLink:
                                                                                     filterTasksByTrader
-                                                                                      .Prapor[35]
+                                                                                      .Prapor[34]
                                                                                       .wikiLink,
                                                                                 },
                                                                               children:
@@ -727,30 +855,30 @@ export const treeDataFunc: any = async () => {
                                                                                     taskRequired:
                                                                                       "",
                                                                                     id: filterTasksByTrader
-                                                                                      .Prapor[36]
+                                                                                      .Prapor[35]
                                                                                       .id,
                                                                                     trader:
                                                                                       "Prapor",
                                                                                     name: filterTasksByTrader
-                                                                                      .Prapor[36]
+                                                                                      .Prapor[35]
                                                                                       .name,
                                                                                     attributes:
                                                                                       {
                                                                                         level:
                                                                                           filterTasksByTrader
-                                                                                            .Prapor[36]
+                                                                                            .Prapor[35]
                                                                                             .minPlayerLevel,
                                                                                         kappaRequired:
                                                                                           filterTasksByTrader
-                                                                                            .Prapor[36]
+                                                                                            .Prapor[35]
                                                                                             .kappaRequired,
                                                                                         objectives:
                                                                                           filterTasksByTrader
-                                                                                            .Prapor[36]
+                                                                                            .Prapor[35]
                                                                                             .objectives,
                                                                                         wikiLink:
                                                                                           filterTasksByTrader
-                                                                                            .Prapor[36]
+                                                                                            .Prapor[35]
                                                                                             .wikiLink,
                                                                                       },
                                                                                     children:
@@ -766,30 +894,30 @@ export const treeDataFunc: any = async () => {
                                                                     taskRequired:
                                                                       "",
                                                                     id: filterTasksByTrader
-                                                                      .Prapor[31]
+                                                                      .Prapor[41]
                                                                       .id,
                                                                     trader:
                                                                       "Prapor",
                                                                     name: filterTasksByTrader
-                                                                      .Prapor[31]
+                                                                      .Prapor[41]
                                                                       .name,
                                                                     attributes:
                                                                       {
                                                                         level:
                                                                           filterTasksByTrader
-                                                                            .Prapor[31]
+                                                                            .Prapor[41]
                                                                             .minPlayerLevel,
                                                                         kappaRequired:
                                                                           filterTasksByTrader
-                                                                            .Prapor[31]
+                                                                            .Prapor[41]
                                                                             .kappaRequired,
                                                                         objectives:
                                                                           filterTasksByTrader
-                                                                            .Prapor[31]
+                                                                            .Prapor[41]
                                                                             .objectives,
                                                                         wikiLink:
                                                                           filterTasksByTrader
-                                                                            .Prapor[31]
+                                                                            .Prapor[41]
                                                                             .wikiLink,
                                                                       },
                                                                     children:
@@ -801,60 +929,60 @@ export const treeDataFunc: any = async () => {
                                                                 taskRequired:
                                                                   "",
                                                                 id: filterTasksByTrader
-                                                                  .Prapor[38]
+                                                                  .Prapor[37]
                                                                   .id,
                                                                 trader:
                                                                   "Prapor",
                                                                 name: filterTasksByTrader
-                                                                  .Prapor[38]
+                                                                  .Prapor[37]
                                                                   .name,
                                                                 attributes: {
                                                                   level:
                                                                     filterTasksByTrader
-                                                                      .Prapor[38]
+                                                                      .Prapor[37]
                                                                       .minPlayerLevel,
                                                                   kappaRequired:
                                                                     filterTasksByTrader
-                                                                      .Prapor[38]
+                                                                      .Prapor[37]
                                                                       .kappaRequired,
                                                                   objectives:
                                                                     filterTasksByTrader
-                                                                      .Prapor[38]
+                                                                      .Prapor[37]
                                                                       .objectives,
                                                                   wikiLink:
                                                                     filterTasksByTrader
-                                                                      .Prapor[38]
+                                                                      .Prapor[37]
                                                                       .wikiLink,
                                                                 },
                                                                 children: [
                                                                   {
                                                                     taskRequired:
-                                                                      "",
-                                                                    id: filterTasksByTrader
-                                                                      .Prapor[41]
-                                                                      .id,
+                                                                      "To unlock this quest, you also need to complete, Kings of the Rooftops from Prapor and The Punisher - Part 6 from Prapor",
                                                                     trader:
                                                                       "Prapor",
+                                                                    id: filterTasksByTrader
+                                                                      .Prapor[40]
+                                                                      .id,
                                                                     name: filterTasksByTrader
-                                                                      .Prapor[41]
+                                                                      .Prapor[40]
                                                                       .name,
                                                                     attributes:
                                                                       {
                                                                         level:
                                                                           filterTasksByTrader
-                                                                            .Prapor[41]
+                                                                            .Prapor[40]
                                                                             .minPlayerLevel,
                                                                         kappaRequired:
                                                                           filterTasksByTrader
-                                                                            .Prapor[41]
+                                                                            .Prapor[40]
                                                                             .kappaRequired,
                                                                         objectives:
                                                                           filterTasksByTrader
-                                                                            .Prapor[41]
+                                                                            .Prapor[40]
                                                                             .objectives,
                                                                         wikiLink:
                                                                           filterTasksByTrader
-                                                                            .Prapor[41]
+                                                                            .Prapor[40]
                                                                             .wikiLink,
                                                                       },
                                                                     children:
@@ -869,56 +997,29 @@ export const treeDataFunc: any = async () => {
                                                       {
                                                         taskRequired: "",
                                                         id: filterTasksByTrader
-                                                          .Prapor[22].id,
+                                                          .Prapor[23].id,
                                                         trader: "Prapor",
                                                         name: filterTasksByTrader
-                                                          .Prapor[22].name,
+                                                          .Prapor[23].name,
                                                         attributes: {
                                                           level:
                                                             filterTasksByTrader
-                                                              .Prapor[22]
+                                                              .Prapor[23]
                                                               .minPlayerLevel,
                                                           kappaRequired:
                                                             filterTasksByTrader
-                                                              .Prapor[22]
+                                                              .Prapor[23]
                                                               .kappaRequired,
                                                           objectives:
                                                             filterTasksByTrader
-                                                              .Prapor[22]
+                                                              .Prapor[23]
                                                               .objectives,
                                                           wikiLink:
                                                             filterTasksByTrader
-                                                              .Prapor[22]
+                                                              .Prapor[23]
                                                               .wikiLink,
                                                         },
                                                         children: [
-                                                          {
-                                                            taskRequired: "",
-                                                            id: filterTasksByTrader
-                                                              .Prapor[23].id,
-                                                            trader: "Prapor",
-                                                            name: filterTasksByTrader
-                                                              .Prapor[23].name,
-                                                            attributes: {
-                                                              level:
-                                                                filterTasksByTrader
-                                                                  .Prapor[23]
-                                                                  .minPlayerLevel,
-                                                              kappaRequired:
-                                                                filterTasksByTrader
-                                                                  .Prapor[23]
-                                                                  .kappaRequired,
-                                                              objectives:
-                                                                filterTasksByTrader
-                                                                  .Prapor[23]
-                                                                  .objectives,
-                                                              wikiLink:
-                                                                filterTasksByTrader
-                                                                  .Prapor[23]
-                                                                  .wikiLink,
-                                                            },
-                                                            children: [],
-                                                          },
                                                           {
                                                             taskRequired: "",
                                                             id: filterTasksByTrader
@@ -946,158 +1047,46 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [],
                                                           },
+                                                          {
+                                                            taskRequired: "",
+                                                            id: filterTasksByTrader
+                                                              .Prapor[22].id,
+                                                            trader: "Prapor",
+                                                            name: filterTasksByTrader
+                                                              .Prapor[22].name,
+                                                            attributes: {
+                                                              level:
+                                                                filterTasksByTrader
+                                                                  .Prapor[22]
+                                                                  .minPlayerLevel,
+                                                              kappaRequired:
+                                                                filterTasksByTrader
+                                                                  .Prapor[22]
+                                                                  .kappaRequired,
+                                                              objectives:
+                                                                filterTasksByTrader
+                                                                  .Prapor[22]
+                                                                  .objectives,
+                                                              wikiLink:
+                                                                filterTasksByTrader
+                                                                  .Prapor[22]
+                                                                  .wikiLink,
+                                                            },
+                                                            children: [],
+                                                          },
                                                         ],
                                                       },
                                                     ],
                                                   },
                                                 ],
                                               },
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Prapor[45].id,
-                                                trader: "Prapor",
-                                                name: filterTasksByTrader
-                                                  .Prapor[45].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Prapor[45]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Prapor[45].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Prapor[45].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Prapor[45].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Prapor[32].id,
-                                                trader: "Prapor",
-                                                name: filterTasksByTrader
-                                                  .Prapor[32].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Prapor[32]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Prapor[32].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Prapor[32].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Prapor[32].wikiLink,
-                                                },
-                                                children: [],
-                                              },
                                             ],
                                           },
                                         ],
                                       },
                                     ],
                                   },
-                                  {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Prapor[27].id,
-                                    trader: "Prapor",
-                                    name: filterTasksByTrader.Prapor[27].name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Prapor[27]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Prapor[27]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Prapor[27]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Prapor[27].wikiLink,
-                                    },
-                                    children: [
-                                      {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Prapor[42].id,
-                                        trader: "Prapor",
-                                        name: filterTasksByTrader.Prapor[42]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Prapor[42]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Prapor[42]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Prapor[42]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Prapor[42]
-                                              .wikiLink,
-                                        },
-                                        children: [
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Prapor[43]
-                                              .id,
-                                            trader: "Prapor",
-                                            name: filterTasksByTrader.Prapor[43]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Prapor[43]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Prapor[43]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Prapor[43]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Prapor[43]
-                                                  .wikiLink,
-                                            },
-                                            children: [
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Prapor[44].id,
-                                                trader: "Prapor",
-                                                name: filterTasksByTrader
-                                                  .Prapor[44].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Prapor[44]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Prapor[44].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Prapor[44].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Prapor[44].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                            ],
-                                          },
-                                        ],
-                                      },
-                                    ],
-                                  },
+
                                   {
                                     taskRequired: "",
                                     id: filterTasksByTrader.Prapor[10].id,
@@ -7104,19 +7093,6 @@ export const treeDataFunc: any = async () => {
         children: [
           {
             taskRequired: "",
-            id: filterTasksByTrader.Fence[0].id,
-            trader: "Fence",
-            name: filterTasksByTrader.Fence[0].name,
-            attributes: {
-              level: filterTasksByTrader.Fence[0].minPlayerLevel,
-              kappaRequired: filterTasksByTrader.Fence[0].kappaRequired,
-              objectives: filterTasksByTrader.Fence[0].objectives,
-              wikiLink: filterTasksByTrader.Fence[0].wikiLink,
-            },
-            children: [],
-          },
-          {
-            taskRequired: "",
             id: filterTasksByTrader.Fence[1].id,
             trader: "Fence",
             name: filterTasksByTrader.Fence[1].name,
@@ -7203,6 +7179,19 @@ export const treeDataFunc: any = async () => {
                 ],
               },
             ],
+          },
+          {
+            taskRequired: "",
+            id: filterTasksByTrader.Fence[0].id,
+            trader: "Fence",
+            name: filterTasksByTrader.Fence[0].name,
+            attributes: {
+              level: filterTasksByTrader.Fence[0].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Fence[0].kappaRequired,
+              objectives: filterTasksByTrader.Fence[0].objectives,
+              wikiLink: filterTasksByTrader.Fence[0].wikiLink,
+            },
+            children: [],
           },
         ],
       },

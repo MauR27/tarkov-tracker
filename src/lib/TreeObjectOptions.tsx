@@ -12,7 +12,17 @@ import {
   Image,
   Link,
   Text,
+  Icon,
+  Tooltip,
 } from "@chakra-ui/react";
+import { IoBookmarkOutline } from "react-icons/io5";
+import {
+  CloseIcon,
+  LockIcon,
+  NotAllowedIcon,
+  UnlockIcon,
+} from "@chakra-ui/icons";
+import { TbCircleLetterK } from "react-icons/tb";
 
 export interface ITreeData<T = Record<string, unknown>> {
   taskRequired: string;
@@ -134,7 +144,7 @@ export const renderForeignObjectNode = ({
           <Card
             className={traderTreeClassName}
             borderRadius="5px"
-            boxShadow="2px 2px 20px black"
+            boxShadow="1px 1px 10px black"
             color="white"
           >
             <CardHeader
@@ -142,25 +152,96 @@ export const renderForeignObjectNode = ({
               as={Flex}
               gap={4}
               p="10px"
+              justifyContent="space-between"
+              boxShadow="md"
             >
-              <Link
-                textDecoration="underline"
-                fontSize="xs"
-                href={nodeDatum.attributes.wikiLink}
-                target="_blank"
-                _hover={{ textDecoration: "none" }}
+              <Flex
+                bg="white"
+                color="black"
+                h="20px"
+                align="center"
+                borderRadius="3px"
+                p="2px"
+                _hover={{ bg: "gray.200" }}
               >
-                Wiki
-              </Link>
+                <Link
+                  fontSize="xs"
+                  href={nodeDatum.attributes.wikiLink}
+                  target="_blank"
+                  _hover={{ textDecoration: "none" }}
+                >
+                  Wiki
+                </Link>
+              </Flex>
               <Text>{nodeDatum.name}</Text>
-              <Text>{nodeDatum.attributes.level} Lvl</Text>
-              <Text>{nodeDatum.taskRequired}</Text>
+              <Box w="43px">
+                <Flex justifyContent="space-between" mb="4px" p="0 2px 0 2px">
+                  {!nodeDatum.attributes.kappaRequired && (
+                    <Tooltip
+                      label="Is not required for kappa"
+                      hasArrow
+                      fontSize="xs"
+                      placement="auto"
+                    >
+                      <Flex
+                        bg="RGB(33, 33, 33)"
+                        borderRadius="2px"
+                        justify="center"
+                        align="center"
+                        w="18px"
+                        h="18px"
+                      >
+                        <Text color="white" fontSize="lg">
+                          K
+                        </Text>
+                        <Text
+                          color="red"
+                          fontSize="20px"
+                          position="absolute"
+                          top="-5px"
+                        >
+                          _
+                        </Text>
+                      </Flex>
+                    </Tooltip>
+                  )}
+                  {nodeDatum.taskRequired !== "" && (
+                    <Tooltip
+                      hasArrow
+                      label={nodeDatum.taskRequired}
+                      fontSize="xs"
+                      placement="auto"
+                    >
+                      <LockIcon color="RGB(249, 16, 16)" />
+                    </Tooltip>
+                  )}
+                </Flex>
+                <Tooltip
+                  hasArrow
+                  label={`You must to be level ${nodeDatum.attributes.level} to unlock this quest`}
+                  fontSize="xs"
+                  placement="auto"
+                >
+                  <Text
+                    textAlign="center"
+                    fontSize="xs"
+                    bg="white"
+                    borderRadius="2px"
+                    color="black"
+                    p="0 2px 0 2px"
+                    _hover={{ bg: "gray.200" }}
+                  >
+                    {nodeDatum.attributes.level} lvl
+                  </Text>
+                </Tooltip>
+              </Box>
             </CardHeader>
             <Divider />
             <CardBody
               className="quest-map-card_body"
               p="10px"
               fontSize="x-small"
+              boxShadow="lg"
             >
               {nodeDatum.attributes.objectives.map((data: any) => (
                 <Flex key={data.id} align="center">
@@ -182,7 +263,12 @@ export const renderForeignObjectNode = ({
               ))}
             </CardBody>
 
-            <CardFooter className="quest-map-card_footer" p={0}>
+            <CardFooter
+              className="quest-map-card_footer"
+              p={2}
+              as={Flex}
+              justify="center"
+            >
               <HandleCompleteMapMissions id={nodeDatum.id} />
             </CardFooter>
           </Card>

@@ -55,7 +55,7 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
   return (
     <Button
       size="sm"
-      minW="100%"
+      minW="50%"
       fontWeight="xs"
       borderRadius="5px"
       onClick={() => handleClick(id)}

@@ -15,7 +15,7 @@ export const treeDataFunc: any = async () => {
     return acc;
   }, {});
 
-  console.log(filterTasksByTrader.Therapist);
+  console.log(filterTasksByTrader.Mechanic);
 
   const treeStructure: ITreeData = {
     taskRequired: "",
@@ -1249,7 +1249,22 @@ export const treeDataFunc: any = async () => {
             children: [],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Chemical - Part 4 from Skier or Big Customer from Prapor",
+            id: filterTasksByTrader.Therapist[12].id,
+            trader: "Therapist",
+            name: filterTasksByTrader.Therapist[12].name,
+            attributes: {
+              level: filterTasksByTrader.Therapist[12].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Therapist[12].kappaRequired,
+              objectives: filterTasksByTrader.Therapist[12].objectives,
+              wikiLink: filterTasksByTrader.Therapist[12].wikiLink,
+            },
+            children: [],
+          },
+          {
+            taskRequired:
+              "To unlock this quest, you also need to complete, Chemical - Part 3 from Skier",
             id: filterTasksByTrader.Therapist[11].id,
             trader: "Therapist",
             name: filterTasksByTrader.Therapist[11].name,
@@ -1259,22 +1274,7 @@ export const treeDataFunc: any = async () => {
               objectives: filterTasksByTrader.Therapist[11].objectives,
               wikiLink: filterTasksByTrader.Therapist[11].wikiLink,
             },
-            children: [
-              {
-                taskRequired: "",
-                id: filterTasksByTrader.Therapist[12].id,
-                trader: "Therapist",
-                name: filterTasksByTrader.Therapist[12].name,
-                attributes: {
-                  level: filterTasksByTrader.Therapist[12].minPlayerLevel,
-                  kappaRequired:
-                    filterTasksByTrader.Therapist[12].kappaRequired,
-                  objectives: filterTasksByTrader.Therapist[12].objectives,
-                  wikiLink: filterTasksByTrader.Therapist[12].wikiLink,
-                },
-                children: [],
-              },
-            ],
+            children: [],
           },
           {
             taskRequired: "",
@@ -1385,70 +1385,71 @@ export const treeDataFunc: any = async () => {
                                     children: [
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Therapist[30]
+                                        id: filterTasksByTrader.Therapist[28]
                                           .id,
                                         trader: "Therapist",
-                                        name: filterTasksByTrader.Therapist[30]
+                                        name: filterTasksByTrader.Therapist[28]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Therapist[30]
+                                            filterTasksByTrader.Therapist[28]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Therapist[30]
+                                            filterTasksByTrader.Therapist[28]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Therapist[30]
+                                            filterTasksByTrader.Therapist[28]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Therapist[30]
+                                            filterTasksByTrader.Therapist[28]
                                               .wikiLink,
                                         },
                                         children: [
                                           {
                                             taskRequired: "",
                                             id: filterTasksByTrader
-                                              .Therapist[31].id,
+                                              .Therapist[29].id,
                                             trader: "Therapist",
                                             name: filterTasksByTrader
-                                              .Therapist[31].name,
+                                              .Therapist[29].name,
                                             attributes: {
                                               level:
                                                 filterTasksByTrader
-                                                  .Therapist[31].minPlayerLevel,
+                                                  .Therapist[29].minPlayerLevel,
                                               kappaRequired:
                                                 filterTasksByTrader
-                                                  .Therapist[31].kappaRequired,
+                                                  .Therapist[29].kappaRequired,
                                               objectives:
                                                 filterTasksByTrader
-                                                  .Therapist[31].objectives,
+                                                  .Therapist[29].objectives,
                                               wikiLink:
                                                 filterTasksByTrader
-                                                  .Therapist[31].wikiLink,
+                                                  .Therapist[29].wikiLink,
                                             },
                                             children: [
                                               {
-                                                taskRequired: "",
+                                                taskRequired:
+                                                  "To unlock this quest, you also need to complete, Rigged Game from Skier and Chemistry Closet from Mechanic",
                                                 id: filterTasksByTrader
-                                                  .Therapist[32].id,
+                                                  .Therapist[30].id,
                                                 trader: "Therapist",
                                                 name: filterTasksByTrader
-                                                  .Therapist[32].name,
+                                                  .Therapist[30].name,
                                                 attributes: {
                                                   level:
                                                     filterTasksByTrader
-                                                      .Therapist[32]
+                                                      .Therapist[30]
                                                       .minPlayerLevel,
                                                   kappaRequired:
                                                     filterTasksByTrader
-                                                      .Therapist[32]
+                                                      .Therapist[30]
                                                       .kappaRequired,
                                                   objectives:
                                                     filterTasksByTrader
-                                                      .Therapist[32].objectives,
+                                                      .Therapist[30].objectives,
                                                   wikiLink:
                                                     filterTasksByTrader
-                                                      .Therapist[32].wikiLink,
+                                                      .Therapist[30].wikiLink,
                                                 },
                                                 children: [],
                                               },
@@ -1572,7 +1573,8 @@ export const treeDataFunc: any = async () => {
                                         },
                                         children: [
                                           {
-                                            taskRequired: "",
+                                            taskRequired:
+                                              "To unlock this quest, you also need to complete, Cease Fire! from Jaeger",
                                             id: filterTasksByTrader
                                               .Therapist[21].id,
                                             trader: "Therapist",
@@ -1620,7 +1622,8 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
-                                        taskRequired: "",
+                                        taskRequired:
+                                          "To unlock this quest, you also need to complete, Kind of Sabotage from Skier or Supply Plans from Therapist",
                                         id: filterTasksByTrader.Therapist[18]
                                           .id,
                                         trader: "Therapist",
@@ -1713,128 +1716,121 @@ export const treeDataFunc: any = async () => {
                                     children: [
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Therapist[23]
+                                        id: filterTasksByTrader.Therapist[24]
                                           .id,
                                         trader: "Therapist",
-                                        name: filterTasksByTrader.Therapist[23]
+                                        name: filterTasksByTrader.Therapist[24]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Therapist[23]
+                                            filterTasksByTrader.Therapist[24]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Therapist[23]
+                                            filterTasksByTrader.Therapist[24]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Therapist[23]
+                                            filterTasksByTrader.Therapist[24]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Therapist[23]
+                                            filterTasksByTrader.Therapist[24]
                                               .wikiLink,
                                         },
                                         children: [
                                           {
                                             taskRequired: "",
                                             id: filterTasksByTrader
-                                              .Therapist[24].id,
+                                              .Therapist[31].id,
                                             trader: "Therapist",
                                             name: filterTasksByTrader
-                                              .Therapist[24].name,
+                                              .Therapist[31].name,
                                             attributes: {
                                               level:
                                                 filterTasksByTrader
-                                                  .Therapist[24].minPlayerLevel,
+                                                  .Therapist[31].minPlayerLevel,
                                               kappaRequired:
                                                 filterTasksByTrader
-                                                  .Therapist[24].kappaRequired,
+                                                  .Therapist[31].kappaRequired,
                                               objectives:
                                                 filterTasksByTrader
-                                                  .Therapist[24].objectives,
+                                                  .Therapist[31].objectives,
                                               wikiLink:
                                                 filterTasksByTrader
-                                                  .Therapist[24].wikiLink,
+                                                  .Therapist[31].wikiLink,
                                             },
                                             children: [
                                               {
                                                 taskRequired: "",
                                                 id: filterTasksByTrader
-                                                  .Therapist[25].id,
+                                                  .Therapist[32].id,
                                                 trader: "Therapist",
                                                 name: filterTasksByTrader
-                                                  .Therapist[25].name,
+                                                  .Therapist[32].name,
                                                 attributes: {
                                                   level:
                                                     filterTasksByTrader
-                                                      .Therapist[25]
+                                                      .Therapist[32]
                                                       .minPlayerLevel,
                                                   kappaRequired:
                                                     filterTasksByTrader
-                                                      .Therapist[25]
+                                                      .Therapist[32]
                                                       .kappaRequired,
                                                   objectives:
                                                     filterTasksByTrader
-                                                      .Therapist[25].objectives,
+                                                      .Therapist[32].objectives,
                                                   wikiLink:
                                                     filterTasksByTrader
-                                                      .Therapist[25].wikiLink,
+                                                      .Therapist[32].wikiLink,
+                                                },
+                                                children: [],
+                                              },
+                                            ],
+                                          },
+                                          {
+                                            taskRequired: "",
+                                            id: filterTasksByTrader
+                                              .Therapist[25].id,
+                                            trader: "Therapist",
+                                            name: filterTasksByTrader
+                                              .Therapist[25].name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader
+                                                  .Therapist[25].minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader
+                                                  .Therapist[25].kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader
+                                                  .Therapist[25].objectives,
+                                              wikiLink:
+                                                filterTasksByTrader
+                                                  .Therapist[25].wikiLink,
+                                            },
+                                            children: [
+                                              {
+                                                taskRequired: "",
+                                                id: filterTasksByTrader
+                                                  .Therapist[23].id,
+                                                trader: "Therapist",
+                                                name: filterTasksByTrader
+                                                  .Therapist[23].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Therapist[23]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Therapist[23]
+                                                      .kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Therapist[23].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Therapist[23].wikiLink,
                                                 },
                                                 children: [
-                                                  {
-                                                    taskRequired: "",
-                                                    id: filterTasksByTrader
-                                                      .Therapist[26].id,
-                                                    trader: "Therapist",
-                                                    name: filterTasksByTrader
-                                                      .Therapist[26].name,
-                                                    attributes: {
-                                                      level:
-                                                        filterTasksByTrader
-                                                          .Therapist[26]
-                                                          .minPlayerLevel,
-                                                      kappaRequired:
-                                                        filterTasksByTrader
-                                                          .Therapist[26]
-                                                          .kappaRequired,
-                                                      objectives:
-                                                        filterTasksByTrader
-                                                          .Therapist[26]
-                                                          .objectives,
-                                                      wikiLink:
-                                                        filterTasksByTrader
-                                                          .Therapist[26]
-                                                          .wikiLink,
-                                                    },
-                                                    children: [
-                                                      {
-                                                        taskRequired: "",
-                                                        id: filterTasksByTrader
-                                                          .Therapist[35].id,
-                                                        trader: "Therapist",
-                                                        name: filterTasksByTrader
-                                                          .Therapist[35].name,
-                                                        attributes: {
-                                                          level:
-                                                            filterTasksByTrader
-                                                              .Therapist[35]
-                                                              .minPlayerLevel,
-                                                          kappaRequired:
-                                                            filterTasksByTrader
-                                                              .Therapist[35]
-                                                              .kappaRequired,
-                                                          objectives:
-                                                            filterTasksByTrader
-                                                              .Therapist[35]
-                                                              .objectives,
-                                                          wikiLink:
-                                                            filterTasksByTrader
-                                                              .Therapist[35]
-                                                              .wikiLink,
-                                                        },
-                                                        children: [],
-                                                      },
-                                                    ],
-                                                  },
-
                                                   {
                                                     taskRequired: "",
                                                     id: filterTasksByTrader
@@ -1887,6 +1883,62 @@ export const treeDataFunc: any = async () => {
                                                           .Therapist[34]
                                                           .wikiLink,
                                                     },
+                                                    children: [
+                                                      {
+                                                        taskRequired:
+                                                          "To unlock this quest, you also need to complete, Health Care Privacy - Part 5 from Therapist",
+                                                        id: filterTasksByTrader
+                                                          .Therapist[35].id,
+                                                        trader: "Therapist",
+                                                        name: filterTasksByTrader
+                                                          .Therapist[35].name,
+                                                        attributes: {
+                                                          level:
+                                                            filterTasksByTrader
+                                                              .Therapist[35]
+                                                              .minPlayerLevel,
+                                                          kappaRequired:
+                                                            filterTasksByTrader
+                                                              .Therapist[35]
+                                                              .kappaRequired,
+                                                          objectives:
+                                                            filterTasksByTrader
+                                                              .Therapist[35]
+                                                              .objectives,
+                                                          wikiLink:
+                                                            filterTasksByTrader
+                                                              .Therapist[35]
+                                                              .wikiLink,
+                                                        },
+                                                        children: [],
+                                                      },
+                                                    ],
+                                                  },
+                                                  {
+                                                    taskRequired: "",
+                                                    id: filterTasksByTrader
+                                                      .Therapist[27].id,
+                                                    trader: "Therapist",
+                                                    name: filterTasksByTrader
+                                                      .Therapist[27].name,
+                                                    attributes: {
+                                                      level:
+                                                        filterTasksByTrader
+                                                          .Therapist[27]
+                                                          .minPlayerLevel,
+                                                      kappaRequired:
+                                                        filterTasksByTrader
+                                                          .Therapist[27]
+                                                          .kappaRequired,
+                                                      objectives:
+                                                        filterTasksByTrader
+                                                          .Therapist[27]
+                                                          .objectives,
+                                                      wikiLink:
+                                                        filterTasksByTrader
+                                                          .Therapist[27]
+                                                          .wikiLink,
+                                                    },
                                                     children: [],
                                                   },
                                                 ],
@@ -1894,74 +1946,25 @@ export const treeDataFunc: any = async () => {
                                               {
                                                 taskRequired: "",
                                                 id: filterTasksByTrader
-                                                  .Therapist[27].id,
+                                                  .Therapist[26].id,
                                                 trader: "Therapist",
                                                 name: filterTasksByTrader
-                                                  .Therapist[27].name,
+                                                  .Therapist[26].name,
                                                 attributes: {
                                                   level:
                                                     filterTasksByTrader
-                                                      .Therapist[27]
+                                                      .Therapist[26]
                                                       .minPlayerLevel,
                                                   kappaRequired:
                                                     filterTasksByTrader
-                                                      .Therapist[27]
+                                                      .Therapist[26]
                                                       .kappaRequired,
                                                   objectives:
                                                     filterTasksByTrader
-                                                      .Therapist[27].objectives,
+                                                      .Therapist[26].objectives,
                                                   wikiLink:
                                                     filterTasksByTrader
-                                                      .Therapist[27].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                            ],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader
-                                              .Therapist[28].id,
-                                            trader: "Therapist",
-                                            name: filterTasksByTrader
-                                              .Therapist[28].name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader
-                                                  .Therapist[28].minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader
-                                                  .Therapist[28].kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader
-                                                  .Therapist[28].objectives,
-                                              wikiLink:
-                                                filterTasksByTrader
-                                                  .Therapist[28].wikiLink,
-                                            },
-                                            children: [
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Therapist[29].id,
-                                                trader: "Therapist",
-                                                name: filterTasksByTrader
-                                                  .Therapist[29].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Therapist[29]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Therapist[29]
-                                                      .kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Therapist[29].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Therapist[29].wikiLink,
+                                                      .Therapist[26].wikiLink,
                                                 },
                                                 children: [],
                                               },
@@ -2031,7 +2034,22 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Out of Curiosity from Therapist or Big Customer from Prapor",
+            id: filterTasksByTrader.Skier[12].id,
+            trader: "Skier",
+            name: filterTasksByTrader.Skier[12].name,
+            attributes: {
+              level: filterTasksByTrader.Skier[12].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Skier[12].kappaRequired,
+              objectives: filterTasksByTrader.Skier[12].objectives,
+              wikiLink: filterTasksByTrader.Skier[12].wikiLink,
+            },
+            children: [],
+          },
+          {
+            taskRequired:
+              "To unlock this quest, you also need to complete, Anesthesia from Prapor",
             id: filterTasksByTrader.Skier[17].id,
             trader: "Skier",
             name: filterTasksByTrader.Skier[17].name,
@@ -2058,7 +2076,8 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Pharmacist from Therapist",
             id: filterTasksByTrader.Skier[13].id,
             trader: "Skier",
             name: filterTasksByTrader.Skier[13].name,
@@ -2212,7 +2231,8 @@ export const treeDataFunc: any = async () => {
                                             },
                                             children: [
                                               {
-                                                taskRequired: "",
+                                                taskRequired:
+                                                  "To unlock this quest, you also need to complete, Big Customer from Prapor or Out of Curiosity from Therapist",
                                                 id: filterTasksByTrader
                                                   .Skier[14].id,
                                                 trader: "Skier",
@@ -2232,29 +2252,6 @@ export const treeDataFunc: any = async () => {
                                                   wikiLink:
                                                     filterTasksByTrader
                                                       .Skier[14].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Skier[12].id,
-                                                trader: "Skier",
-                                                name: filterTasksByTrader
-                                                  .Skier[12].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Skier[12].minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Skier[12].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Skier[12].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Skier[12].wikiLink,
                                                 },
                                                 children: [],
                                               },
@@ -2469,7 +2466,8 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
-                                    taskRequired: "",
+                                    taskRequired:
+                                      "To unlock this quest, you also need to complete, Getting Acquainted from Mechanic",
                                     id: filterTasksByTrader.Skier[34].id,
                                     trader: "Skier",
                                     name: filterTasksByTrader.Skier[34].name,
@@ -2750,7 +2748,37 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, The Huntsman Path - Forest Cleaning from Jaeger",
+            id: filterTasksByTrader.Peacekeeper[41].id,
+            trader: "Peacekeeper",
+            name: filterTasksByTrader.Peacekeeper[41].name,
+            attributes: {
+              level: filterTasksByTrader.Peacekeeper[41].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Peacekeeper[41].kappaRequired,
+              objectives: filterTasksByTrader.Peacekeeper[41].objectives,
+              wikiLink: filterTasksByTrader.Peacekeeper[41].wikiLink,
+            },
+            children: [
+              {
+                taskRequired: "",
+                id: filterTasksByTrader.Peacekeeper[42].id,
+                trader: "Peacekeeper",
+                name: filterTasksByTrader.Peacekeeper[42].name,
+                attributes: {
+                  level: filterTasksByTrader.Peacekeeper[42].minPlayerLevel,
+                  kappaRequired:
+                    filterTasksByTrader.Peacekeeper[42].kappaRequired,
+                  objectives: filterTasksByTrader.Peacekeeper[42].objectives,
+                  wikiLink: filterTasksByTrader.Peacekeeper[42].wikiLink,
+                },
+                children: [],
+              },
+            ],
+          },
+          {
+            taskRequired:
+              "To unlock this quest, you also need to complete, Lend-Lease - Part 1 from Skier",
             id: filterTasksByTrader.Peacekeeper[36].id,
             trader: "Peacekeeper",
             name: filterTasksByTrader.Peacekeeper[36].name,
@@ -2778,7 +2806,8 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Friend From the West - Part 2 from Skier",
             id: filterTasksByTrader.Peacekeeper[0].id,
             trader: "Peacekeeper",
             name: filterTasksByTrader.Peacekeeper[0].name,
@@ -2789,36 +2818,6 @@ export const treeDataFunc: any = async () => {
               wikiLink: filterTasksByTrader.Peacekeeper[0].wikiLink,
             },
             children: [
-              {
-                taskRequired: "",
-                id: filterTasksByTrader.Peacekeeper[41].id,
-                trader: "Peacekeeper",
-                name: filterTasksByTrader.Peacekeeper[41].name,
-                attributes: {
-                  level: filterTasksByTrader.Peacekeeper[41].minPlayerLevel,
-                  kappaRequired:
-                    filterTasksByTrader.Peacekeeper[41].kappaRequired,
-                  objectives: filterTasksByTrader.Peacekeeper[41].objectives,
-                  wikiLink: filterTasksByTrader.Peacekeeper[41].wikiLink,
-                },
-                children: [
-                  {
-                    taskRequired: "",
-                    id: filterTasksByTrader.Peacekeeper[42].id,
-                    trader: "Peacekeeper",
-                    name: filterTasksByTrader.Peacekeeper[42].name,
-                    attributes: {
-                      level: filterTasksByTrader.Peacekeeper[42].minPlayerLevel,
-                      kappaRequired:
-                        filterTasksByTrader.Peacekeeper[42].kappaRequired,
-                      objectives:
-                        filterTasksByTrader.Peacekeeper[42].objectives,
-                      wikiLink: filterTasksByTrader.Peacekeeper[42].wikiLink,
-                    },
-                    children: [],
-                  },
-                ],
-              },
               {
                 taskRequired: "",
                 id: filterTasksByTrader.Peacekeeper[1].id,
@@ -2942,22 +2941,22 @@ export const treeDataFunc: any = async () => {
                                 children: [
                                   {
                                     taskRequired: "",
-                                    id: filterTasksByTrader.Peacekeeper[7].id,
+                                    id: filterTasksByTrader.Peacekeeper[9].id,
                                     trader: "Peacekeeper",
-                                    name: filterTasksByTrader.Peacekeeper[7]
+                                    name: filterTasksByTrader.Peacekeeper[9]
                                       .name,
                                     attributes: {
                                       level:
-                                        filterTasksByTrader.Peacekeeper[7]
+                                        filterTasksByTrader.Peacekeeper[9]
                                           .minPlayerLevel,
                                       kappaRequired:
-                                        filterTasksByTrader.Peacekeeper[7]
+                                        filterTasksByTrader.Peacekeeper[9]
                                           .kappaRequired,
                                       objectives:
-                                        filterTasksByTrader.Peacekeeper[7]
+                                        filterTasksByTrader.Peacekeeper[9]
                                           .objectives,
                                       wikiLink:
-                                        filterTasksByTrader.Peacekeeper[7]
+                                        filterTasksByTrader.Peacekeeper[9]
                                           .wikiLink,
                                     },
                                     children: [
@@ -2986,302 +2985,107 @@ export const treeDataFunc: any = async () => {
                                           {
                                             taskRequired: "",
                                             id: filterTasksByTrader
-                                              .Peacekeeper[9].id,
+                                              .Peacekeeper[11].id,
                                             trader: "Peacekeeper",
                                             name: filterTasksByTrader
-                                              .Peacekeeper[9].name,
+                                              .Peacekeeper[11].name,
                                             attributes: {
                                               level:
                                                 filterTasksByTrader
-                                                  .Peacekeeper[9]
+                                                  .Peacekeeper[11]
                                                   .minPlayerLevel,
                                               kappaRequired:
                                                 filterTasksByTrader
-                                                  .Peacekeeper[9].kappaRequired,
+                                                  .Peacekeeper[11]
+                                                  .kappaRequired,
                                               objectives:
                                                 filterTasksByTrader
-                                                  .Peacekeeper[9].objectives,
+                                                  .Peacekeeper[11].objectives,
                                               wikiLink:
                                                 filterTasksByTrader
-                                                  .Peacekeeper[9].wikiLink,
+                                                  .Peacekeeper[11].wikiLink,
                                             },
                                             children: [
                                               {
                                                 taskRequired: "",
                                                 id: filterTasksByTrader
-                                                  .Peacekeeper[10].id,
+                                                  .Peacekeeper[15].id,
                                                 trader: "Peacekeeper",
                                                 name: filterTasksByTrader
-                                                  .Peacekeeper[10].name,
+                                                  .Peacekeeper[15].name,
                                                 attributes: {
                                                   level:
                                                     filterTasksByTrader
-                                                      .Peacekeeper[10]
+                                                      .Peacekeeper[15]
                                                       .minPlayerLevel,
                                                   kappaRequired:
                                                     filterTasksByTrader
-                                                      .Peacekeeper[10]
+                                                      .Peacekeeper[15]
                                                       .kappaRequired,
                                                   objectives:
                                                     filterTasksByTrader
-                                                      .Peacekeeper[10]
+                                                      .Peacekeeper[15]
                                                       .objectives,
                                                   wikiLink:
                                                     filterTasksByTrader
-                                                      .Peacekeeper[10].wikiLink,
+                                                      .Peacekeeper[15].wikiLink,
                                                 },
                                                 children: [
                                                   {
                                                     taskRequired: "",
                                                     id: filterTasksByTrader
-                                                      .Peacekeeper[11].id,
+                                                      .Peacekeeper[13].id,
                                                     trader: "Peacekeeper",
                                                     name: filterTasksByTrader
-                                                      .Peacekeeper[11].name,
+                                                      .Peacekeeper[13].name,
                                                     attributes: {
                                                       level:
                                                         filterTasksByTrader
-                                                          .Peacekeeper[11]
+                                                          .Peacekeeper[13]
                                                           .minPlayerLevel,
                                                       kappaRequired:
                                                         filterTasksByTrader
-                                                          .Peacekeeper[11]
+                                                          .Peacekeeper[13]
                                                           .kappaRequired,
                                                       objectives:
                                                         filterTasksByTrader
-                                                          .Peacekeeper[11]
+                                                          .Peacekeeper[13]
                                                           .objectives,
                                                       wikiLink:
                                                         filterTasksByTrader
-                                                          .Peacekeeper[11]
+                                                          .Peacekeeper[13]
                                                           .wikiLink,
                                                     },
                                                     children: [
                                                       {
                                                         taskRequired: "",
                                                         id: filterTasksByTrader
-                                                          .Peacekeeper[12].id,
+                                                          .Peacekeeper[14].id,
                                                         trader: "Peacekeeper",
                                                         name: filterTasksByTrader
-                                                          .Peacekeeper[12].name,
+                                                          .Peacekeeper[14].name,
                                                         attributes: {
                                                           level:
                                                             filterTasksByTrader
-                                                              .Peacekeeper[12]
+                                                              .Peacekeeper[14]
                                                               .minPlayerLevel,
                                                           kappaRequired:
                                                             filterTasksByTrader
-                                                              .Peacekeeper[12]
+                                                              .Peacekeeper[14]
                                                               .kappaRequired,
                                                           objectives:
                                                             filterTasksByTrader
-                                                              .Peacekeeper[12]
+                                                              .Peacekeeper[14]
                                                               .objectives,
                                                           wikiLink:
                                                             filterTasksByTrader
-                                                              .Peacekeeper[12]
+                                                              .Peacekeeper[14]
                                                               .wikiLink,
                                                         },
                                                         children: [
                                                           {
                                                             taskRequired: "",
                                                             id: filterTasksByTrader
-                                                              .Peacekeeper[13]
-                                                              .id,
-                                                            trader:
-                                                              "Peacekeeper",
-                                                            name: filterTasksByTrader
-                                                              .Peacekeeper[13]
-                                                              .name,
-                                                            attributes: {
-                                                              level:
-                                                                filterTasksByTrader
-                                                                  .Peacekeeper[13]
-                                                                  .minPlayerLevel,
-                                                              kappaRequired:
-                                                                filterTasksByTrader
-                                                                  .Peacekeeper[13]
-                                                                  .kappaRequired,
-                                                              objectives:
-                                                                filterTasksByTrader
-                                                                  .Peacekeeper[13]
-                                                                  .objectives,
-                                                              wikiLink:
-                                                                filterTasksByTrader
-                                                                  .Peacekeeper[13]
-                                                                  .wikiLink,
-                                                            },
-                                                            children: [
-                                                              {
-                                                                taskRequired:
-                                                                  "",
-                                                                id: filterTasksByTrader
-                                                                  .Peacekeeper[14]
-                                                                  .id,
-                                                                trader:
-                                                                  "Peacekeeper",
-                                                                name: filterTasksByTrader
-                                                                  .Peacekeeper[14]
-                                                                  .name,
-                                                                attributes: {
-                                                                  level:
-                                                                    filterTasksByTrader
-                                                                      .Peacekeeper[14]
-                                                                      .minPlayerLevel,
-                                                                  kappaRequired:
-                                                                    filterTasksByTrader
-                                                                      .Peacekeeper[14]
-                                                                      .kappaRequired,
-                                                                  objectives:
-                                                                    filterTasksByTrader
-                                                                      .Peacekeeper[14]
-                                                                      .objectives,
-                                                                  wikiLink:
-                                                                    filterTasksByTrader
-                                                                      .Peacekeeper[14]
-                                                                      .wikiLink,
-                                                                },
-                                                                children: [
-                                                                  {
-                                                                    taskRequired:
-                                                                      "",
-                                                                    id: filterTasksByTrader
-                                                                      .Peacekeeper[15]
-                                                                      .id,
-                                                                    trader:
-                                                                      "Peacekeeper",
-                                                                    name: filterTasksByTrader
-                                                                      .Peacekeeper[15]
-                                                                      .name,
-                                                                    attributes:
-                                                                      {
-                                                                        level:
-                                                                          filterTasksByTrader
-                                                                            .Peacekeeper[15]
-                                                                            .minPlayerLevel,
-                                                                        kappaRequired:
-                                                                          filterTasksByTrader
-                                                                            .Peacekeeper[15]
-                                                                            .kappaRequired,
-                                                                        objectives:
-                                                                          filterTasksByTrader
-                                                                            .Peacekeeper[15]
-                                                                            .objectives,
-                                                                        wikiLink:
-                                                                          filterTasksByTrader
-                                                                            .Peacekeeper[15]
-                                                                            .wikiLink,
-                                                                      },
-                                                                    children: [
-                                                                      {
-                                                                        taskRequired:
-                                                                          "",
-                                                                        id: filterTasksByTrader
-                                                                          .Peacekeeper[16]
-                                                                          .id,
-                                                                        trader:
-                                                                          "Peacekeeper",
-                                                                        name: filterTasksByTrader
-                                                                          .Peacekeeper[16]
-                                                                          .name,
-                                                                        attributes:
-                                                                          {
-                                                                            level:
-                                                                              filterTasksByTrader
-                                                                                .Peacekeeper[16]
-                                                                                .minPlayerLevel,
-                                                                            kappaRequired:
-                                                                              filterTasksByTrader
-                                                                                .Peacekeeper[16]
-                                                                                .kappaRequired,
-                                                                            objectives:
-                                                                              filterTasksByTrader
-                                                                                .Peacekeeper[16]
-                                                                                .objectives,
-                                                                            wikiLink:
-                                                                              filterTasksByTrader
-                                                                                .Peacekeeper[16]
-                                                                                .wikiLink,
-                                                                          },
-                                                                        children:
-                                                                          [
-                                                                            {
-                                                                              taskRequired:
-                                                                                "",
-                                                                              id: filterTasksByTrader
-                                                                                .Peacekeeper[33]
-                                                                                .id,
-                                                                              trader:
-                                                                                "Peacekeeper",
-                                                                              name: filterTasksByTrader
-                                                                                .Peacekeeper[33]
-                                                                                .name,
-                                                                              attributes:
-                                                                                {
-                                                                                  level:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[33]
-                                                                                      .minPlayerLevel,
-                                                                                  kappaRequired:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[33]
-                                                                                      .kappaRequired,
-                                                                                  objectives:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[33]
-                                                                                      .objectives,
-                                                                                  wikiLink:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[33]
-                                                                                      .wikiLink,
-                                                                                },
-                                                                              children:
-                                                                                [],
-                                                                            },
-                                                                            {
-                                                                              taskRequired:
-                                                                                "",
-                                                                              id: filterTasksByTrader
-                                                                                .Peacekeeper[38]
-                                                                                .id,
-                                                                              trader:
-                                                                                "Peacekeeper",
-                                                                              name: filterTasksByTrader
-                                                                                .Peacekeeper[38]
-                                                                                .name,
-                                                                              attributes:
-                                                                                {
-                                                                                  level:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[38]
-                                                                                      .minPlayerLevel,
-                                                                                  kappaRequired:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[38]
-                                                                                      .kappaRequired,
-                                                                                  objectives:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[38]
-                                                                                      .objectives,
-                                                                                  wikiLink:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[38]
-                                                                                      .wikiLink,
-                                                                                },
-                                                                              children:
-                                                                                [],
-                                                                            },
-                                                                          ],
-                                                                      },
-                                                                    ],
-                                                                  },
-                                                                ],
-                                                              },
-                                                            ],
-                                                          },
-                                                          {
-                                                            taskRequired: "",
-                                                            id: filterTasksByTrader
                                                               .Peacekeeper[18]
                                                               .id,
                                                             trader:
@@ -3312,29 +3116,29 @@ export const treeDataFunc: any = async () => {
                                                                 taskRequired:
                                                                   "",
                                                                 id: filterTasksByTrader
-                                                                  .Peacekeeper[19]
+                                                                  .Peacekeeper[20]
                                                                   .id,
                                                                 trader:
                                                                   "Peacekeeper",
                                                                 name: filterTasksByTrader
-                                                                  .Peacekeeper[19]
+                                                                  .Peacekeeper[20]
                                                                   .name,
                                                                 attributes: {
                                                                   level:
                                                                     filterTasksByTrader
-                                                                      .Peacekeeper[19]
+                                                                      .Peacekeeper[20]
                                                                       .minPlayerLevel,
                                                                   kappaRequired:
                                                                     filterTasksByTrader
-                                                                      .Peacekeeper[19]
+                                                                      .Peacekeeper[20]
                                                                       .kappaRequired,
                                                                   objectives:
                                                                     filterTasksByTrader
-                                                                      .Peacekeeper[19]
+                                                                      .Peacekeeper[20]
                                                                       .objectives,
                                                                   wikiLink:
                                                                     filterTasksByTrader
-                                                                      .Peacekeeper[19]
+                                                                      .Peacekeeper[20]
                                                                       .wikiLink,
                                                                 },
                                                                 children: [
@@ -3342,30 +3146,30 @@ export const treeDataFunc: any = async () => {
                                                                     taskRequired:
                                                                       "",
                                                                     id: filterTasksByTrader
-                                                                      .Peacekeeper[20]
+                                                                      .Peacekeeper[19]
                                                                       .id,
                                                                     trader:
                                                                       "Peacekeeper",
                                                                     name: filterTasksByTrader
-                                                                      .Peacekeeper[20]
+                                                                      .Peacekeeper[19]
                                                                       .name,
                                                                     attributes:
                                                                       {
                                                                         level:
                                                                           filterTasksByTrader
-                                                                            .Peacekeeper[20]
+                                                                            .Peacekeeper[19]
                                                                             .minPlayerLevel,
                                                                         kappaRequired:
                                                                           filterTasksByTrader
-                                                                            .Peacekeeper[20]
+                                                                            .Peacekeeper[19]
                                                                             .kappaRequired,
                                                                         objectives:
                                                                           filterTasksByTrader
-                                                                            .Peacekeeper[20]
+                                                                            .Peacekeeper[19]
                                                                             .objectives,
                                                                         wikiLink:
                                                                           filterTasksByTrader
-                                                                            .Peacekeeper[20]
+                                                                            .Peacekeeper[19]
                                                                             .wikiLink,
                                                                       },
                                                                     children: [
@@ -3373,30 +3177,30 @@ export const treeDataFunc: any = async () => {
                                                                         taskRequired:
                                                                           "",
                                                                         id: filterTasksByTrader
-                                                                          .Peacekeeper[21]
+                                                                          .Peacekeeper[23]
                                                                           .id,
                                                                         trader:
                                                                           "Peacekeeper",
                                                                         name: filterTasksByTrader
-                                                                          .Peacekeeper[21]
+                                                                          .Peacekeeper[23]
                                                                           .name,
                                                                         attributes:
                                                                           {
                                                                             level:
                                                                               filterTasksByTrader
-                                                                                .Peacekeeper[21]
+                                                                                .Peacekeeper[23]
                                                                                 .minPlayerLevel,
                                                                             kappaRequired:
                                                                               filterTasksByTrader
-                                                                                .Peacekeeper[21]
+                                                                                .Peacekeeper[23]
                                                                                 .kappaRequired,
                                                                             objectives:
                                                                               filterTasksByTrader
-                                                                                .Peacekeeper[21]
+                                                                                .Peacekeeper[23]
                                                                                 .objectives,
                                                                             wikiLink:
                                                                               filterTasksByTrader
-                                                                                .Peacekeeper[21]
+                                                                                .Peacekeeper[23]
                                                                                 .wikiLink,
                                                                           },
                                                                         children:
@@ -3405,30 +3209,63 @@ export const treeDataFunc: any = async () => {
                                                                               taskRequired:
                                                                                 "",
                                                                               id: filterTasksByTrader
-                                                                                .Peacekeeper[22]
+                                                                                .Peacekeeper[24]
                                                                                 .id,
                                                                               trader:
                                                                                 "Peacekeeper",
                                                                               name: filterTasksByTrader
-                                                                                .Peacekeeper[22]
+                                                                                .Peacekeeper[24]
                                                                                 .name,
                                                                               attributes:
                                                                                 {
                                                                                   level:
                                                                                     filterTasksByTrader
-                                                                                      .Peacekeeper[22]
+                                                                                      .Peacekeeper[24]
                                                                                       .minPlayerLevel,
                                                                                   kappaRequired:
                                                                                     filterTasksByTrader
-                                                                                      .Peacekeeper[22]
+                                                                                      .Peacekeeper[24]
                                                                                       .kappaRequired,
                                                                                   objectives:
                                                                                     filterTasksByTrader
-                                                                                      .Peacekeeper[22]
+                                                                                      .Peacekeeper[24]
                                                                                       .objectives,
                                                                                   wikiLink:
                                                                                     filterTasksByTrader
-                                                                                      .Peacekeeper[22]
+                                                                                      .Peacekeeper[24]
+                                                                                      .wikiLink,
+                                                                                },
+                                                                              children:
+                                                                                [],
+                                                                            },
+                                                                            {
+                                                                              taskRequired:
+                                                                                "",
+                                                                              id: filterTasksByTrader
+                                                                                .Peacekeeper[21]
+                                                                                .id,
+                                                                              trader:
+                                                                                "Peacekeeper",
+                                                                              name: filterTasksByTrader
+                                                                                .Peacekeeper[21]
+                                                                                .name,
+                                                                              attributes:
+                                                                                {
+                                                                                  level:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[21]
+                                                                                      .minPlayerLevel,
+                                                                                  kappaRequired:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[21]
+                                                                                      .kappaRequired,
+                                                                                  objectives:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[21]
+                                                                                      .objectives,
+                                                                                  wikiLink:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[21]
                                                                                       .wikiLink,
                                                                                 },
                                                                               children:
@@ -3437,30 +3274,30 @@ export const treeDataFunc: any = async () => {
                                                                                     taskRequired:
                                                                                       "",
                                                                                     id: filterTasksByTrader
-                                                                                      .Peacekeeper[23]
+                                                                                      .Peacekeeper[26]
                                                                                       .id,
                                                                                     trader:
                                                                                       "Peacekeeper",
                                                                                     name: filterTasksByTrader
-                                                                                      .Peacekeeper[23]
+                                                                                      .Peacekeeper[26]
                                                                                       .name,
                                                                                     attributes:
                                                                                       {
                                                                                         level:
                                                                                           filterTasksByTrader
-                                                                                            .Peacekeeper[23]
+                                                                                            .Peacekeeper[26]
                                                                                             .minPlayerLevel,
                                                                                         kappaRequired:
                                                                                           filterTasksByTrader
-                                                                                            .Peacekeeper[23]
+                                                                                            .Peacekeeper[26]
                                                                                             .kappaRequired,
                                                                                         objectives:
                                                                                           filterTasksByTrader
-                                                                                            .Peacekeeper[23]
+                                                                                            .Peacekeeper[26]
                                                                                             .objectives,
                                                                                         wikiLink:
                                                                                           filterTasksByTrader
-                                                                                            .Peacekeeper[23]
+                                                                                            .Peacekeeper[26]
                                                                                             .wikiLink,
                                                                                       },
                                                                                     children:
@@ -3534,73 +3371,7 @@ export const treeDataFunc: any = async () => {
                                                                                         },
                                                                                       ],
                                                                                   },
-                                                                                  {
-                                                                                    taskRequired:
-                                                                                      "",
-                                                                                    id: filterTasksByTrader
-                                                                                      .Peacekeeper[34]
-                                                                                      .id,
-                                                                                    trader:
-                                                                                      "Peacekeeper",
-                                                                                    name: filterTasksByTrader
-                                                                                      .Peacekeeper[34]
-                                                                                      .name,
-                                                                                    attributes:
-                                                                                      {
-                                                                                        level:
-                                                                                          filterTasksByTrader
-                                                                                            .Peacekeeper[34]
-                                                                                            .minPlayerLevel,
-                                                                                        kappaRequired:
-                                                                                          filterTasksByTrader
-                                                                                            .Peacekeeper[34]
-                                                                                            .kappaRequired,
-                                                                                        objectives:
-                                                                                          filterTasksByTrader
-                                                                                            .Peacekeeper[34]
-                                                                                            .objectives,
-                                                                                        wikiLink:
-                                                                                          filterTasksByTrader
-                                                                                            .Peacekeeper[34]
-                                                                                            .wikiLink,
-                                                                                      },
-                                                                                    children:
-                                                                                      [],
-                                                                                  },
                                                                                 ],
-                                                                            },
-                                                                            {
-                                                                              taskRequired:
-                                                                                "",
-                                                                              id: filterTasksByTrader
-                                                                                .Peacekeeper[24]
-                                                                                .id,
-                                                                              trader:
-                                                                                "Peacekeeper",
-                                                                              name: filterTasksByTrader
-                                                                                .Peacekeeper[24]
-                                                                                .name,
-                                                                              attributes:
-                                                                                {
-                                                                                  level:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[24]
-                                                                                      .minPlayerLevel,
-                                                                                  kappaRequired:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[24]
-                                                                                      .kappaRequired,
-                                                                                  objectives:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[24]
-                                                                                      .objectives,
-                                                                                  wikiLink:
-                                                                                    filterTasksByTrader
-                                                                                      .Peacekeeper[24]
-                                                                                      .wikiLink,
-                                                                                },
-                                                                              children:
-                                                                                [],
                                                                             },
                                                                           ],
                                                                       },
@@ -3640,6 +3411,202 @@ export const treeDataFunc: any = async () => {
                                                             },
                                                             children: [],
                                                           },
+                                                          {
+                                                            taskRequired: "",
+                                                            id: filterTasksByTrader
+                                                              .Peacekeeper[12]
+                                                              .id,
+                                                            trader:
+                                                              "Peacekeeper",
+                                                            name: filterTasksByTrader
+                                                              .Peacekeeper[12]
+                                                              .name,
+                                                            attributes: {
+                                                              level:
+                                                                filterTasksByTrader
+                                                                  .Peacekeeper[12]
+                                                                  .minPlayerLevel,
+                                                              kappaRequired:
+                                                                filterTasksByTrader
+                                                                  .Peacekeeper[12]
+                                                                  .kappaRequired,
+                                                              objectives:
+                                                                filterTasksByTrader
+                                                                  .Peacekeeper[12]
+                                                                  .objectives,
+                                                              wikiLink:
+                                                                filterTasksByTrader
+                                                                  .Peacekeeper[12]
+                                                                  .wikiLink,
+                                                            },
+                                                            children: [
+                                                              {
+                                                                taskRequired:
+                                                                  "",
+                                                                id: filterTasksByTrader
+                                                                  .Peacekeeper[10]
+                                                                  .id,
+                                                                trader:
+                                                                  "Peacekeeper",
+                                                                name: filterTasksByTrader
+                                                                  .Peacekeeper[10]
+                                                                  .name,
+                                                                attributes: {
+                                                                  level:
+                                                                    filterTasksByTrader
+                                                                      .Peacekeeper[10]
+                                                                      .minPlayerLevel,
+                                                                  kappaRequired:
+                                                                    filterTasksByTrader
+                                                                      .Peacekeeper[10]
+                                                                      .kappaRequired,
+                                                                  objectives:
+                                                                    filterTasksByTrader
+                                                                      .Peacekeeper[10]
+                                                                      .objectives,
+                                                                  wikiLink:
+                                                                    filterTasksByTrader
+                                                                      .Peacekeeper[10]
+                                                                      .wikiLink,
+                                                                },
+                                                                children: [
+                                                                  {
+                                                                    taskRequired:
+                                                                      "",
+                                                                    id: filterTasksByTrader
+                                                                      .Peacekeeper[7]
+                                                                      .id,
+                                                                    trader:
+                                                                      "Peacekeeper",
+                                                                    name: filterTasksByTrader
+                                                                      .Peacekeeper[7]
+                                                                      .name,
+                                                                    attributes:
+                                                                      {
+                                                                        level:
+                                                                          filterTasksByTrader
+                                                                            .Peacekeeper[7]
+                                                                            .minPlayerLevel,
+                                                                        kappaRequired:
+                                                                          filterTasksByTrader
+                                                                            .Peacekeeper[7]
+                                                                            .kappaRequired,
+                                                                        objectives:
+                                                                          filterTasksByTrader
+                                                                            .Peacekeeper[7]
+                                                                            .objectives,
+                                                                        wikiLink:
+                                                                          filterTasksByTrader
+                                                                            .Peacekeeper[7]
+                                                                            .wikiLink,
+                                                                      },
+                                                                    children: [
+                                                                      {
+                                                                        taskRequired:
+                                                                          "",
+                                                                        id: filterTasksByTrader
+                                                                          .Peacekeeper[16]
+                                                                          .id,
+                                                                        trader:
+                                                                          "Peacekeeper",
+                                                                        name: filterTasksByTrader
+                                                                          .Peacekeeper[16]
+                                                                          .name,
+                                                                        attributes:
+                                                                          {
+                                                                            level:
+                                                                              filterTasksByTrader
+                                                                                .Peacekeeper[16]
+                                                                                .minPlayerLevel,
+                                                                            kappaRequired:
+                                                                              filterTasksByTrader
+                                                                                .Peacekeeper[16]
+                                                                                .kappaRequired,
+                                                                            objectives:
+                                                                              filterTasksByTrader
+                                                                                .Peacekeeper[16]
+                                                                                .objectives,
+                                                                            wikiLink:
+                                                                              filterTasksByTrader
+                                                                                .Peacekeeper[16]
+                                                                                .wikiLink,
+                                                                          },
+                                                                        children:
+                                                                          [
+                                                                            {
+                                                                              taskRequired:
+                                                                                "",
+                                                                              id: filterTasksByTrader
+                                                                                .Peacekeeper[33]
+                                                                                .id,
+                                                                              trader:
+                                                                                "Peacekeeper",
+                                                                              name: filterTasksByTrader
+                                                                                .Peacekeeper[33]
+                                                                                .name,
+                                                                              attributes:
+                                                                                {
+                                                                                  level:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[33]
+                                                                                      .minPlayerLevel,
+                                                                                  kappaRequired:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[33]
+                                                                                      .kappaRequired,
+                                                                                  objectives:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[33]
+                                                                                      .objectives,
+                                                                                  wikiLink:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[33]
+                                                                                      .wikiLink,
+                                                                                },
+                                                                              children:
+                                                                                [],
+                                                                            },
+                                                                            {
+                                                                              taskRequired:
+                                                                                "",
+                                                                              id: filterTasksByTrader
+                                                                                .Peacekeeper[38]
+                                                                                .id,
+                                                                              trader:
+                                                                                "Peacekeeper",
+                                                                              name: filterTasksByTrader
+                                                                                .Peacekeeper[38]
+                                                                                .name,
+                                                                              attributes:
+                                                                                {
+                                                                                  level:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[38]
+                                                                                      .minPlayerLevel,
+                                                                                  kappaRequired:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[38]
+                                                                                      .kappaRequired,
+                                                                                  objectives:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[38]
+                                                                                      .objectives,
+                                                                                  wikiLink:
+                                                                                    filterTasksByTrader
+                                                                                      .Peacekeeper[38]
+                                                                                      .wikiLink,
+                                                                                },
+                                                                              children:
+                                                                                [],
+                                                                            },
+                                                                          ],
+                                                                      },
+                                                                    ],
+                                                                  },
+                                                                ],
+                                                              },
+                                                            ],
+                                                          },
                                                         ],
                                                       },
                                                     ],
@@ -3677,6 +3644,7 @@ export const treeDataFunc: any = async () => {
                                       },
                                     ],
                                   },
+
                                   {
                                     taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[27].id,
@@ -3723,6 +3691,28 @@ export const treeDataFunc: any = async () => {
                                 children: [
                                   {
                                     taskRequired: "",
+                                    id: filterTasksByTrader.Peacekeeper[22].id,
+                                    trader: "Peacekeeper",
+                                    name: filterTasksByTrader.Peacekeeper[22]
+                                      .name,
+                                    attributes: {
+                                      level:
+                                        filterTasksByTrader.Peacekeeper[22]
+                                          .minPlayerLevel,
+                                      kappaRequired:
+                                        filterTasksByTrader.Peacekeeper[22]
+                                          .kappaRequired,
+                                      objectives:
+                                        filterTasksByTrader.Peacekeeper[22]
+                                          .objectives,
+                                      wikiLink:
+                                        filterTasksByTrader.Peacekeeper[22]
+                                          .wikiLink,
+                                    },
+                                    children: [],
+                                  },
+                                  {
+                                    taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[25].id,
                                     trader: "Peacekeeper",
                                     name: filterTasksByTrader.Peacekeeper[25]
@@ -3743,28 +3733,7 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [],
                                   },
-                                  {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Peacekeeper[26].id,
-                                    trader: "Peacekeeper",
-                                    name: filterTasksByTrader.Peacekeeper[26]
-                                      .name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Peacekeeper[26]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Peacekeeper[26]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Peacekeeper[26]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Peacekeeper[26]
-                                          .wikiLink,
-                                    },
-                                    children: [],
-                                  },
+
                                   {
                                     taskRequired: "",
                                     id: filterTasksByTrader.Peacekeeper[28].id,
@@ -3785,7 +3754,32 @@ export const treeDataFunc: any = async () => {
                                         filterTasksByTrader.Peacekeeper[28]
                                           .wikiLink,
                                     },
-                                    children: [],
+                                    children: [
+                                      {
+                                        taskRequired:
+                                          "To unlock this quest, you also need to complete, Wet Job - Part 5 from Peacekeeper",
+                                        id: filterTasksByTrader.Peacekeeper[34]
+                                          .id,
+                                        trader: "Peacekeeper",
+                                        name: filterTasksByTrader
+                                          .Peacekeeper[34].name,
+                                        attributes: {
+                                          level:
+                                            filterTasksByTrader.Peacekeeper[34]
+                                              .minPlayerLevel,
+                                          kappaRequired:
+                                            filterTasksByTrader.Peacekeeper[34]
+                                              .kappaRequired,
+                                          objectives:
+                                            filterTasksByTrader.Peacekeeper[34]
+                                              .objectives,
+                                          wikiLink:
+                                            filterTasksByTrader.Peacekeeper[34]
+                                              .wikiLink,
+                                        },
+                                        children: [],
+                                      },
+                                    ],
                                   },
                                 ],
                               },
@@ -3798,7 +3792,8 @@ export const treeDataFunc: any = async () => {
                 ],
               },
               {
-                taskRequired: "",
+                taskRequired:
+                  "To unlock this quest, you also need to complete, Anesthesia from Prapor",
                 id: filterTasksByTrader.Peacekeeper[31].id,
                 trader: "Peacekeeper",
                 name: filterTasksByTrader.Peacekeeper[31].name,
@@ -3811,7 +3806,8 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
-                    taskRequired: "",
+                    taskRequired:
+                      "To unlock this quest, you also need to complete, Colleagues - Part 3 from Therapist or The Huntsman Path - Sadist from Jaeger",
                     id: filterTasksByTrader.Peacekeeper[32].id,
                     trader: "Peacekeeper",
                     name: filterTasksByTrader.Peacekeeper[32].name,
@@ -3883,37 +3879,6 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [],
                   },
-                  {
-                    taskRequired: "",
-                    id: filterTasksByTrader.Mechanic[58].id,
-                    trader: "Mechanic",
-                    name: filterTasksByTrader.Mechanic[58].name,
-                    attributes: {
-                      level: filterTasksByTrader.Mechanic[58].minPlayerLevel,
-                      kappaRequired:
-                        filterTasksByTrader.Mechanic[58].kappaRequired,
-                      objectives: filterTasksByTrader.Mechanic[58].objectives,
-                      wikiLink: filterTasksByTrader.Mechanic[58].wikiLink,
-                    },
-                    children: [
-                      {
-                        taskRequired: "",
-                        id: filterTasksByTrader.Mechanic[59].id,
-                        trader: "Mechanic",
-                        name: filterTasksByTrader.Mechanic[59].name,
-                        attributes: {
-                          level:
-                            filterTasksByTrader.Mechanic[59].minPlayerLevel,
-                          kappaRequired:
-                            filterTasksByTrader.Mechanic[59].kappaRequired,
-                          objectives:
-                            filterTasksByTrader.Mechanic[59].objectives,
-                          wikiLink: filterTasksByTrader.Mechanic[59].wikiLink,
-                        },
-                        children: [],
-                      },
-                    ],
-                  },
                 ],
               },
             ],
@@ -3932,58 +3897,58 @@ export const treeDataFunc: any = async () => {
             children: [
               {
                 taskRequired: "",
-                id: filterTasksByTrader.Mechanic[48].id,
+                id: filterTasksByTrader.Mechanic[53].id,
                 trader: "Mechanic",
-                name: filterTasksByTrader.Mechanic[48].name,
+                name: filterTasksByTrader.Mechanic[53].name,
                 attributes: {
-                  level: filterTasksByTrader.Mechanic[48].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Mechanic[48].kappaRequired,
-                  objectives: filterTasksByTrader.Mechanic[48].objectives,
-                  wikiLink: filterTasksByTrader.Mechanic[48].wikiLink,
+                  level: filterTasksByTrader.Mechanic[53].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Mechanic[53].kappaRequired,
+                  objectives: filterTasksByTrader.Mechanic[53].objectives,
+                  wikiLink: filterTasksByTrader.Mechanic[53].wikiLink,
                 },
                 children: [
                   {
                     taskRequired: "",
-                    id: filterTasksByTrader.Mechanic[49].id,
+                    id: filterTasksByTrader.Mechanic[51].id,
                     trader: "Mechanic",
-                    name: filterTasksByTrader.Mechanic[49].name,
+                    name: filterTasksByTrader.Mechanic[51].name,
                     attributes: {
-                      level: filterTasksByTrader.Mechanic[49].minPlayerLevel,
+                      level: filterTasksByTrader.Mechanic[51].minPlayerLevel,
                       kappaRequired:
-                        filterTasksByTrader.Mechanic[49].kappaRequired,
-                      objectives: filterTasksByTrader.Mechanic[49].objectives,
-                      wikiLink: filterTasksByTrader.Mechanic[49].wikiLink,
+                        filterTasksByTrader.Mechanic[51].kappaRequired,
+                      objectives: filterTasksByTrader.Mechanic[51].objectives,
+                      wikiLink: filterTasksByTrader.Mechanic[51].wikiLink,
                     },
                     children: [
                       {
                         taskRequired: "",
-                        id: filterTasksByTrader.Mechanic[50].id,
+                        id: filterTasksByTrader.Mechanic[54].id,
                         trader: "Mechanic",
-                        name: filterTasksByTrader.Mechanic[50].name,
+                        name: filterTasksByTrader.Mechanic[54].name,
                         attributes: {
                           level:
-                            filterTasksByTrader.Mechanic[50].minPlayerLevel,
+                            filterTasksByTrader.Mechanic[54].minPlayerLevel,
                           kappaRequired:
-                            filterTasksByTrader.Mechanic[50].kappaRequired,
+                            filterTasksByTrader.Mechanic[54].kappaRequired,
                           objectives:
-                            filterTasksByTrader.Mechanic[50].objectives,
-                          wikiLink: filterTasksByTrader.Mechanic[50].wikiLink,
+                            filterTasksByTrader.Mechanic[54].objectives,
+                          wikiLink: filterTasksByTrader.Mechanic[54].wikiLink,
                         },
                         children: [
                           {
                             taskRequired: "",
-                            id: filterTasksByTrader.Mechanic[51].id,
+                            id: filterTasksByTrader.Mechanic[48].id,
                             trader: "Mechanic",
-                            name: filterTasksByTrader.Mechanic[51].name,
+                            name: filterTasksByTrader.Mechanic[48].name,
                             attributes: {
                               level:
-                                filterTasksByTrader.Mechanic[51].minPlayerLevel,
+                                filterTasksByTrader.Mechanic[48].minPlayerLevel,
                               kappaRequired:
-                                filterTasksByTrader.Mechanic[51].kappaRequired,
+                                filterTasksByTrader.Mechanic[48].kappaRequired,
                               objectives:
-                                filterTasksByTrader.Mechanic[51].objectives,
+                                filterTasksByTrader.Mechanic[48].objectives,
                               wikiLink:
-                                filterTasksByTrader.Mechanic[51].wikiLink,
+                                filterTasksByTrader.Mechanic[48].wikiLink,
                             },
                             children: [
                               {
@@ -4006,42 +3971,42 @@ export const treeDataFunc: any = async () => {
                                 children: [
                                   {
                                     taskRequired: "",
-                                    id: filterTasksByTrader.Mechanic[53].id,
+                                    id: filterTasksByTrader.Mechanic[49].id,
                                     trader: "Mechanic",
-                                    name: filterTasksByTrader.Mechanic[53].name,
+                                    name: filterTasksByTrader.Mechanic[49].name,
                                     attributes: {
                                       level:
-                                        filterTasksByTrader.Mechanic[53]
+                                        filterTasksByTrader.Mechanic[49]
                                           .minPlayerLevel,
                                       kappaRequired:
-                                        filterTasksByTrader.Mechanic[53]
+                                        filterTasksByTrader.Mechanic[49]
                                           .kappaRequired,
                                       objectives:
-                                        filterTasksByTrader.Mechanic[53]
+                                        filterTasksByTrader.Mechanic[49]
                                           .objectives,
                                       wikiLink:
-                                        filterTasksByTrader.Mechanic[53]
+                                        filterTasksByTrader.Mechanic[49]
                                           .wikiLink,
                                     },
                                     children: [
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Mechanic[54].id,
+                                        id: filterTasksByTrader.Mechanic[50].id,
                                         trader: "Mechanic",
-                                        name: filterTasksByTrader.Mechanic[54]
+                                        name: filterTasksByTrader.Mechanic[50]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Mechanic[54]
+                                            filterTasksByTrader.Mechanic[50]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Mechanic[54]
+                                            filterTasksByTrader.Mechanic[50]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Mechanic[54]
+                                            filterTasksByTrader.Mechanic[50]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Mechanic[54]
+                                            filterTasksByTrader.Mechanic[50]
                                               .wikiLink,
                                         },
                                         children: [],
@@ -4061,20 +4026,22 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
-            taskRequired: "",
-            id: filterTasksByTrader.Mechanic[46].id,
+            taskRequired:
+              "To unlock this quest, you also need to complete, Wet Job - Part 6 from Peacekeeper",
+            id: filterTasksByTrader.Mechanic[47].id,
             trader: "Mechanic",
-            name: filterTasksByTrader.Mechanic[46].name,
+            name: filterTasksByTrader.Mechanic[47].name,
             attributes: {
-              level: filterTasksByTrader.Mechanic[46].minPlayerLevel,
-              kappaRequired: filterTasksByTrader.Mechanic[46].kappaRequired,
-              objectives: filterTasksByTrader.Mechanic[46].objectives,
-              wikiLink: filterTasksByTrader.Mechanic[46].wikiLink,
+              level: filterTasksByTrader.Mechanic[47].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Mechanic[47].kappaRequired,
+              objectives: filterTasksByTrader.Mechanic[47].objectives,
+              wikiLink: filterTasksByTrader.Mechanic[47].wikiLink,
             },
             children: [],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Anesthesia from Prapor and Colleagues - Part 1 from Therapist",
             id: filterTasksByTrader.Mechanic[33].id,
             trader: "Mechanic",
             name: filterTasksByTrader.Mechanic[33].name,
@@ -4153,7 +4120,8 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [
                       {
-                        taskRequired: "",
+                        taskRequired:
+                          "To unlock this quest, you also need to complete, Gunsmith - Part 3 from Mechanic",
                         id: filterTasksByTrader.Mechanic[5].id,
                         trader: "Mechanic",
                         name: filterTasksByTrader.Mechanic[5].name,
@@ -4655,30 +4623,30 @@ export const treeDataFunc: any = async () => {
                                                                                                                   taskRequired:
                                                                                                                     "",
                                                                                                                   id: filterTasksByTrader
-                                                                                                                    .Mechanic[65]
+                                                                                                                    .Mechanic[67]
                                                                                                                     .id,
                                                                                                                   trader:
                                                                                                                     "Mechanic",
                                                                                                                   name: filterTasksByTrader
-                                                                                                                    .Mechanic[65]
+                                                                                                                    .Mechanic[67]
                                                                                                                     .name,
                                                                                                                   attributes:
                                                                                                                     {
                                                                                                                       level:
                                                                                                                         filterTasksByTrader
-                                                                                                                          .Mechanic[65]
+                                                                                                                          .Mechanic[67]
                                                                                                                           .minPlayerLevel,
                                                                                                                       kappaRequired:
                                                                                                                         filterTasksByTrader
-                                                                                                                          .Mechanic[65]
+                                                                                                                          .Mechanic[67]
                                                                                                                           .kappaRequired,
                                                                                                                       objectives:
                                                                                                                         filterTasksByTrader
-                                                                                                                          .Mechanic[65]
+                                                                                                                          .Mechanic[67]
                                                                                                                           .objectives,
                                                                                                                       wikiLink:
                                                                                                                         filterTasksByTrader
-                                                                                                                          .Mechanic[65]
+                                                                                                                          .Mechanic[67]
                                                                                                                           .wikiLink,
                                                                                                                     },
                                                                                                                   children:
@@ -4687,30 +4655,30 @@ export const treeDataFunc: any = async () => {
                                                                                                                         taskRequired:
                                                                                                                           "",
                                                                                                                         id: filterTasksByTrader
-                                                                                                                          .Mechanic[66]
+                                                                                                                          .Mechanic[65]
                                                                                                                           .id,
                                                                                                                         trader:
                                                                                                                           "Mechanic",
                                                                                                                         name: filterTasksByTrader
-                                                                                                                          .Mechanic[66]
+                                                                                                                          .Mechanic[65]
                                                                                                                           .name,
                                                                                                                         attributes:
                                                                                                                           {
                                                                                                                             level:
                                                                                                                               filterTasksByTrader
-                                                                                                                                .Mechanic[66]
+                                                                                                                                .Mechanic[65]
                                                                                                                                 .minPlayerLevel,
                                                                                                                             kappaRequired:
                                                                                                                               filterTasksByTrader
-                                                                                                                                .Mechanic[66]
+                                                                                                                                .Mechanic[65]
                                                                                                                                 .kappaRequired,
                                                                                                                             objectives:
                                                                                                                               filterTasksByTrader
-                                                                                                                                .Mechanic[66]
+                                                                                                                                .Mechanic[65]
                                                                                                                                 .objectives,
                                                                                                                             wikiLink:
                                                                                                                               filterTasksByTrader
-                                                                                                                                .Mechanic[66]
+                                                                                                                                .Mechanic[65]
                                                                                                                                 .wikiLink,
                                                                                                                           },
                                                                                                                         children:
@@ -4719,30 +4687,30 @@ export const treeDataFunc: any = async () => {
                                                                                                                               taskRequired:
                                                                                                                                 "",
                                                                                                                               id: filterTasksByTrader
-                                                                                                                                .Mechanic[67]
+                                                                                                                                .Mechanic[66]
                                                                                                                                 .id,
                                                                                                                               trader:
                                                                                                                                 "Mechanic",
                                                                                                                               name: filterTasksByTrader
-                                                                                                                                .Mechanic[67]
+                                                                                                                                .Mechanic[66]
                                                                                                                                 .name,
                                                                                                                               attributes:
                                                                                                                                 {
                                                                                                                                   level:
                                                                                                                                     filterTasksByTrader
-                                                                                                                                      .Mechanic[67]
+                                                                                                                                      .Mechanic[66]
                                                                                                                                       .minPlayerLevel,
                                                                                                                                   kappaRequired:
                                                                                                                                     filterTasksByTrader
-                                                                                                                                      .Mechanic[67]
+                                                                                                                                      .Mechanic[66]
                                                                                                                                       .kappaRequired,
                                                                                                                                   objectives:
                                                                                                                                     filterTasksByTrader
-                                                                                                                                      .Mechanic[67]
+                                                                                                                                      .Mechanic[66]
                                                                                                                                       .objectives,
                                                                                                                                   wikiLink:
                                                                                                                                     filterTasksByTrader
-                                                                                                                                      .Mechanic[67]
+                                                                                                                                      .Mechanic[66]
                                                                                                                                       .wikiLink,
                                                                                                                                 },
                                                                                                                               children:
@@ -4806,18 +4774,18 @@ export const treeDataFunc: any = async () => {
                         children: [
                           {
                             taskRequired: "",
-                            id: filterTasksByTrader.Mechanic[10].id,
+                            id: filterTasksByTrader.Mechanic[12].id,
                             trader: "Mechanic",
-                            name: filterTasksByTrader.Mechanic[10].name,
+                            name: filterTasksByTrader.Mechanic[12].name,
                             attributes: {
                               level:
-                                filterTasksByTrader.Mechanic[10].minPlayerLevel,
+                                filterTasksByTrader.Mechanic[12].minPlayerLevel,
                               kappaRequired:
-                                filterTasksByTrader.Mechanic[10].kappaRequired,
+                                filterTasksByTrader.Mechanic[12].kappaRequired,
                               objectives:
-                                filterTasksByTrader.Mechanic[10].objectives,
+                                filterTasksByTrader.Mechanic[12].objectives,
                               wikiLink:
-                                filterTasksByTrader.Mechanic[10].wikiLink,
+                                filterTasksByTrader.Mechanic[12].wikiLink,
                             },
                             children: [
                               {
@@ -4838,6 +4806,27 @@ export const treeDataFunc: any = async () => {
                                     filterTasksByTrader.Mechanic[21].wikiLink,
                                 },
                                 children: [
+                                  {
+                                    taskRequired: "",
+                                    id: filterTasksByTrader.Mechanic[25].id,
+                                    trader: "Mechanic",
+                                    name: filterTasksByTrader.Mechanic[25].name,
+                                    attributes: {
+                                      level:
+                                        filterTasksByTrader.Mechanic[25]
+                                          .minPlayerLevel,
+                                      kappaRequired:
+                                        filterTasksByTrader.Mechanic[25]
+                                          .kappaRequired,
+                                      objectives:
+                                        filterTasksByTrader.Mechanic[25]
+                                          .objectives,
+                                      wikiLink:
+                                        filterTasksByTrader.Mechanic[25]
+                                          .wikiLink,
+                                    },
+                                    children: [],
+                                  },
                                   {
                                     taskRequired: "",
                                     id: filterTasksByTrader.Mechanic[24].id,
@@ -4886,20 +4875,20 @@ export const treeDataFunc: any = async () => {
                               },
                               {
                                 taskRequired: "",
-                                id: filterTasksByTrader.Mechanic[12].id,
+                                id: filterTasksByTrader.Mechanic[10].id,
                                 trader: "Mechanic",
-                                name: filterTasksByTrader.Mechanic[12].name,
+                                name: filterTasksByTrader.Mechanic[10].name,
                                 attributes: {
                                   level:
-                                    filterTasksByTrader.Mechanic[12]
+                                    filterTasksByTrader.Mechanic[10]
                                       .minPlayerLevel,
                                   kappaRequired:
-                                    filterTasksByTrader.Mechanic[12]
+                                    filterTasksByTrader.Mechanic[10]
                                       .kappaRequired,
                                   objectives:
-                                    filterTasksByTrader.Mechanic[12].objectives,
+                                    filterTasksByTrader.Mechanic[10].objectives,
                                   wikiLink:
-                                    filterTasksByTrader.Mechanic[12].wikiLink,
+                                    filterTasksByTrader.Mechanic[10].wikiLink,
                                 },
                                 children: [
                                   {
@@ -4924,22 +4913,22 @@ export const treeDataFunc: any = async () => {
                                     children: [
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Mechanic[20].id,
+                                        id: filterTasksByTrader.Mechanic[19].id,
                                         trader: "Mechanic",
-                                        name: filterTasksByTrader.Mechanic[20]
+                                        name: filterTasksByTrader.Mechanic[19]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Mechanic[20]
+                                            filterTasksByTrader.Mechanic[19]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Mechanic[20]
+                                            filterTasksByTrader.Mechanic[19]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Mechanic[20]
+                                            filterTasksByTrader.Mechanic[19]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Mechanic[20]
+                                            filterTasksByTrader.Mechanic[19]
                                               .wikiLink,
                                         },
                                         children: [],
@@ -4948,29 +4937,11 @@ export const treeDataFunc: any = async () => {
                                   },
                                 ],
                               },
-                              {
-                                taskRequired: "",
-                                id: filterTasksByTrader.Mechanic[25].id,
-                                trader: "Mechanic",
-                                name: filterTasksByTrader.Mechanic[25].name,
-                                attributes: {
-                                  level:
-                                    filterTasksByTrader.Mechanic[25]
-                                      .minPlayerLevel,
-                                  kappaRequired:
-                                    filterTasksByTrader.Mechanic[25]
-                                      .kappaRequired,
-                                  objectives:
-                                    filterTasksByTrader.Mechanic[25].objectives,
-                                  wikiLink:
-                                    filterTasksByTrader.Mechanic[25].wikiLink,
-                                },
-                                children: [],
-                              },
                             ],
                           },
                           {
-                            taskRequired: "",
+                            taskRequired:
+                              "To unlock this quest, you also need to complete, Gunsmith - Part 3 from Mechanic",
                             id: filterTasksByTrader.Mechanic[14].id,
                             trader: "Mechanic",
                             name: filterTasksByTrader.Mechanic[14].name,
@@ -5049,20 +5020,20 @@ export const treeDataFunc: any = async () => {
                             children: [
                               {
                                 taskRequired: "",
-                                id: filterTasksByTrader.Mechanic[19].id,
+                                id: filterTasksByTrader.Mechanic[20].id,
                                 trader: "Mechanic",
-                                name: filterTasksByTrader.Mechanic[19].name,
+                                name: filterTasksByTrader.Mechanic[20].name,
                                 attributes: {
                                   level:
-                                    filterTasksByTrader.Mechanic[19]
+                                    filterTasksByTrader.Mechanic[20]
                                       .minPlayerLevel,
                                   kappaRequired:
-                                    filterTasksByTrader.Mechanic[19]
+                                    filterTasksByTrader.Mechanic[20]
                                       .kappaRequired,
                                   objectives:
-                                    filterTasksByTrader.Mechanic[19].objectives,
+                                    filterTasksByTrader.Mechanic[20].objectives,
                                   wikiLink:
-                                    filterTasksByTrader.Mechanic[19].wikiLink,
+                                    filterTasksByTrader.Mechanic[20].wikiLink,
                                 },
                                 children: [],
                               },
@@ -5128,21 +5099,21 @@ export const treeDataFunc: any = async () => {
                                   },
                                   {
                                     taskRequired: "",
-                                    id: filterTasksByTrader.Mechanic[47].id,
+                                    id: filterTasksByTrader.Mechanic[46].id,
                                     trader: "Mechanic",
-                                    name: filterTasksByTrader.Mechanic[47].name,
+                                    name: filterTasksByTrader.Mechanic[46].name,
                                     attributes: {
                                       level:
-                                        filterTasksByTrader.Mechanic[47]
+                                        filterTasksByTrader.Mechanic[46]
                                           .minPlayerLevel,
                                       kappaRequired:
-                                        filterTasksByTrader.Mechanic[47]
+                                        filterTasksByTrader.Mechanic[46]
                                           .kappaRequired,
                                       objectives:
-                                        filterTasksByTrader.Mechanic[47]
+                                        filterTasksByTrader.Mechanic[46]
                                           .objectives,
                                       wikiLink:
-                                        filterTasksByTrader.Mechanic[47]
+                                        filterTasksByTrader.Mechanic[46]
                                           .wikiLink,
                                     },
                                     children: [],
@@ -5223,7 +5194,8 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
-                                    taskRequired: "",
+                                    taskRequired:
+                                      "To unlock this quest, you also need to complete, Corporate Secrets from Mechanic",
                                     id: filterTasksByTrader.Mechanic[39].id,
                                     trader: "Mechanic",
                                     name: filterTasksByTrader.Mechanic[39].name,

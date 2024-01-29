@@ -46,7 +46,7 @@ const MissionsSchema: React.FC = () => {
         translate={translate}
         zoom={0.1}
         scaleExtent={{ min: 0.1, max: 2 }}
-        separation={{ siblings: 2, nonSiblings: 3 }}
+        separation={{ siblings: 1, nonSiblings: 2 }}
         collapsible={false}
         pathClassFunc={() => "link-quests"}
         pathFunc={pathFuncOptions}

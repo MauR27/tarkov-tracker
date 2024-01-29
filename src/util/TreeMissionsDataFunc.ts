@@ -15,7 +15,7 @@ export const treeDataFunc: any = async () => {
     return acc;
   }, {});
 
-  console.log(filterTasksByTrader.Mechanic);
+  console.log(filterTasksByTrader.Lightkeeper);
 
   const treeStructure: ITreeData = {
     taskRequired: "",
@@ -5326,7 +5326,8 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Overseas trust - Part 1 from Lightkeeper",
             id: filterTasksByTrader.Ragman[32].id,
             trader: "Ragman",
             name: filterTasksByTrader.Ragman[32].name,
@@ -5363,7 +5364,8 @@ export const treeDataFunc: any = async () => {
                 },
                 children: [
                   {
-                    taskRequired: "",
+                    taskRequired:
+                      "To unlock this quest, you also need to complete, Make ULTRA Great Again from Ragman",
                     id: filterTasksByTrader.Ragman[9].id,
                     trader: "Ragman",
                     name: filterTasksByTrader.Ragman[9].name,
@@ -5373,66 +5375,6 @@ export const treeDataFunc: any = async () => {
                         filterTasksByTrader.Ragman[9].kappaRequired,
                       objectives: filterTasksByTrader.Ragman[9].objectives,
                       wikiLink: filterTasksByTrader.Ragman[9].wikiLink,
-                    },
-                    children: [
-                      {
-                        taskRequired: "",
-                        id: filterTasksByTrader.Ragman[7].id,
-                        trader: "Ragman",
-                        name: filterTasksByTrader.Ragman[7].name,
-                        attributes: {
-                          level: filterTasksByTrader.Ragman[7].minPlayerLevel,
-                          kappaRequired:
-                            filterTasksByTrader.Ragman[7].kappaRequired,
-                          objectives: filterTasksByTrader.Ragman[7].objectives,
-                          wikiLink: filterTasksByTrader.Ragman[7].wikiLink,
-                        },
-                        children: [
-                          {
-                            taskRequired: "",
-                            id: filterTasksByTrader.Ragman[6].id,
-                            trader: "Ragman",
-                            name: filterTasksByTrader.Ragman[6].name,
-                            attributes: {
-                              level:
-                                filterTasksByTrader.Ragman[6].minPlayerLevel,
-                              kappaRequired:
-                                filterTasksByTrader.Ragman[6].kappaRequired,
-                              objectives:
-                                filterTasksByTrader.Ragman[6].objectives,
-                              wikiLink: filterTasksByTrader.Ragman[6].wikiLink,
-                            },
-                            children: [],
-                          },
-                        ],
-                      },
-                      {
-                        taskRequired: "",
-                        id: filterTasksByTrader.Ragman[4].id,
-                        trader: "Ragman",
-                        name: filterTasksByTrader.Ragman[4].name,
-                        attributes: {
-                          level: filterTasksByTrader.Ragman[4].minPlayerLevel,
-                          kappaRequired:
-                            filterTasksByTrader.Ragman[4].kappaRequired,
-                          objectives: filterTasksByTrader.Ragman[4].objectives,
-                          wikiLink: filterTasksByTrader.Ragman[4].wikiLink,
-                        },
-                        children: [],
-                      },
-                    ],
-                  },
-                  {
-                    taskRequired: "",
-                    id: filterTasksByTrader.Ragman[10].id,
-                    trader: "Ragman",
-                    name: filterTasksByTrader.Ragman[10].name,
-                    attributes: {
-                      level: filterTasksByTrader.Ragman[10].minPlayerLevel,
-                      kappaRequired:
-                        filterTasksByTrader.Ragman[10].kappaRequired,
-                      objectives: filterTasksByTrader.Ragman[10].objectives,
-                      wikiLink: filterTasksByTrader.Ragman[10].wikiLink,
                     },
                     children: [
                       {
@@ -5449,7 +5391,8 @@ export const treeDataFunc: any = async () => {
                         },
                         children: [
                           {
-                            taskRequired: "",
+                            taskRequired:
+                              "To unlock this quest, you also need to complete, Dressed to Kill from Ragman",
                             id: filterTasksByTrader.Ragman[11].id,
                             trader: "Ragman",
                             name: filterTasksByTrader.Ragman[11].name,
@@ -5522,7 +5465,8 @@ export const treeDataFunc: any = async () => {
                                 },
                                 children: [
                                   {
-                                    taskRequired: "",
+                                    taskRequired:
+                                      "To unlock this quest, you also need to complete, The Key to Success from Ragman",
                                     id: filterTasksByTrader.Ragman[33].id,
                                     trader: "Ragman",
                                     name: filterTasksByTrader.Ragman[33].name,
@@ -5667,29 +5611,6 @@ export const treeDataFunc: any = async () => {
                                         children: [
                                           {
                                             taskRequired: "",
-                                            id: filterTasksByTrader.Ragman[18]
-                                              .id,
-                                            trader: "Ragman",
-                                            name: filterTasksByTrader.Ragman[18]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Ragman[18]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Ragman[18]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Ragman[18]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Ragman[18]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                          {
-                                            taskRequired: "",
                                             id: filterTasksByTrader.Ragman[34]
                                               .id,
                                             trader: "Ragman",
@@ -5738,52 +5659,6 @@ export const treeDataFunc: any = async () => {
                                           },
                                         ],
                                       },
-                                      {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Ragman[23].id,
-                                        trader: "Ragman",
-                                        name: filterTasksByTrader.Ragman[23]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Ragman[23]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Ragman[23]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Ragman[23]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Ragman[23]
-                                              .wikiLink,
-                                        },
-                                        children: [
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Ragman[30]
-                                              .id,
-                                            trader: "Ragman",
-                                            name: filterTasksByTrader.Ragman[30]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Ragman[30]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Ragman[30]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Ragman[30]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Ragman[30]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                        ],
-                                      },
                                     ],
                                   },
                                   {
@@ -5828,7 +5703,8 @@ export const treeDataFunc: any = async () => {
                                         children: [],
                                       },
                                       {
-                                        taskRequired: "",
+                                        taskRequired:
+                                          "To unlock this quest, you also need to complete, The Huntsman Path - Sellout from Jaeger",
                                         id: filterTasksByTrader.Ragman[29].id,
                                         trader: "Ragman",
                                         name: filterTasksByTrader.Ragman[29]
@@ -5850,46 +5726,6 @@ export const treeDataFunc: any = async () => {
                                         children: [],
                                       },
                                     ],
-                                  },
-                                ],
-                              },
-                              {
-                                taskRequired: "",
-                                id: filterTasksByTrader.Ragman[19].id,
-                                trader: "Ragman",
-                                name: filterTasksByTrader.Ragman[19].name,
-                                attributes: {
-                                  level:
-                                    filterTasksByTrader.Ragman[19]
-                                      .minPlayerLevel,
-                                  kappaRequired:
-                                    filterTasksByTrader.Ragman[19]
-                                      .kappaRequired,
-                                  objectives:
-                                    filterTasksByTrader.Ragman[19].objectives,
-                                  wikiLink:
-                                    filterTasksByTrader.Ragman[19].wikiLink,
-                                },
-                                children: [
-                                  {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Ragman[28].id,
-                                    trader: "Ragman",
-                                    name: filterTasksByTrader.Ragman[28].name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Ragman[28]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Ragman[28]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Ragman[28]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Ragman[28].wikiLink,
-                                    },
-                                    children: [],
                                   },
                                 ],
                               },
@@ -5915,20 +5751,6 @@ export const treeDataFunc: any = async () => {
                       },
                     ],
                   },
-                ],
-              },
-              {
-                taskRequired: "",
-                id: filterTasksByTrader.Ragman[2].id,
-                trader: "Ragman",
-                name: filterTasksByTrader.Ragman[2].name,
-                attributes: {
-                  level: filterTasksByTrader.Ragman[2].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Ragman[2].kappaRequired,
-                  objectives: filterTasksByTrader.Ragman[2].objectives,
-                  wikiLink: filterTasksByTrader.Ragman[2].wikiLink,
-                },
-                children: [
                   {
                     taskRequired: "",
                     id: filterTasksByTrader.Ragman[8].id,
@@ -5943,7 +5765,161 @@ export const treeDataFunc: any = async () => {
                     },
                     children: [],
                   },
+                  {
+                    taskRequired:
+                      "To unlock this quest, ypu also need to complete, Make ULTRA Great Again from Ragman",
+                    id: filterTasksByTrader.Ragman[10].id,
+                    trader: "Ragman",
+                    name: filterTasksByTrader.Ragman[10].name,
+                    attributes: {
+                      level: filterTasksByTrader.Ragman[10].minPlayerLevel,
+                      kappaRequired:
+                        filterTasksByTrader.Ragman[10].kappaRequired,
+                      objectives: filterTasksByTrader.Ragman[10].objectives,
+                      wikiLink: filterTasksByTrader.Ragman[10].wikiLink,
+                    },
+                    children: [
+                      {
+                        taskRequired:
+                          "To unlock this quest, ypu also need to complete, Sew it Good - Part 1 from Ragman",
+                        id: filterTasksByTrader.Ragman[18].id,
+                        trader: "Ragman",
+                        name: filterTasksByTrader.Ragman[18].name,
+                        attributes: {
+                          level: filterTasksByTrader.Ragman[18].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Ragman[18].kappaRequired,
+                          objectives: filterTasksByTrader.Ragman[18].objectives,
+                          wikiLink: filterTasksByTrader.Ragman[18].wikiLink,
+                        },
+                        children: [
+                          {
+                            taskRequired: "",
+                            id: filterTasksByTrader.Ragman[28].id,
+                            trader: "Ragman",
+                            name: filterTasksByTrader.Ragman[28].name,
+                            attributes: {
+                              level:
+                                filterTasksByTrader.Ragman[28].minPlayerLevel,
+                              kappaRequired:
+                                filterTasksByTrader.Ragman[28].kappaRequired,
+                              objectives:
+                                filterTasksByTrader.Ragman[28].objectives,
+                              wikiLink: filterTasksByTrader.Ragman[28].wikiLink,
+                            },
+                            children: [],
+                          },
+                        ],
+                      },
+                      {
+                        taskRequired:
+                          "To unlock this quest, ypu also need to complete, Sew it Good - Part 3 from Ragman",
+                        id: filterTasksByTrader.Ragman[23].id,
+                        trader: "Ragman",
+                        name: filterTasksByTrader.Ragman[23].name,
+                        attributes: {
+                          level: filterTasksByTrader.Ragman[23].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Ragman[23].kappaRequired,
+                          objectives: filterTasksByTrader.Ragman[23].objectives,
+                          wikiLink: filterTasksByTrader.Ragman[23].wikiLink,
+                        },
+                        children: [
+                          {
+                            taskRequired:
+                              "To unlock this quest, ypu also need to complete, The Blood of War - Part 3 from Ragman",
+                            id: filterTasksByTrader.Ragman[30].id,
+                            trader: "Ragman",
+                            name: filterTasksByTrader.Ragman[30].name,
+                            attributes: {
+                              level:
+                                filterTasksByTrader.Ragman[30].minPlayerLevel,
+                              kappaRequired:
+                                filterTasksByTrader.Ragman[30].kappaRequired,
+                              objectives:
+                                filterTasksByTrader.Ragman[30].objectives,
+                              wikiLink: filterTasksByTrader.Ragman[30].wikiLink,
+                            },
+                            children: [],
+                          },
+                        ],
+                      },
+                      {
+                        taskRequired:
+                          "To unlock this quest, ypu also need to complete, Sew it Good - Part 4 from Ragman",
+                        id: filterTasksByTrader.Ragman[19].id,
+                        trader: "Ragman",
+                        name: filterTasksByTrader.Ragman[19].name,
+                        attributes: {
+                          level: filterTasksByTrader.Ragman[19].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Ragman[19].kappaRequired,
+                          objectives: filterTasksByTrader.Ragman[19].objectives,
+                          wikiLink: filterTasksByTrader.Ragman[19].wikiLink,
+                        },
+                        children: [],
+                      },
+                      {
+                        taskRequired: "",
+                        id: filterTasksByTrader.Ragman[4].id,
+                        trader: "Ragman",
+                        name: filterTasksByTrader.Ragman[4].name,
+                        attributes: {
+                          level: filterTasksByTrader.Ragman[4].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Ragman[4].kappaRequired,
+                          objectives: filterTasksByTrader.Ragman[4].objectives,
+                          wikiLink: filterTasksByTrader.Ragman[4].wikiLink,
+                        },
+                        children: [],
+                      },
+                      {
+                        taskRequired: "",
+                        id: filterTasksByTrader.Ragman[7].id,
+                        trader: "Ragman",
+                        name: filterTasksByTrader.Ragman[7].name,
+                        attributes: {
+                          level: filterTasksByTrader.Ragman[7].minPlayerLevel,
+                          kappaRequired:
+                            filterTasksByTrader.Ragman[7].kappaRequired,
+                          objectives: filterTasksByTrader.Ragman[7].objectives,
+                          wikiLink: filterTasksByTrader.Ragman[7].wikiLink,
+                        },
+                        children: [
+                          {
+                            taskRequired: "",
+                            id: filterTasksByTrader.Ragman[6].id,
+                            trader: "Ragman",
+                            name: filterTasksByTrader.Ragman[6].name,
+                            attributes: {
+                              level:
+                                filterTasksByTrader.Ragman[6].minPlayerLevel,
+                              kappaRequired:
+                                filterTasksByTrader.Ragman[6].kappaRequired,
+                              objectives:
+                                filterTasksByTrader.Ragman[6].objectives,
+                              wikiLink: filterTasksByTrader.Ragman[6].wikiLink,
+                            },
+                            children: [],
+                          },
+                        ],
+                      },
+                    ],
+                  },
                 ],
+              },
+              {
+                taskRequired: "",
+                id: filterTasksByTrader.Ragman[2].id,
+                trader: "Ragman",
+                name: filterTasksByTrader.Ragman[2].name,
+                attributes: {
+                  level: filterTasksByTrader.Ragman[2].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Ragman[2].kappaRequired,
+                  objectives: filterTasksByTrader.Ragman[2].objectives,
+                  wikiLink: filterTasksByTrader.Ragman[2].wikiLink,
+                },
+                children: [],
               },
               {
                 taskRequired: "",
@@ -5985,7 +5961,8 @@ export const treeDataFunc: any = async () => {
                         children: [],
                       },
                       {
-                        taskRequired: "",
+                        taskRequired:
+                          "To unlock this quest, you also need to complete, Minibus from Ragman",
                         id: filterTasksByTrader.Ragman[20].id,
                         trader: "Ragman",
                         name: filterTasksByTrader.Ragman[20].name,
@@ -6021,7 +5998,8 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Colleagues - Part 2 from Therapist, Rigged Game from Skier and Chemistry Closet from Mechanic",
             id: filterTasksByTrader.Jaeger[37].id,
             trader: "Jaeger",
             name: filterTasksByTrader.Jaeger[37].name,
@@ -6033,7 +6011,8 @@ export const treeDataFunc: any = async () => {
             },
             children: [
               {
-                taskRequired: "",
+                taskRequired:
+                  "To unlock this quest, you need to complete, Colleagues - Part 3 from Therapist or The Huntsman Path - Sadist from Jaeger",
                 id: filterTasksByTrader.Jaeger[51].id,
                 trader: "Jaeger",
                 name: filterTasksByTrader.Jaeger[51].name,
@@ -6061,7 +6040,8 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Broadcast - Part 2 from Mechanic",
             id: filterTasksByTrader.Jaeger[32].id,
             trader: "Jaeger",
             name: filterTasksByTrader.Jaeger[32].name,
@@ -6103,272 +6083,109 @@ export const treeDataFunc: any = async () => {
             ],
           },
           {
-            taskRequired: "",
-            id: filterTasksByTrader.Jaeger[8].id,
+            taskRequired:
+              "To unlock this quest, you also need to complete, Introduction from Mechanic",
+            id: filterTasksByTrader.Jaeger[6].id,
             trader: "Jaeger",
-            name: filterTasksByTrader.Jaeger[8].name,
+            name: filterTasksByTrader.Jaeger[6].name,
             attributes: {
-              level: filterTasksByTrader.Jaeger[8].minPlayerLevel,
-              kappaRequired: filterTasksByTrader.Jaeger[8].kappaRequired,
-              objectives: filterTasksByTrader.Jaeger[8].objectives,
-              wikiLink: filterTasksByTrader.Jaeger[8].wikiLink,
+              level: filterTasksByTrader.Jaeger[6].minPlayerLevel,
+              kappaRequired: filterTasksByTrader.Jaeger[6].kappaRequired,
+              objectives: filterTasksByTrader.Jaeger[6].objectives,
+              wikiLink: filterTasksByTrader.Jaeger[6].wikiLink,
             },
             children: [
               {
                 taskRequired: "",
-                id: filterTasksByTrader.Jaeger[31].id,
+                id: filterTasksByTrader.Jaeger[3].id,
                 trader: "Jaeger",
-                name: filterTasksByTrader.Jaeger[31].name,
+                name: filterTasksByTrader.Jaeger[3].name,
                 attributes: {
-                  level: filterTasksByTrader.Jaeger[31].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Jaeger[31].kappaRequired,
-                  objectives: filterTasksByTrader.Jaeger[31].objectives,
-                  wikiLink: filterTasksByTrader.Jaeger[31].wikiLink,
+                  level: filterTasksByTrader.Jaeger[3].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Jaeger[3].kappaRequired,
+                  objectives: filterTasksByTrader.Jaeger[3].objectives,
+                  wikiLink: filterTasksByTrader.Jaeger[3].wikiLink,
                 },
                 children: [
                   {
                     taskRequired: "",
-                    id: filterTasksByTrader.Jaeger[40].id,
+                    id: filterTasksByTrader.Jaeger[12].id,
                     trader: "Jaeger",
-                    name: filterTasksByTrader.Jaeger[40].name,
+                    name: filterTasksByTrader.Jaeger[12].name,
                     attributes: {
-                      level: filterTasksByTrader.Jaeger[40].minPlayerLevel,
+                      level: filterTasksByTrader.Jaeger[12].minPlayerLevel,
                       kappaRequired:
-                        filterTasksByTrader.Jaeger[40].kappaRequired,
-                      objectives: filterTasksByTrader.Jaeger[40].objectives,
-                      wikiLink: filterTasksByTrader.Jaeger[40].wikiLink,
-                    },
-                    children: [],
-                  },
-                ],
-              },
-              {
-                taskRequired: "",
-                id: filterTasksByTrader.Jaeger[9].id,
-                trader: "Jaeger",
-                name: filterTasksByTrader.Jaeger[9].name,
-                attributes: {
-                  level: filterTasksByTrader.Jaeger[9].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Jaeger[9].kappaRequired,
-                  objectives: filterTasksByTrader.Jaeger[9].objectives,
-                  wikiLink: filterTasksByTrader.Jaeger[9].wikiLink,
-                },
-                children: [
-                  {
-                    taskRequired: "",
-                    id: filterTasksByTrader.Jaeger[10].id,
-                    trader: "Jaeger",
-                    name: filterTasksByTrader.Jaeger[10].name,
-                    attributes: {
-                      level: filterTasksByTrader.Jaeger[10].minPlayerLevel,
-                      kappaRequired:
-                        filterTasksByTrader.Jaeger[10].kappaRequired,
-                      objectives: filterTasksByTrader.Jaeger[10].objectives,
-                      wikiLink: filterTasksByTrader.Jaeger[10].wikiLink,
+                        filterTasksByTrader.Jaeger[12].kappaRequired,
+                      objectives: filterTasksByTrader.Jaeger[12].objectives,
+                      wikiLink: filterTasksByTrader.Jaeger[12].wikiLink,
                     },
                     children: [
                       {
                         taskRequired: "",
-                        id: filterTasksByTrader.Jaeger[11].id,
+                        id: filterTasksByTrader.Jaeger[0].id,
                         trader: "Jaeger",
-                        name: filterTasksByTrader.Jaeger[11].name,
+                        name: filterTasksByTrader.Jaeger[0].name,
                         attributes: {
-                          level: filterTasksByTrader.Jaeger[11].minPlayerLevel,
+                          level: filterTasksByTrader.Jaeger[0].minPlayerLevel,
                           kappaRequired:
-                            filterTasksByTrader.Jaeger[11].kappaRequired,
-                          objectives: filterTasksByTrader.Jaeger[11].objectives,
-                          wikiLink: filterTasksByTrader.Jaeger[11].wikiLink,
+                            filterTasksByTrader.Jaeger[0].kappaRequired,
+                          objectives: filterTasksByTrader.Jaeger[0].objectives,
+                          wikiLink: filterTasksByTrader.Jaeger[0].wikiLink,
                         },
                         children: [
                           {
                             taskRequired: "",
-                            id: filterTasksByTrader.Jaeger[12].id,
+                            id: filterTasksByTrader.Jaeger[8].id,
                             trader: "Jaeger",
-                            name: filterTasksByTrader.Jaeger[12].name,
+                            name: filterTasksByTrader.Jaeger[8].name,
                             attributes: {
                               level:
-                                filterTasksByTrader.Jaeger[12].minPlayerLevel,
+                                filterTasksByTrader.Jaeger[8].minPlayerLevel,
                               kappaRequired:
-                                filterTasksByTrader.Jaeger[12].kappaRequired,
+                                filterTasksByTrader.Jaeger[8].kappaRequired,
                               objectives:
-                                filterTasksByTrader.Jaeger[12].objectives,
-                              wikiLink: filterTasksByTrader.Jaeger[12].wikiLink,
+                                filterTasksByTrader.Jaeger[8].objectives,
+                              wikiLink: filterTasksByTrader.Jaeger[8].wikiLink,
                             },
                             children: [
                               {
                                 taskRequired: "",
-                                id: filterTasksByTrader.Jaeger[13].id,
+                                id: filterTasksByTrader.Jaeger[5].id,
                                 trader: "Jaeger",
-                                name: filterTasksByTrader.Jaeger[13].name,
+                                name: filterTasksByTrader.Jaeger[5].name,
                                 attributes: {
                                   level:
-                                    filterTasksByTrader.Jaeger[13]
+                                    filterTasksByTrader.Jaeger[5]
                                       .minPlayerLevel,
                                   kappaRequired:
-                                    filterTasksByTrader.Jaeger[13]
-                                      .kappaRequired,
+                                    filterTasksByTrader.Jaeger[5].kappaRequired,
                                   objectives:
-                                    filterTasksByTrader.Jaeger[13].objectives,
+                                    filterTasksByTrader.Jaeger[5].objectives,
                                   wikiLink:
-                                    filterTasksByTrader.Jaeger[13].wikiLink,
+                                    filterTasksByTrader.Jaeger[5].wikiLink,
+                                },
+                                children: [],
+                              },
+                              {
+                                taskRequired: "",
+                                id: filterTasksByTrader.Jaeger[9].id,
+                                trader: "Jaeger",
+                                name: filterTasksByTrader.Jaeger[9].name,
+                                attributes: {
+                                  level:
+                                    filterTasksByTrader.Jaeger[9]
+                                      .minPlayerLevel,
+                                  kappaRequired:
+                                    filterTasksByTrader.Jaeger[9].kappaRequired,
+                                  objectives:
+                                    filterTasksByTrader.Jaeger[9].objectives,
+                                  wikiLink:
+                                    filterTasksByTrader.Jaeger[9].wikiLink,
                                 },
                                 children: [
                                   {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Jaeger[29].id,
-                                    trader: "Jaeger",
-                                    name: filterTasksByTrader.Jaeger[29].name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Jaeger[29]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Jaeger[29]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Jaeger[29]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Jaeger[29].wikiLink,
-                                    },
-                                    children: [
-                                      {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[43].id,
-                                        trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[43]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Jaeger[43]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Jaeger[43]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Jaeger[43]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Jaeger[43]
-                                              .wikiLink,
-                                        },
-                                        children: [
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[44]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[44]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[44]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[44]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[44]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[44]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                        ],
-                                      },
-                                    ],
-                                  },
-                                  {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Jaeger[35].id,
-                                    trader: "Jaeger",
-                                    name: filterTasksByTrader.Jaeger[35].name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Jaeger[35]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Jaeger[35]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Jaeger[35]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Jaeger[35].wikiLink,
-                                    },
-                                    children: [],
-                                  },
-                                  {
-                                    taskRequired: "",
-                                    id: filterTasksByTrader.Jaeger[15].id,
-                                    trader: "Jaeger",
-                                    name: filterTasksByTrader.Jaeger[15].name,
-                                    attributes: {
-                                      level:
-                                        filterTasksByTrader.Jaeger[15]
-                                          .minPlayerLevel,
-                                      kappaRequired:
-                                        filterTasksByTrader.Jaeger[15]
-                                          .kappaRequired,
-                                      objectives:
-                                        filterTasksByTrader.Jaeger[15]
-                                          .objectives,
-                                      wikiLink:
-                                        filterTasksByTrader.Jaeger[15].wikiLink,
-                                    },
-                                    children: [
-                                      {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[16].id,
-                                        trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[16]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Jaeger[16]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Jaeger[16]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Jaeger[16]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Jaeger[16]
-                                              .wikiLink,
-                                        },
-                                        children: [
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[22]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[22]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[22]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[22]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[22]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[22]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                        ],
-                                      },
-                                    ],
-                                  },
-                                  {
-                                    taskRequired: "",
+                                    taskRequired:
+                                      "To unlock this quest, you also need to complete, The Tarkov Shooter - Part 3 from Jaeger",
                                     id: filterTasksByTrader.Jaeger[23].id,
                                     trader: "Jaeger",
                                     name: filterTasksByTrader.Jaeger[23].name,
@@ -6387,45 +6204,287 @@ export const treeDataFunc: any = async () => {
                                     },
                                     children: [
                                       {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[17].id,
+                                        taskRequired:
+                                          "To unlock this quest, you also need to complete, The Huntsman Path - Eraser - Part 1 from Jaeger",
+                                        id: filterTasksByTrader.Jaeger[45].id,
                                         trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[17]
+                                        name: filterTasksByTrader.Jaeger[45]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Jaeger[17]
+                                            filterTasksByTrader.Jaeger[45]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Jaeger[17]
+                                            filterTasksByTrader.Jaeger[45]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Jaeger[17]
+                                            filterTasksByTrader.Jaeger[45]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Jaeger[17]
+                                            filterTasksByTrader.Jaeger[45]
+                                              .wikiLink,
+                                        },
+                                        children: [],
+                                      },
+                                      {
+                                        taskRequired: "",
+                                        id: filterTasksByTrader.Jaeger[7].id,
+                                        trader: "Jaeger",
+                                        name: filterTasksByTrader.Jaeger[7]
+                                          .name,
+                                        attributes: {
+                                          level:
+                                            filterTasksByTrader.Jaeger[7]
+                                              .minPlayerLevel,
+                                          kappaRequired:
+                                            filterTasksByTrader.Jaeger[7]
+                                              .kappaRequired,
+                                          objectives:
+                                            filterTasksByTrader.Jaeger[7]
+                                              .objectives,
+                                          wikiLink:
+                                            filterTasksByTrader.Jaeger[7]
                                               .wikiLink,
                                         },
                                         children: [
                                           {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[49]
+                                            taskRequired:
+                                              "To unlock this quest, you also need to complete, Urban Medicine from Therapist",
+                                            id: filterTasksByTrader.Jaeger[28]
                                               .id,
                                             trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[49]
+                                            name: filterTasksByTrader.Jaeger[28]
                                               .name,
                                             attributes: {
                                               level:
-                                                filterTasksByTrader.Jaeger[49]
+                                                filterTasksByTrader.Jaeger[28]
                                                   .minPlayerLevel,
                                               kappaRequired:
-                                                filterTasksByTrader.Jaeger[49]
+                                                filterTasksByTrader.Jaeger[28]
                                                   .kappaRequired,
                                               objectives:
-                                                filterTasksByTrader.Jaeger[49]
+                                                filterTasksByTrader.Jaeger[28]
                                                   .objectives,
                                               wikiLink:
-                                                filterTasksByTrader.Jaeger[49]
+                                                filterTasksByTrader.Jaeger[28]
+                                                  .wikiLink,
+                                            },
+                                            children: [],
+                                          },
+
+                                          {
+                                            taskRequired:
+                                              "To unlock this quest, you also need to complete, Sales Night from Ragman",
+                                            id: filterTasksByTrader.Jaeger[46]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[46]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[46]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[46]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[46]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[46]
+                                                  .wikiLink,
+                                            },
+                                            children: [
+                                              {
+                                                taskRequired:
+                                                  "To unlock this quest, you also need to complete, The Huntsman Path - Trophy from Jaeger and The Huntsman Path - Woods Keeper from Jaeger",
+                                                id: filterTasksByTrader
+                                                  .Jaeger[49].id,
+                                                trader: "Jaeger",
+                                                name: filterTasksByTrader
+                                                  .Jaeger[49].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Jaeger[49]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Jaeger[49].kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Jaeger[49].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Jaeger[49].wikiLink,
+                                                },
+                                                children: [],
+                                              },
+                                            ],
+                                          },
+                                          {
+                                            taskRequired: "",
+                                            id: filterTasksByTrader.Jaeger[38]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[38]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[38]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[38]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[38]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[38]
+                                                  .wikiLink,
+                                            },
+                                            children: [
+                                              {
+                                                taskRequired:
+                                                  "To unlock this quest, you also need to complete, Broadcast - Part 4 from Jaeger",
+                                                id: filterTasksByTrader
+                                                  .Jaeger[50].id,
+                                                trader: "Jaeger",
+                                                name: filterTasksByTrader
+                                                  .Jaeger[50].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Jaeger[50]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Jaeger[50].kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Jaeger[50].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Jaeger[50].wikiLink,
+                                                },
+                                                children: [],
+                                              },
+                                              {
+                                                taskRequired: "",
+                                                id: filterTasksByTrader
+                                                  .Jaeger[39].id,
+                                                trader: "Jaeger",
+                                                name: filterTasksByTrader
+                                                  .Jaeger[39].name,
+                                                attributes: {
+                                                  level:
+                                                    filterTasksByTrader
+                                                      .Jaeger[39]
+                                                      .minPlayerLevel,
+                                                  kappaRequired:
+                                                    filterTasksByTrader
+                                                      .Jaeger[39].kappaRequired,
+                                                  objectives:
+                                                    filterTasksByTrader
+                                                      .Jaeger[39].objectives,
+                                                  wikiLink:
+                                                    filterTasksByTrader
+                                                      .Jaeger[39].wikiLink,
+                                                },
+                                                children: [],
+                                              },
+                                            ],
+                                          },
+                                          {
+                                            taskRequired: "",
+                                            id: filterTasksByTrader.Jaeger[36]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[36]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[36]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[36]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[36]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[36]
+                                                  .wikiLink,
+                                            },
+                                            children: [],
+                                          },
+                                          {
+                                            taskRequired: "",
+                                            id: filterTasksByTrader.Jaeger[10]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[10]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[10]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[10]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[10]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[10]
+                                                  .wikiLink,
+                                            },
+                                            children: [],
+                                          },
+                                          {
+                                            taskRequired:
+                                              "To unlock this quest, you also need to complete, Scout from Mechanic",
+                                            id: filterTasksByTrader.Jaeger[26]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[26]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[26]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[26]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[26]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[26]
+                                                  .wikiLink,
+                                            },
+                                            children: [],
+                                          },
+
+                                          {
+                                            taskRequired: "",
+                                            id: filterTasksByTrader.Jaeger[14]
+                                              .id,
+                                            trader: "Jaeger",
+                                            name: filterTasksByTrader.Jaeger[14]
+                                              .name,
+                                            attributes: {
+                                              level:
+                                                filterTasksByTrader.Jaeger[14]
+                                                  .minPlayerLevel,
+                                              kappaRequired:
+                                                filterTasksByTrader.Jaeger[14]
+                                                  .kappaRequired,
+                                              objectives:
+                                                filterTasksByTrader.Jaeger[14]
+                                                  .objectives,
+                                              wikiLink:
+                                                filterTasksByTrader.Jaeger[14]
                                                   .wikiLink,
                                             },
                                             children: [],
@@ -6433,29 +6492,8 @@ export const treeDataFunc: any = async () => {
                                         ],
                                       },
                                       {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[20].id,
-                                        trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[20]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Jaeger[20]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Jaeger[20]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Jaeger[20]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Jaeger[20]
-                                              .wikiLink,
-                                        },
-                                        children: [],
-                                      },
-                                      {
-                                        taskRequired: "",
+                                        taskRequired:
+                                          "To unlock this quest, you also need to complete, Supply Plans from Therapist or Kind of Sabotage from Skier",
                                         id: filterTasksByTrader.Jaeger[27].id,
                                         trader: "Jaeger",
                                         name: filterTasksByTrader.Jaeger[27]
@@ -6525,231 +6563,196 @@ export const treeDataFunc: any = async () => {
                                       },
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[18].id,
+                                        id: filterTasksByTrader.Jaeger[11].id,
                                         trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[18]
+                                        name: filterTasksByTrader.Jaeger[11]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Jaeger[18]
+                                            filterTasksByTrader.Jaeger[11]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Jaeger[18]
+                                            filterTasksByTrader.Jaeger[11]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Jaeger[18]
+                                            filterTasksByTrader.Jaeger[11]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Jaeger[18]
+                                            filterTasksByTrader.Jaeger[11]
+                                              .wikiLink,
+                                        },
+                                        children: [],
+                                      },
+                                      {
+                                        taskRequired: "",
+                                        id: filterTasksByTrader.Jaeger[2].id,
+                                        trader: "Jaeger",
+                                        name: filterTasksByTrader.Jaeger[2]
+                                          .name,
+                                        attributes: {
+                                          level:
+                                            filterTasksByTrader.Jaeger[2]
+                                              .minPlayerLevel,
+                                          kappaRequired:
+                                            filterTasksByTrader.Jaeger[2]
+                                              .kappaRequired,
+                                          objectives:
+                                            filterTasksByTrader.Jaeger[2]
+                                              .objectives,
+                                          wikiLink:
+                                            filterTasksByTrader.Jaeger[2]
+                                              .wikiLink,
+                                        },
+                                        children: [],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    taskRequired: "",
+                                    id: filterTasksByTrader.Jaeger[4].id,
+                                    trader: "Jaeger",
+                                    name: filterTasksByTrader.Jaeger[4].name,
+                                    attributes: {
+                                      level:
+                                        filterTasksByTrader.Jaeger[4]
+                                          .minPlayerLevel,
+                                      kappaRequired:
+                                        filterTasksByTrader.Jaeger[4]
+                                          .kappaRequired,
+                                      objectives:
+                                        filterTasksByTrader.Jaeger[4]
+                                          .objectives,
+                                      wikiLink:
+                                        filterTasksByTrader.Jaeger[4].wikiLink,
+                                    },
+                                    children: [
+                                      {
+                                        taskRequired: "",
+                                        id: filterTasksByTrader.Jaeger[13].id,
+                                        trader: "Jaeger",
+                                        name: filterTasksByTrader.Jaeger[13]
+                                          .name,
+                                        attributes: {
+                                          level:
+                                            filterTasksByTrader.Jaeger[13]
+                                              .minPlayerLevel,
+                                          kappaRequired:
+                                            filterTasksByTrader.Jaeger[13]
+                                              .kappaRequired,
+                                          objectives:
+                                            filterTasksByTrader.Jaeger[13]
+                                              .objectives,
+                                          wikiLink:
+                                            filterTasksByTrader.Jaeger[13]
                                               .wikiLink,
                                         },
                                         children: [
                                           {
                                             taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[28]
+                                            id: filterTasksByTrader.Jaeger[1]
                                               .id,
                                             trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[28]
+                                            name: filterTasksByTrader.Jaeger[1]
                                               .name,
                                             attributes: {
                                               level:
-                                                filterTasksByTrader.Jaeger[28]
+                                                filterTasksByTrader.Jaeger[1]
                                                   .minPlayerLevel,
                                               kappaRequired:
-                                                filterTasksByTrader.Jaeger[28]
+                                                filterTasksByTrader.Jaeger[1]
                                                   .kappaRequired,
                                               objectives:
-                                                filterTasksByTrader.Jaeger[28]
+                                                filterTasksByTrader.Jaeger[1]
                                                   .objectives,
                                               wikiLink:
-                                                filterTasksByTrader.Jaeger[28]
+                                                filterTasksByTrader.Jaeger[1]
                                                   .wikiLink,
                                             },
                                             children: [],
                                           },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                  {
+                                    taskRequired: "",
+                                    id: filterTasksByTrader.Jaeger[34].id,
+                                    trader: "Jaeger",
+                                    name: filterTasksByTrader.Jaeger[34].name,
+                                    attributes: {
+                                      level:
+                                        filterTasksByTrader.Jaeger[34]
+                                          .minPlayerLevel,
+                                      kappaRequired:
+                                        filterTasksByTrader.Jaeger[34]
+                                          .kappaRequired,
+                                      objectives:
+                                        filterTasksByTrader.Jaeger[34]
+                                          .objectives,
+                                      wikiLink:
+                                        filterTasksByTrader.Jaeger[34].wikiLink,
+                                    },
+                                    children: [],
+                                  },
+                                  {
+                                    taskRequired: "",
+                                    id: filterTasksByTrader.Jaeger[29].id,
+                                    trader: "Jaeger",
+                                    name: filterTasksByTrader.Jaeger[29].name,
+                                    attributes: {
+                                      level:
+                                        filterTasksByTrader.Jaeger[29]
+                                          .minPlayerLevel,
+                                      kappaRequired:
+                                        filterTasksByTrader.Jaeger[29]
+                                          .kappaRequired,
+                                      objectives:
+                                        filterTasksByTrader.Jaeger[29]
+                                          .objectives,
+                                      wikiLink:
+                                        filterTasksByTrader.Jaeger[29].wikiLink,
+                                    },
+                                    children: [
+                                      {
+                                        taskRequired: "",
+                                        id: filterTasksByTrader.Jaeger[43].id,
+                                        trader: "Jaeger",
+                                        name: filterTasksByTrader.Jaeger[43]
+                                          .name,
+                                        attributes: {
+                                          level:
+                                            filterTasksByTrader.Jaeger[43]
+                                              .minPlayerLevel,
+                                          kappaRequired:
+                                            filterTasksByTrader.Jaeger[43]
+                                              .kappaRequired,
+                                          objectives:
+                                            filterTasksByTrader.Jaeger[43]
+                                              .objectives,
+                                          wikiLink:
+                                            filterTasksByTrader.Jaeger[43]
+                                              .wikiLink,
+                                        },
+                                        children: [
                                           {
                                             taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[19]
+                                            id: filterTasksByTrader.Jaeger[44]
                                               .id,
                                             trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[19]
+                                            name: filterTasksByTrader.Jaeger[44]
                                               .name,
                                             attributes: {
                                               level:
-                                                filterTasksByTrader.Jaeger[19]
+                                                filterTasksByTrader.Jaeger[44]
                                                   .minPlayerLevel,
                                               kappaRequired:
-                                                filterTasksByTrader.Jaeger[19]
+                                                filterTasksByTrader.Jaeger[44]
                                                   .kappaRequired,
                                               objectives:
-                                                filterTasksByTrader.Jaeger[19]
+                                                filterTasksByTrader.Jaeger[44]
                                                   .objectives,
                                               wikiLink:
-                                                filterTasksByTrader.Jaeger[19]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[26]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[26]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[26]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[26]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[26]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[26]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[21]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[21]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[21]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[21]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[21]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[21]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[36]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[36]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[36]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[36]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[36]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[36]
-                                                  .wikiLink,
-                                            },
-                                            children: [],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[38]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[38]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[38]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[38]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[38]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[38]
-                                                  .wikiLink,
-                                            },
-                                            children: [
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Jaeger[50].id,
-                                                trader: "Jaeger",
-                                                name: filterTasksByTrader
-                                                  .Jaeger[50].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Jaeger[50]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Jaeger[50].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Jaeger[50].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Jaeger[50].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                              {
-                                                taskRequired: "",
-                                                id: filterTasksByTrader
-                                                  .Jaeger[39].id,
-                                                trader: "Jaeger",
-                                                name: filterTasksByTrader
-                                                  .Jaeger[39].name,
-                                                attributes: {
-                                                  level:
-                                                    filterTasksByTrader
-                                                      .Jaeger[39]
-                                                      .minPlayerLevel,
-                                                  kappaRequired:
-                                                    filterTasksByTrader
-                                                      .Jaeger[39].kappaRequired,
-                                                  objectives:
-                                                    filterTasksByTrader
-                                                      .Jaeger[39].objectives,
-                                                  wikiLink:
-                                                    filterTasksByTrader
-                                                      .Jaeger[39].wikiLink,
-                                                },
-                                                children: [],
-                                              },
-                                            ],
-                                          },
-                                          {
-                                            taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[46]
-                                              .id,
-                                            trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[46]
-                                              .name,
-                                            attributes: {
-                                              level:
-                                                filterTasksByTrader.Jaeger[46]
-                                                  .minPlayerLevel,
-                                              kappaRequired:
-                                                filterTasksByTrader.Jaeger[46]
-                                                  .kappaRequired,
-                                              objectives:
-                                                filterTasksByTrader.Jaeger[46]
-                                                  .objectives,
-                                              wikiLink:
-                                                filterTasksByTrader.Jaeger[46]
+                                                filterTasksByTrader.Jaeger[44]
                                                   .wikiLink,
                                             },
                                             children: [],
@@ -6759,25 +6762,6 @@ export const treeDataFunc: any = async () => {
                                     ],
                                   },
                                 ],
-                              },
-                              {
-                                taskRequired: "",
-                                id: filterTasksByTrader.Jaeger[14].id,
-                                trader: "Jaeger",
-                                name: filterTasksByTrader.Jaeger[14].name,
-                                attributes: {
-                                  level:
-                                    filterTasksByTrader.Jaeger[14]
-                                      .minPlayerLevel,
-                                  kappaRequired:
-                                    filterTasksByTrader.Jaeger[14]
-                                      .kappaRequired,
-                                  objectives:
-                                    filterTasksByTrader.Jaeger[14].objectives,
-                                  wikiLink:
-                                    filterTasksByTrader.Jaeger[14].wikiLink,
-                                },
-                                children: [],
                               },
                             ],
                           },
@@ -6813,64 +6797,41 @@ export const treeDataFunc: any = async () => {
                             children: [
                               {
                                 taskRequired: "",
-                                id: filterTasksByTrader.Jaeger[34].id,
+                                id: filterTasksByTrader.Jaeger[33].id,
                                 trader: "Jaeger",
-                                name: filterTasksByTrader.Jaeger[34].name,
+                                name: filterTasksByTrader.Jaeger[33].name,
                                 attributes: {
                                   level:
-                                    filterTasksByTrader.Jaeger[34]
+                                    filterTasksByTrader.Jaeger[33]
                                       .minPlayerLevel,
                                   kappaRequired:
-                                    filterTasksByTrader.Jaeger[34]
+                                    filterTasksByTrader.Jaeger[33]
                                       .kappaRequired,
                                   objectives:
-                                    filterTasksByTrader.Jaeger[34].objectives,
+                                    filterTasksByTrader.Jaeger[33].objectives,
                                   wikiLink:
-                                    filterTasksByTrader.Jaeger[34].wikiLink,
+                                    filterTasksByTrader.Jaeger[33].wikiLink,
                                 },
                                 children: [
                                   {
                                     taskRequired: "",
-                                    id: filterTasksByTrader.Jaeger[33].id,
+                                    id: filterTasksByTrader.Jaeger[35].id,
                                     trader: "Jaeger",
-                                    name: filterTasksByTrader.Jaeger[33].name,
+                                    name: filterTasksByTrader.Jaeger[35].name,
                                     attributes: {
                                       level:
-                                        filterTasksByTrader.Jaeger[33]
+                                        filterTasksByTrader.Jaeger[35]
                                           .minPlayerLevel,
                                       kappaRequired:
-                                        filterTasksByTrader.Jaeger[33]
+                                        filterTasksByTrader.Jaeger[35]
                                           .kappaRequired,
                                       objectives:
-                                        filterTasksByTrader.Jaeger[33]
+                                        filterTasksByTrader.Jaeger[35]
                                           .objectives,
                                       wikiLink:
-                                        filterTasksByTrader.Jaeger[33].wikiLink,
+                                        filterTasksByTrader.Jaeger[35].wikiLink,
                                     },
-                                    children: [
-                                      {
-                                        taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[45].id,
-                                        trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[45]
-                                          .name,
-                                        attributes: {
-                                          level:
-                                            filterTasksByTrader.Jaeger[45]
-                                              .minPlayerLevel,
-                                          kappaRequired:
-                                            filterTasksByTrader.Jaeger[45]
-                                              .kappaRequired,
-                                          objectives:
-                                            filterTasksByTrader.Jaeger[45]
-                                              .objectives,
-                                          wikiLink:
-                                            filterTasksByTrader.Jaeger[45]
-                                              .wikiLink,
-                                        },
-                                        children: [],
-                                      },
-                                    ],
+                                    children: [],
                                   },
                                 ],
                               },
@@ -6900,133 +6861,134 @@ export const treeDataFunc: any = async () => {
               },
               {
                 taskRequired: "",
-                id: filterTasksByTrader.Jaeger[0].id,
+                id: filterTasksByTrader.Jaeger[15].id,
                 trader: "Jaeger",
-                name: filterTasksByTrader.Jaeger[0].name,
+                name: filterTasksByTrader.Jaeger[15].name,
                 attributes: {
-                  level: filterTasksByTrader.Jaeger[0].minPlayerLevel,
-                  kappaRequired: filterTasksByTrader.Jaeger[0].kappaRequired,
-                  objectives: filterTasksByTrader.Jaeger[0].objectives,
-                  wikiLink: filterTasksByTrader.Jaeger[0].wikiLink,
+                  level: filterTasksByTrader.Jaeger[15].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Jaeger[15].kappaRequired,
+                  objectives: filterTasksByTrader.Jaeger[15].objectives,
+                  wikiLink: filterTasksByTrader.Jaeger[15].wikiLink,
                 },
                 children: [
                   {
                     taskRequired: "",
-                    id: filterTasksByTrader.Jaeger[1].id,
+                    id: filterTasksByTrader.Jaeger[17].id,
                     trader: "Jaeger",
-                    name: filterTasksByTrader.Jaeger[1].name,
+                    name: filterTasksByTrader.Jaeger[17].name,
                     attributes: {
-                      level: filterTasksByTrader.Jaeger[1].minPlayerLevel,
+                      level: filterTasksByTrader.Jaeger[17].minPlayerLevel,
                       kappaRequired:
-                        filterTasksByTrader.Jaeger[1].kappaRequired,
-                      objectives: filterTasksByTrader.Jaeger[1].objectives,
-                      wikiLink: filterTasksByTrader.Jaeger[1].wikiLink,
+                        filterTasksByTrader.Jaeger[17].kappaRequired,
+                      objectives: filterTasksByTrader.Jaeger[17].objectives,
+                      wikiLink: filterTasksByTrader.Jaeger[17].wikiLink,
                     },
                     children: [
                       {
                         taskRequired: "",
-                        id: filterTasksByTrader.Jaeger[2].id,
+                        id: filterTasksByTrader.Jaeger[19].id,
                         trader: "Jaeger",
-                        name: filterTasksByTrader.Jaeger[2].name,
+                        name: filterTasksByTrader.Jaeger[19].name,
                         attributes: {
-                          level: filterTasksByTrader.Jaeger[2].minPlayerLevel,
+                          level: filterTasksByTrader.Jaeger[19].minPlayerLevel,
                           kappaRequired:
-                            filterTasksByTrader.Jaeger[2].kappaRequired,
-                          objectives: filterTasksByTrader.Jaeger[2].objectives,
-                          wikiLink: filterTasksByTrader.Jaeger[2].wikiLink,
+                            filterTasksByTrader.Jaeger[19].kappaRequired,
+                          objectives: filterTasksByTrader.Jaeger[19].objectives,
+                          wikiLink: filterTasksByTrader.Jaeger[19].wikiLink,
                         },
                         children: [
                           {
                             taskRequired: "",
-                            id: filterTasksByTrader.Jaeger[3].id,
+                            id: filterTasksByTrader.Jaeger[16].id,
                             trader: "Jaeger",
-                            name: filterTasksByTrader.Jaeger[3].name,
+                            name: filterTasksByTrader.Jaeger[16].name,
                             attributes: {
                               level:
-                                filterTasksByTrader.Jaeger[3].minPlayerLevel,
+                                filterTasksByTrader.Jaeger[16].minPlayerLevel,
                               kappaRequired:
-                                filterTasksByTrader.Jaeger[3].kappaRequired,
+                                filterTasksByTrader.Jaeger[16].kappaRequired,
                               objectives:
-                                filterTasksByTrader.Jaeger[3].objectives,
-                              wikiLink: filterTasksByTrader.Jaeger[3].wikiLink,
+                                filterTasksByTrader.Jaeger[16].objectives,
+                              wikiLink: filterTasksByTrader.Jaeger[16].wikiLink,
                             },
                             children: [
                               {
                                 taskRequired: "",
-                                id: filterTasksByTrader.Jaeger[4].id,
+                                id: filterTasksByTrader.Jaeger[18].id,
                                 trader: "Jaeger",
-                                name: filterTasksByTrader.Jaeger[4].name,
+                                name: filterTasksByTrader.Jaeger[18].name,
                                 attributes: {
                                   level:
-                                    filterTasksByTrader.Jaeger[4]
+                                    filterTasksByTrader.Jaeger[18]
                                       .minPlayerLevel,
                                   kappaRequired:
-                                    filterTasksByTrader.Jaeger[4].kappaRequired,
+                                    filterTasksByTrader.Jaeger[18]
+                                      .kappaRequired,
                                   objectives:
-                                    filterTasksByTrader.Jaeger[4].objectives,
+                                    filterTasksByTrader.Jaeger[18].objectives,
                                   wikiLink:
-                                    filterTasksByTrader.Jaeger[4].wikiLink,
+                                    filterTasksByTrader.Jaeger[18].wikiLink,
                                 },
                                 children: [
                                   {
                                     taskRequired: "",
-                                    id: filterTasksByTrader.Jaeger[5].id,
+                                    id: filterTasksByTrader.Jaeger[22].id,
                                     trader: "Jaeger",
-                                    name: filterTasksByTrader.Jaeger[5].name,
+                                    name: filterTasksByTrader.Jaeger[22].name,
                                     attributes: {
                                       level:
-                                        filterTasksByTrader.Jaeger[5]
+                                        filterTasksByTrader.Jaeger[22]
                                           .minPlayerLevel,
                                       kappaRequired:
-                                        filterTasksByTrader.Jaeger[5]
+                                        filterTasksByTrader.Jaeger[22]
                                           .kappaRequired,
                                       objectives:
-                                        filterTasksByTrader.Jaeger[5]
+                                        filterTasksByTrader.Jaeger[22]
                                           .objectives,
                                       wikiLink:
-                                        filterTasksByTrader.Jaeger[5].wikiLink,
+                                        filterTasksByTrader.Jaeger[22].wikiLink,
                                     },
                                     children: [
                                       {
                                         taskRequired: "",
-                                        id: filterTasksByTrader.Jaeger[6].id,
+                                        id: filterTasksByTrader.Jaeger[20].id,
                                         trader: "Jaeger",
-                                        name: filterTasksByTrader.Jaeger[6]
+                                        name: filterTasksByTrader.Jaeger[20]
                                           .name,
                                         attributes: {
                                           level:
-                                            filterTasksByTrader.Jaeger[6]
+                                            filterTasksByTrader.Jaeger[20]
                                               .minPlayerLevel,
                                           kappaRequired:
-                                            filterTasksByTrader.Jaeger[6]
+                                            filterTasksByTrader.Jaeger[20]
                                               .kappaRequired,
                                           objectives:
-                                            filterTasksByTrader.Jaeger[6]
+                                            filterTasksByTrader.Jaeger[20]
                                               .objectives,
                                           wikiLink:
-                                            filterTasksByTrader.Jaeger[6]
+                                            filterTasksByTrader.Jaeger[20]
                                               .wikiLink,
                                         },
                                         children: [
                                           {
                                             taskRequired: "",
-                                            id: filterTasksByTrader.Jaeger[7]
+                                            id: filterTasksByTrader.Jaeger[21]
                                               .id,
                                             trader: "Jaeger",
-                                            name: filterTasksByTrader.Jaeger[7]
+                                            name: filterTasksByTrader.Jaeger[21]
                                               .name,
                                             attributes: {
                                               level:
-                                                filterTasksByTrader.Jaeger[7]
+                                                filterTasksByTrader.Jaeger[21]
                                                   .minPlayerLevel,
                                               kappaRequired:
-                                                filterTasksByTrader.Jaeger[7]
+                                                filterTasksByTrader.Jaeger[21]
                                                   .kappaRequired,
                                               objectives:
-                                                filterTasksByTrader.Jaeger[7]
+                                                filterTasksByTrader.Jaeger[21]
                                                   .objectives,
                                               wikiLink:
-                                                filterTasksByTrader.Jaeger[7]
+                                                filterTasksByTrader.Jaeger[21]
                                                   .wikiLink,
                                             },
                                             children: [],
@@ -7042,6 +7004,35 @@ export const treeDataFunc: any = async () => {
                         ],
                       },
                     ],
+                  },
+                ],
+              },
+              {
+                taskRequired:
+                  "To unlock this quest, you also need to complete, What’s on the Flash Drive? from Skier",
+                id: filterTasksByTrader.Jaeger[31].id,
+                trader: "Jaeger",
+                name: filterTasksByTrader.Jaeger[31].name,
+                attributes: {
+                  level: filterTasksByTrader.Jaeger[31].minPlayerLevel,
+                  kappaRequired: filterTasksByTrader.Jaeger[31].kappaRequired,
+                  objectives: filterTasksByTrader.Jaeger[31].objectives,
+                  wikiLink: filterTasksByTrader.Jaeger[31].wikiLink,
+                },
+                children: [
+                  {
+                    taskRequired: "",
+                    id: filterTasksByTrader.Jaeger[40].id,
+                    trader: "Jaeger",
+                    name: filterTasksByTrader.Jaeger[40].name,
+                    attributes: {
+                      level: filterTasksByTrader.Jaeger[40].minPlayerLevel,
+                      kappaRequired:
+                        filterTasksByTrader.Jaeger[40].kappaRequired,
+                      objectives: filterTasksByTrader.Jaeger[40].objectives,
+                      wikiLink: filterTasksByTrader.Jaeger[40].wikiLink,
+                    },
+                    children: [],
                   },
                 ],
               },
@@ -7064,7 +7055,8 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, The Punisher - Part 6 from Prapor",
             id: filterTasksByTrader.Fence[1].id,
             trader: "Fence",
             name: filterTasksByTrader.Fence[1].name,
@@ -7182,7 +7174,8 @@ export const treeDataFunc: any = async () => {
         },
         children: [
           {
-            taskRequired: "",
+            taskRequired:
+              "To unlock this quest, you also need to complete, Getting Acquainted from Mechanic",
             id: filterTasksByTrader.Lightkeeper[0].id,
             trader: "Lightkeeper",
             name: filterTasksByTrader.Lightkeeper[0].name,
@@ -7195,61 +7188,61 @@ export const treeDataFunc: any = async () => {
             children: [
               {
                 taskRequired: "",
-                id: filterTasksByTrader.Lightkeeper[1].id,
+                id: filterTasksByTrader.Lightkeeper[3].id,
                 trader: "Lightkeeper",
-                name: filterTasksByTrader.Lightkeeper[1].name,
+                name: filterTasksByTrader.Lightkeeper[3].name,
                 attributes: {
-                  level: filterTasksByTrader.Lightkeeper[1].minPlayerLevel,
+                  level: filterTasksByTrader.Lightkeeper[3].minPlayerLevel,
                   kappaRequired:
-                    filterTasksByTrader.Lightkeeper[1].kappaRequired,
-                  objectives: filterTasksByTrader.Lightkeeper[1].objectives,
-                  wikiLink: filterTasksByTrader.Lightkeeper[1].wikiLink,
+                    filterTasksByTrader.Lightkeeper[3].kappaRequired,
+                  objectives: filterTasksByTrader.Lightkeeper[3].objectives,
+                  wikiLink: filterTasksByTrader.Lightkeeper[3].wikiLink,
                 },
                 children: [
                   {
                     taskRequired: "",
-                    id: filterTasksByTrader.Lightkeeper[2].id,
+                    id: filterTasksByTrader.Lightkeeper[4].id,
                     trader: "Lightkeeper",
-                    name: filterTasksByTrader.Lightkeeper[2].name,
+                    name: filterTasksByTrader.Lightkeeper[4].name,
                     attributes: {
-                      level: filterTasksByTrader.Lightkeeper[2].minPlayerLevel,
+                      level: filterTasksByTrader.Lightkeeper[4].minPlayerLevel,
                       kappaRequired:
-                        filterTasksByTrader.Lightkeeper[2].kappaRequired,
-                      objectives: filterTasksByTrader.Lightkeeper[2].objectives,
-                      wikiLink: filterTasksByTrader.Lightkeeper[2].wikiLink,
+                        filterTasksByTrader.Lightkeeper[4].kappaRequired,
+                      objectives: filterTasksByTrader.Lightkeeper[4].objectives,
+                      wikiLink: filterTasksByTrader.Lightkeeper[4].wikiLink,
                     },
                     children: [
                       {
                         taskRequired: "",
-                        id: filterTasksByTrader.Lightkeeper[4].id,
+                        id: filterTasksByTrader.Lightkeeper[1].id,
                         trader: "Lightkeeper",
-                        name: filterTasksByTrader.Lightkeeper[4].name,
+                        name: filterTasksByTrader.Lightkeeper[1].name,
                         attributes: {
                           level:
-                            filterTasksByTrader.Lightkeeper[4].minPlayerLevel,
+                            filterTasksByTrader.Lightkeeper[1].minPlayerLevel,
                           kappaRequired:
-                            filterTasksByTrader.Lightkeeper[4].kappaRequired,
+                            filterTasksByTrader.Lightkeeper[1].kappaRequired,
                           objectives:
-                            filterTasksByTrader.Lightkeeper[4].objectives,
-                          wikiLink: filterTasksByTrader.Lightkeeper[4].wikiLink,
+                            filterTasksByTrader.Lightkeeper[1].objectives,
+                          wikiLink: filterTasksByTrader.Lightkeeper[1].wikiLink,
                         },
                         children: [
                           {
                             taskRequired: "",
-                            id: filterTasksByTrader.Lightkeeper[3].id,
+                            id: filterTasksByTrader.Lightkeeper[2].id,
                             trader: "Lightkeeper",
-                            name: filterTasksByTrader.Lightkeeper[3].name,
+                            name: filterTasksByTrader.Lightkeeper[2].name,
                             attributes: {
                               level:
-                                filterTasksByTrader.Lightkeeper[3]
+                                filterTasksByTrader.Lightkeeper[2]
                                   .minPlayerLevel,
                               kappaRequired:
-                                filterTasksByTrader.Lightkeeper[3]
+                                filterTasksByTrader.Lightkeeper[2]
                                   .kappaRequired,
                               objectives:
-                                filterTasksByTrader.Lightkeeper[3].objectives,
+                                filterTasksByTrader.Lightkeeper[2].objectives,
                               wikiLink:
-                                filterTasksByTrader.Lightkeeper[3].wikiLink,
+                                filterTasksByTrader.Lightkeeper[2].wikiLink,
                             },
                             children: [
                               {

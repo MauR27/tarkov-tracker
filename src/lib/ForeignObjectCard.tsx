@@ -1,4 +1,5 @@
 import HandleCompleteMapMissions from "@/components/missionsMapComponents/HandleCompleteMapMissions";
+import HandleMissionItem from "@/util/HandleMissionItem";
 import { LockIcon } from "@chakra-ui/icons";
 import {
   Box,
@@ -33,7 +34,7 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
   const nodeDatum = nodeDatumProp;
 
   const [forceRender, setForceRender] = useState<boolean>(false);
-  let stateOfMissions;
+  let stateOfMissions: any;
 
   const handleForceRender = () => {
     setForceRender((prev) => !prev);
@@ -70,92 +71,183 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
               justifyContent="space-between"
               boxShadow="md"
             >
-              <Flex
-                bg="white"
-                color="black"
-                h="20px"
-                align="center"
-                borderRadius="3px"
-                p="2px"
-                _hover={{ bg: "gray.200" }}
-              >
-                <Link
-                  fontSize="xs"
-                  href={nodeDatum.attributes.wikiLink}
-                  target="_blank"
-                  _hover={{ textDecoration: "none" }}
+              {stateOfMissions ? (
+                <Flex
+                  bg="gray"
+                  color="rgb(69, 69, 69)"
+                  h="20px"
+                  align="center"
+                  borderRadius="3px"
+                  p="2px"
+                  _hover={{ bg: "gray.200" }}
                 >
-                  Wiki
-                </Link>
-              </Flex>
+                  <Link
+                    fontSize="xs"
+                    href={nodeDatum.attributes.wikiLink}
+                    target="_blank"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    Wiki
+                  </Link>
+                </Flex>
+              ) : (
+                <Flex
+                  bg="white"
+                  color="black"
+                  h="20px"
+                  align="center"
+                  borderRadius="3px"
+                  p="2px"
+                  _hover={{ bg: "gray.200" }}
+                >
+                  <Link
+                    fontSize="xs"
+                    href={nodeDatum.attributes.wikiLink}
+                    target="_blank"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    Wiki
+                  </Link>
+                </Flex>
+              )}
+
               <Text>{nodeDatum.name}</Text>
               <Box w="43px">
-                <Flex justifyContent="space-between" mb="4px" p="0 2px 0 2px">
-                  {!nodeDatum.attributes.kappaRequired && (
-                    <Tooltip
-                      label="Is not required for kappa"
-                      hasArrow
-                      fontSize="xs"
-                      placement="auto"
-                    >
-                      <Flex
-                        bg="RGB(33, 33, 33)"
-                        borderRadius="2px"
-                        justify="center"
-                        align="center"
-                        w="18px"
-                        h="18px"
+                {stateOfMissions ? (
+                  <Flex justifyContent="space-between" mb="4px" p="0 2px 0 2px">
+                    {!nodeDatum.attributes.kappaRequired && (
+                      <Tooltip
+                        label="Is not required for kappa"
+                        hasArrow
+                        fontSize="xs"
+                        placement="auto"
                       >
-                        <Text color="white" fontSize="lg">
-                          K
-                        </Text>
-                        <Text
-                          color="red"
-                          fontSize="20px"
-                          position="absolute"
-                          top="-5px"
+                        <Flex
+                          bg="gray"
+                          borderRadius="2px"
+                          justify="center"
+                          align="center"
+                          w="18px"
+                          h="18px"
                         >
-                          _
-                        </Text>
-                      </Flex>
-                    </Tooltip>
-                  )}
-                  {nodeDatum.taskRequired !== "" && (
-                    <Tooltip
-                      hasArrow
-                      label={nodeDatum.taskRequired}
-                      fontSize="xs"
-                      placement="auto"
-                    >
-                      <LockIcon
-                        color="RGB(249, 16, 16)"
-                        _hover={{ cursor: "pointer" }}
-                      />
-                    </Tooltip>
-                  )}
-                </Flex>
-                <Tooltip
-                  hasArrow
-                  label={`You must to be level ${nodeDatum.attributes.level} to unlock this quest`}
-                  fontSize="xs"
-                  placement="auto"
-                >
-                  <Flex
-                    align="center"
-                    justify="space-around"
-                    fontSize="xs"
-                    bg="white"
-                    borderRadius="2px"
-                    color="black"
-                    h="20px"
-                    w="40px"
-                    p="0 2px 0 2px"
-                    _hover={{ bg: "gray.200", cursor: "pointer" }}
-                  >
-                    <Text>{nodeDatum.attributes.level}</Text>
-                    <Text>lvl</Text>
+                          <Text color="rgb(69, 69, 69)" fontSize="lg">
+                            K
+                          </Text>
+                          <Text
+                            color="rgb(39, 49, 59)"
+                            fontSize="20px"
+                            position="absolute"
+                            top="-5px"
+                          >
+                            _
+                          </Text>
+                        </Flex>
+                      </Tooltip>
+                    )}
+                    {nodeDatum.taskRequired !== "" && (
+                      <Tooltip
+                        hasArrow
+                        label={nodeDatum.taskRequired}
+                        fontSize="xs"
+                        placement="auto"
+                      >
+                        <LockIcon color="gray" _hover={{ cursor: "pointer" }} />
+                      </Tooltip>
+                    )}
                   </Flex>
-                </Tooltip>
+                ) : (
+                  <Flex justifyContent="space-between" mb="4px" p="0 2px 0 2px">
+                    {!nodeDatum.attributes.kappaRequired && (
+                      <Tooltip
+                        label="Is not required for kappa"
+                        hasArrow
+                        fontSize="xs"
+                        placement="auto"
+                      >
+                        <Flex
+                          bg="RGB(33, 33, 33)"
+                          borderRadius="2px"
+                          justify="center"
+                          align="center"
+                          w="18px"
+                          h="18px"
+                        >
+                          <Text color="white" fontSize="lg">
+                            K
+                          </Text>
+                          <Text
+                            color="red"
+                            fontSize="20px"
+                            position="absolute"
+                            top="-5px"
+                          >
+                            _
+                          </Text>
+                        </Flex>
+                      </Tooltip>
+                    )}
+                    {nodeDatum.taskRequired !== "" && (
+                      <Tooltip
+                        hasArrow
+                        label={nodeDatum.taskRequired}
+                        fontSize="xs"
+                        placement="auto"
+                      >
+                        <LockIcon
+                          color="RGB(249, 16, 16)"
+                          _hover={{ cursor: "pointer" }}
+                        />
+                      </Tooltip>
+                    )}
+                  </Flex>
+                )}
+                {stateOfMissions ? (
+                  <Tooltip
+                    hasArrow
+                    label={`You must to be level ${nodeDatum.attributes.level} to unlock this quest`}
+                    fontSize="xs"
+                    placement="auto"
+                  >
+                    <Flex
+                      align="center"
+                      justify="space-around"
+                      fontSize="xs"
+                      bg="gray"
+                      borderRadius="2px"
+                      color="rgb(69, 69, 69)"
+                      h="20px"
+                      w="40px"
+                      p="0 2px 0 2px"
+                      _hover={{ bg: "gray.200", cursor: "pointer" }}
+                    >
+                      <Text>{nodeDatum.attributes.level}</Text>
+                      <Text>lvl</Text>
+                    </Flex>
+                  </Tooltip>
+                ) : (
+                  <Tooltip
+                    hasArrow
+                    label={`You must to be level ${nodeDatum.attributes.level} to unlock this quest`}
+                    fontSize="xs"
+                    placement="auto"
+                  >
+                    <Flex
+                      align="center"
+                      justify="space-around"
+                      fontSize="xs"
+                      bg="white"
+                      borderRadius="2px"
+                      color="black"
+                      h="20px"
+                      w="40px"
+                      p="0 2px 0 2px"
+                      _hover={{ bg: "gray.200", cursor: "pointer" }}
+                    >
+                      <Text>{nodeDatum.attributes.level}</Text>
+                      <Text>lvl</Text>
+                    </Flex>
+                  </Tooltip>
+                )}
               </Box>
             </CardHeader>
             <Divider />
@@ -172,13 +264,34 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
                   </Box>
                   {data.type === "giveItem" && data.item && (
                     <Flex flexDir="row" gap={2} minH="100%" align="center">
-                      <Image
-                        src={data.item.iconLink}
-                        alt={data.item.name}
-                        width={30}
-                        height={30}
-                      />
-                      <Text>{data.count}</Text>
+                      {stateOfMissions ? (
+                        <Image
+                          src={data.item.iconLink}
+                          alt={data.item.name}
+                          opacity={0.5}
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <Image
+                          src={data.item.iconLink}
+                          alt={data.item.name}
+                          width={30}
+                          height={30}
+                        />
+                      )}
+
+                      {data.item.shortName !== "EUR" &&
+                      data.item.shortName !== "RUB" &&
+                      data.item.shortName !== "USD" ? (
+                        <HandleMissionItem
+                          missionId={nodeDatum.id}
+                          itemId={data.item.id}
+                          itemQuantity={data.count}
+                        />
+                      ) : (
+                        <Text>{data.count}</Text>
+                      )}
                     </Flex>
                   )}
                 </Flex>

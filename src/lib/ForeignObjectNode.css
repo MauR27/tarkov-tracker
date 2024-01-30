@@ -1,42 +1,110 @@
 .quest-map-trader-card {
   background-color: RGB(33, 33, 33);
 }
+/* PRAPOR CARD */
 
 .chakra-card.quest-map-trader-card_Prapor {
   background-color: #157a58;
   border: #22bf8a 3px solid;
 }
+.chakra-card.quest-map-trader-card_Prapor.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* THERAPIST CARD */
 
 .chakra-card.quest-map-trader-card_Therapist {
   background-color: #371a60;
   border: #6630b0 3px solid;
 }
+.chakra-card.quest-map-trader-card_Therapist.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* SKIER CARD */
 
 .chakra-card.quest-map-trader-card_Skier {
   background-color: #8c2f18;
   border: #c04021 3px solid;
 }
+.chakra-card.quest-map-trader-card_Skier.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* MECHANIC CARD */
+
 .chakra-card.quest-map-trader-card_Mechanic {
   background-color: #3c6e35;
   border: #529749 3px solid;
 }
+.chakra-card.quest-map-trader-card_Mechanic.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* RAGMAN CARD */
+
 .chakra-card.quest-map-trader-card_Ragman {
   background-color: #453d66;
   border: #5f548c 3px solid;
 }
+.chakra-card.quest-map-trader-card_Ragman.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* FENCE CARD */
+
 .chakra-card.quest-map-trader-card_Fence {
   background-color: #22236d;
   border: #3638ab 3px solid;
 }
+.chakra-card.quest-map-trader-card_Fence.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* LIGHTKEEPER CARD */
+
 .chakra-card.quest-map-trader-card_Lightkeeper {
   background-color: #636600;
   border: #b1b800 3px solid;
 }
+.chakra-card.quest-map-trader-card_Lightkeeper.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* JAEGER CARD */
+
 .chakra-card.quest-map-trader-card_Jaeger {
   background-color: #3d0000;
   border: #8f0000 3px solid;
 }
+.chakra-card.quest-map-trader-card_Jaeger.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
+}
+
+/* PEACEKEEPER CARD */
+
 .chakra-card.quest-map-trader-card_Peacekeeper {
   background-color: #005361;
   border: #009cb8 3px solid;
+}
+.chakra-card.quest-map-trader-card_Peacekeeper.completed {
+  background-color: rgb(67, 67, 67);
+  border: rgb(76, 76, 76) 3px solid;
+  color: gray;
 }

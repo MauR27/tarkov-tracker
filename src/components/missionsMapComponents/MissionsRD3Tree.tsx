@@ -5,15 +5,15 @@ import useCenteredTree from "@/lib/useCenteredTree";
 import Tree, { RawNodeDatum } from "react-d3-tree";
 import "./MissionsRD3Tree.css";
 import {
-  renderForeignObjectNode,
   containerStyles,
   pathFuncOptions,
   foreignObjectProps,
   ITreeData,
   initialTreeData,
-} from "@/lib/TreeObjectOptions";
+} from "@/lib/RenderForeignObject";
 import { treeDataFunc } from "@/util/TreeMissionsDataFunc";
 import { Box } from "@chakra-ui/react";
+import RenderForeignObject from "@/lib/RenderForeignObject";
 
 const MissionsSchema: React.FC = () => {
   const [translate, containerRef]: any = useCenteredTree();
@@ -52,7 +52,10 @@ const MissionsSchema: React.FC = () => {
         pathFunc={pathFuncOptions}
         nodeSize={{ x: 400, y: 580 }}
         renderCustomNodeElement={(props) =>
-          renderForeignObjectNode({ ...props, foreignObjectProps })
+          RenderForeignObject({
+            ...props,
+            foreignObjectProps,
+          })
         }
       />
     </Box>

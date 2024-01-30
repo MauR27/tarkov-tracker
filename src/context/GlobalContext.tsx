@@ -28,6 +28,9 @@ interface IGlobalContext {
 
   missionsSelector: string;
   setMissionsSelector: Dispatch<SetStateAction<string>>;
+
+  completedMissionsTree: boolean;
+  setCompletedMissionsTree: Dispatch<SetStateAction<boolean>>;
 }
 
 const GlobalContext = createContext<IGlobalContext>({
@@ -45,6 +48,9 @@ const GlobalContext = createContext<IGlobalContext>({
 
   handleUpdatedMissions: false,
   setHandleUpdatedMission: () => false,
+
+  completedMissionsTree: false,
+  setCompletedMissionsTree: () => false,
 
   missionsSelector: "",
   setMissionsSelector: () => "",
@@ -72,6 +78,9 @@ export const GlobalContextProvider: FC<GlobalContextProviderProps> = ({
 
   const [missionsSelector, setMissionsSelector] = useState<string>("available");
 
+  const [completedMissionsTree, setCompletedMissionsTree] =
+    useState<boolean>(false);
+
   return (
     <GlobalContext.Provider
       value={{
@@ -87,6 +96,8 @@ export const GlobalContextProvider: FC<GlobalContextProviderProps> = ({
         setHandleUpdatedMission,
         missionsSelector,
         setMissionsSelector,
+        completedMissionsTree,
+        setCompletedMissionsTree,
       }}
     >
       {children}

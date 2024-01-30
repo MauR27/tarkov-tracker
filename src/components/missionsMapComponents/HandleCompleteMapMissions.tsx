@@ -4,10 +4,12 @@ import React, { FC, useEffect, useState } from "react";
 
 type TIdNode = {
   id: string;
+  forceRender: any;
 };
 
-const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
-  const [completeMission, setCompleteMission] = useState<boolean>(false);
+const HandleCompleteMapMissions: FC<TIdNode> = ({ id, forceRender }) => {
+  const [completedMissionsTree, setCompletedMissionsTree] =
+    useState<boolean>(false);
 
   useEffect(() => {
     const currentID: any = id;
@@ -19,8 +21,7 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
     const mission = initialStatusMissions.find(
       (mission: any) => mission.id === currentID
     );
-
-    setCompleteMission(mission ? mission.completed : false);
+    setCompletedMissionsTree(mission ? mission.completed : false);
   }, [id]);
 
   const handleClick = (id: string) => {
@@ -49,19 +50,35 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id }) => {
       JSON.stringify(updatedStatusMissions)
     );
 
-    setCompleteMission((prev) => !prev);
+    setCompletedMissionsTree((prev) => !prev);
+    forceRender();
   };
-
   return (
-    <Button
-      size="sm"
-      minW="50%"
-      fontWeight="xs"
-      borderRadius="5px"
-      onClick={() => handleClick(id)}
-    >
-      {!completeMission ? "complete" : "uncomplete"}
-    </Button>
+    <>
+      {!completedMissionsTree ? (
+        <Button
+          size="sm"
+          minW="50%"
+          fontWeight="xs"
+          borderRadius="5px"
+          onClick={() => handleClick(id)}
+        >
+          Completed
+        </Button>
+      ) : (
+        <Button
+          size="sm"
+          minW="50%"
+          fontWeight="xs"
+          borderRadius="5px"
+          bg="gray"
+          _hover={{ bg: "rgb(99, 99, 99)" }}
+          onClick={() => handleClick(id)}
+        >
+          Uncompleted
+        </Button>
+      )}
+    </>
   );
 };
 

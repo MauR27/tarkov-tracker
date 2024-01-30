@@ -1,12 +1,14 @@
-import styles from "../../app/page.module.css";
 import MapMissionsPage from "@/components/missionsMapComponents/MapMissionsPage";
 import MapNavbar from "@/components/missionsMapComponents/MapNavbar";
+import { MapMissionsContextProvider } from "@/context/MissionsMapContext";
 
 export default function MapPage() {
   return (
-    <main className={styles.mainMapPage}>
-      <MapNavbar />
-      <MapMissionsPage />
+    <main>
+      <MapMissionsContextProvider>
+        <MapNavbar />
+        <MapMissionsPage />
+      </MapMissionsContextProvider>
     </main>
   );
 }

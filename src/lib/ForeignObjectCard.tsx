@@ -1,6 +1,5 @@
-import React from "react";
-import "./ForeignObjectNode.css";
 import HandleCompleteMapMissions from "@/components/missionsMapComponents/HandleCompleteMapMissions";
+import { LockIcon } from "@chakra-ui/icons";
 import {
   Box,
   Card,
@@ -12,129 +11,43 @@ import {
   Image,
   Link,
   Text,
-  Icon,
   Tooltip,
 } from "@chakra-ui/react";
-import { IoBookmarkOutline } from "react-icons/io5";
-import {
-  CloseIcon,
-  LockIcon,
-  NotAllowedIcon,
-  UnlockIcon,
-} from "@chakra-ui/icons";
-import { TbCircleLetterK } from "react-icons/tb";
+import React, { FC, useState } from "react";
 
-export interface ITreeData<T = Record<string, unknown>> {
-  taskRequired: string;
-  id: string;
-  trader: string;
-  name: string;
-  attributes: T;
-  children?: ITreeData<T>[];
-}
-
-export const initialTreeData: ITreeData = {
-  taskRequired: "",
-  id: "",
-  trader: "",
-  name: "Traders",
-  attributes: {
-    level: 0,
-    kappaRequired: false,
-    objectives: [],
-    wikiLink: "",
-  },
-  children: [],
+type TPropsForeingCard = {
+  nodeClassNameProp: any;
+  traderTreeClassNameProp: any;
+  foreignObjectProps: any;
+  nodeDatumProp: any;
 };
 
-// Change nodeClassName for all branches traders
-
-const getTraderNodeClassName = (nodeName: any) => {
-  switch (nodeName) {
-    case "Therapist":
-      return "quest-map-trader-card";
-    case "Prapor":
-      return "quest-map-trader-card";
-    case "Skier":
-      return "quest-map-trader-card";
-    case "Mechanic":
-      return "quest-map-trader-card";
-    case "Ragman":
-      return "quest-map-trader-card";
-    case "Fence":
-      return "quest-map-trader-card";
-    case "Lightkeeper":
-      return "quest-map-trader-card";
-    case "Jaeger":
-      return "quest-map-trader-card";
-    case "Peacekeeper":
-      return "quest-map-trader-card";
-
-    default:
-      return "default-node";
-  }
-};
-const getTraderTreeClassName = (nodeName: any) => {
-  switch (nodeName) {
-    case "Therapist":
-      return "quest-map-trader-card_Therapist";
-    case "Prapor":
-      return "quest-map-trader-card_Prapor";
-    case "Skier":
-      return "quest-map-trader-card_Skier";
-    case "Mechanic":
-      return "quest-map-trader-card_Mechanic";
-    case "Ragman":
-      return "quest-map-trader-card_Ragman";
-    case "Fence":
-      return "quest-map-trader-card_Fence";
-    case "Lightkeeper":
-      return "quest-map-trader-card_Lightkeeper";
-    case "Jaeger":
-      return "quest-map-trader-card_Jaeger";
-    case "Peacekeeper":
-      return "quest-map-trader-card_Peacekeeper";
-
-    default:
-      return "default-node";
-  }
-};
-
-// Links that conect all nodes
-
-export const pathFuncOptions = ({ target, source }: any) => {
-  if (target.data.attributes.level <= 0) {
-    return "";
-  } else {
-    return `M${source.x},${source.y} V${target.y - 70} H${target.x} V${
-      target.y
-    }`;
-  }
-};
-
-export const containerStyles = {
-  width: "100vw",
-  height: "100vh",
-};
-
-// Edit all nodes and properties from customs nodes
-
-const nodeSize = { x: 375, y: 480 };
-export const foreignObjectProps = {
-  width: nodeSize.x,
-  height: nodeSize.y,
-  y: -30,
-  x: -190,
-};
-
-// Custom nodes objects
-
-export const renderForeignObjectNode = ({
-  nodeDatum,
+const ForeingObjectCard: FC<TPropsForeingCard> = ({
+  nodeClassNameProp,
+  traderTreeClassNameProp,
   foreignObjectProps,
-}: any) => {
-  const nodeClassName = getTraderNodeClassName(nodeDatum.name);
-  const traderTreeClassName = getTraderTreeClassName(nodeDatum.trader);
+  nodeDatumProp,
+}) => {
+  const nodeClassName = nodeClassNameProp;
+  const traderTreeClassName = traderTreeClassNameProp;
+  const nodeDatum = nodeDatumProp;
+
+  const [forceRender, setForceRender] = useState<boolean>(false);
+  let stateOfMissions;
+
+  const handleForceRender = () => {
+    setForceRender((prev) => !prev);
+  };
+
+  const getMissionFromStorage = localStorage.getItem("mapMissionsStatus");
+
+  if (getMissionFromStorage) {
+    const findMissionsById = JSON.parse(getMissionFromStorage).find(
+      (data: any) => data.id === nodeDatum.id
+    );
+
+    stateOfMissions = findMissionsById && findMissionsById.completed;
+  }
 
   return (
     <>
@@ -142,7 +55,9 @@ export const renderForeignObjectNode = ({
       nodeClassName !== "quest-map-trader-card" ? (
         <foreignObject {...foreignObjectProps} style={{ overflow: "visible" }}>
           <Card
-            className={traderTreeClassName}
+            className={`${traderTreeClassName} ${
+              stateOfMissions ? "completed" : "incomplete"
+            }`}
             borderRadius="5px"
             boxShadow="1px 1px 10px black"
             color="white"
@@ -212,7 +127,10 @@ export const renderForeignObjectNode = ({
                       fontSize="xs"
                       placement="auto"
                     >
-                      <LockIcon color="RGB(249, 16, 16)" />
+                      <LockIcon
+                        color="RGB(249, 16, 16)"
+                        _hover={{ cursor: "pointer" }}
+                      />
                     </Tooltip>
                   )}
                 </Flex>
@@ -222,17 +140,21 @@ export const renderForeignObjectNode = ({
                   fontSize="xs"
                   placement="auto"
                 >
-                  <Text
-                    textAlign="center"
+                  <Flex
+                    align="center"
+                    justify="space-around"
                     fontSize="xs"
                     bg="white"
                     borderRadius="2px"
                     color="black"
+                    h="20px"
+                    w="40px"
                     p="0 2px 0 2px"
-                    _hover={{ bg: "gray.200" }}
+                    _hover={{ bg: "gray.200", cursor: "pointer" }}
                   >
-                    {nodeDatum.attributes.level} lvl
-                  </Text>
+                    <Text>{nodeDatum.attributes.level}</Text>
+                    <Text>lvl</Text>
+                  </Flex>
                 </Tooltip>
               </Box>
             </CardHeader>
@@ -269,7 +191,10 @@ export const renderForeignObjectNode = ({
               as={Flex}
               justify="center"
             >
-              <HandleCompleteMapMissions id={nodeDatum.id} />
+              <HandleCompleteMapMissions
+                id={nodeDatum.id}
+                forceRender={handleForceRender}
+              />
             </CardFooter>
           </Card>
         </foreignObject>
@@ -295,3 +220,5 @@ export const renderForeignObjectNode = ({
     </>
   );
 };
+
+export default ForeingObjectCard;

@@ -1,4 +1,4 @@
-import { ITreeData } from "@/lib/TreeObjectOptions";
+import { ITreeData } from "@/lib/RenderForeignObject";
 import tarkovDataQuery from "./tarkovDataQuery";
 
 export const treeDataFunc: any = async () => {
@@ -14,8 +14,6 @@ export const treeDataFunc: any = async () => {
 
     return acc;
   }, {});
-
-  console.log(filterTasksByTrader.Lightkeeper);
 
   const treeStructure: ITreeData = {
     taskRequired: "",

@@ -158,14 +158,14 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
   };
 
   return (
-    <Flex align="center" justify="center">
+    <Flex align="center" justify="space-between" w="65px">
       {increment === 0 ? (
         <Button
           isDisabled
           onClick={() => handleDecrementItemQuantity(itemId)}
           borderRadius="2px"
-          minW="15px"
-          h="15px"
+          minW="12px"
+          h="12px"
           p={0}
         >
           <Text textAlign="center" fontSize="10px">
@@ -176,8 +176,8 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
         <Button
           onClick={() => handleDecrementItemQuantity(itemId)}
           borderRadius="2px"
-          minW="15px"
-          h="15px"
+          minW="12px"
+          h="12px"
           p={0}
         >
           <Text textAlign="center" fontSize="10px">
@@ -197,8 +197,8 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
           isDisabled
           onClick={() => handleIncrementItemQuantity(itemId)}
           borderRadius="2px"
-          minW="15px"
-          h="15px"
+          minW="12px"
+          h="12px"
           p={0}
         >
           <Text textAlign="center" fontSize="10px">
@@ -209,8 +209,8 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
         <Button
           onClick={() => handleIncrementItemQuantity(itemId)}
           borderRadius="2px"
-          minW="15px"
-          h="15px"
+          minW="12px"
+          h="12px"
           p={0}
         >
           <Text textAlign="center" fontSize="10px">

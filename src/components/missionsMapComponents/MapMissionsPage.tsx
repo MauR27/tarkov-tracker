@@ -1,10 +1,10 @@
 import React from "react";
-import MissionsSchema from "./MissionsRD3Tree";
+import MissionsRD3Tree from "./MissionsRD3Tree";
 
 const MapMissionsPage = () => {
   return (
     <>
-      <MissionsSchema />
+      <MissionsRD3Tree />
     </>
   );
 };

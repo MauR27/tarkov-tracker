@@ -95,7 +95,7 @@ const getTraderTreeClassName = (nodeName: any) => {
 // Links that conect all nodes
 
 export const pathFuncOptions = ({ target, source }: any) => {
-  if (target.data.attributes.level <= 0) {
+  if (source.data.attributes.level <= -1) {
     return "";
   } else {
     return `M${source.x},${source.y} V${target.y - 70} H${target.x} V${

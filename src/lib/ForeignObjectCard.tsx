@@ -1,6 +1,5 @@
 import HandleCompleteMapMissions from "@/components/missionsMapComponents/HandleCompleteMapMissions";
 import HandleMissionItem from "@/util/HandleMissionItem";
-import { LockIcon } from "@chakra-ui/icons";
 import {
   Box,
   Card,
@@ -14,7 +13,7 @@ import {
   Text,
   Tooltip,
 } from "@chakra-ui/react";
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 
 type TPropsForeingCard = {
   nodeClassNameProp: any;
@@ -36,6 +35,8 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
   const [forceRender, setForceRender] = useState<boolean>(false);
   let stateOfMissions: any;
 
+  useEffect(() => {}, []);
+
   const handleForceRender = () => {
     setForceRender((prev) => !prev);
   };
@@ -49,12 +50,17 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
 
     stateOfMissions = findMissionsById && findMissionsById.completed;
   }
+  // console.log(nodeDatum.attributes.level);
 
   return (
     <>
       {nodeDatum.attributes.level >= 0 &&
       nodeClassName !== "quest-map-trader-card" ? (
-        <foreignObject {...foreignObjectProps} style={{ overflow: "visible" }}>
+        <foreignObject
+          {...foreignObjectProps}
+          style={{ overflow: "visible" }}
+          data-node-name={nodeDatum.name}
+        >
           <Card
             className={`${traderTreeClassName} ${
               stateOfMissions ? "completed" : "incomplete"
@@ -144,16 +150,6 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
                         </Flex>
                       </Tooltip>
                     )}
-                    {nodeDatum.taskRequired !== "" && (
-                      <Tooltip
-                        hasArrow
-                        label={nodeDatum.taskRequired}
-                        fontSize="xs"
-                        placement="auto"
-                      >
-                        <LockIcon color="gray" _hover={{ cursor: "pointer" }} />
-                      </Tooltip>
-                    )}
                   </Flex>
                 ) : (
                   <Flex justifyContent="space-between" mb="4px" p="0 2px 0 2px">
@@ -184,19 +180,6 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
                             _
                           </Text>
                         </Flex>
-                      </Tooltip>
-                    )}
-                    {nodeDatum.taskRequired !== "" && (
-                      <Tooltip
-                        hasArrow
-                        label={nodeDatum.taskRequired}
-                        fontSize="xs"
-                        placement="auto"
-                      >
-                        <LockIcon
-                          color="RGB(249, 16, 16)"
-                          _hover={{ cursor: "pointer" }}
-                        />
                       </Tooltip>
                     )}
                   </Flex>
@@ -250,7 +233,9 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
                 )}
               </Box>
             </CardHeader>
+
             <Divider />
+
             <CardBody
               className="quest-map-card_body"
               p="10px"
@@ -258,10 +243,20 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
               boxShadow="lg"
             >
               {nodeDatum.attributes.objectives.map((data: any) => (
-                <Flex key={data.id} align="center">
-                  <Box w="80%" mb="10px">
-                    <Text>{data.description}</Text>
-                  </Box>
+                <Flex
+                  key={data.id}
+                  align="center"
+                  mb="5px"
+                  justify="space-between"
+                >
+                  <Flex w="80%" textAlign="start">
+                    <Text mr="10px">{data.description}</Text>
+                    {data.type === "shoot" && (
+                      <Text textAlign="center" fontWeight="bold">
+                        {`"${data.count}"`}
+                      </Text>
+                    )}
+                  </Flex>
                   {data.type === "giveItem" && data.item && (
                     <Flex flexDir="row" gap={2} minH="100%" align="center">
                       {stateOfMissions ? (
@@ -284,11 +279,17 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
                       {data.item.shortName !== "EUR" &&
                       data.item.shortName !== "RUB" &&
                       data.item.shortName !== "USD" ? (
-                        <HandleMissionItem
-                          missionId={nodeDatum.id}
-                          itemId={data.item.id}
-                          itemQuantity={data.count}
-                        />
+                        <>
+                          {!stateOfMissions ? (
+                            <HandleMissionItem
+                              missionId={nodeDatum.id}
+                              itemId={data.item.id}
+                              itemQuantity={data.count}
+                            />
+                          ) : (
+                            <Text>{data.count}</Text>
+                          )}
+                        </>
                       ) : (
                         <Text>{data.count}</Text>
                       )}
@@ -331,6 +332,28 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
         </>
       )}
     </>
+
+    // <>
+    //   <foreignObject
+    //     {...foreignObjectProps}
+    //     style={{ overflow: "visible" }}
+    //     data-node-name={nodeDatum.name} // keep track of each node using the name
+    //   >
+    //     <>
+    //       <div
+    //         style={{
+    //           border: "1px solid black",
+    //           backgroundColor: "#CCC9A1",
+    //           minWidth: "100%",
+    //           minHeight: "100%",
+    //         }}
+    //       >
+    //         <p style={{ textAlign: "center" }}>{nodeDatum.name}</p>
+    //       </div>
+    //       <button style={{ width: "100%" }}>complete</button>
+    //     </>
+    //   </foreignObject>
+    // </>
   );
 };
 

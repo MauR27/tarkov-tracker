@@ -4,7 +4,19 @@ import React, { FC, useEffect, useState } from "react";
 type TItemsMissionsProps = {
   itemId: string;
   missionId: string;
-  itemQuantity: any;
+  itemQuantity: number;
+};
+
+type TAllItemMission = {
+  itemId: string;
+  missionId: string;
+  itemQuantity: number;
+  items: [];
+};
+
+type TItemFinded = {
+  id: string;
+  count: number;
 };
 
 const HandleMissionItem: FC<TItemsMissionsProps> = ({
@@ -19,10 +31,10 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
     const initialItemMission = itemMission ? JSON.parse(itemMission) : [];
 
     const mission = initialItemMission.find(
-      (mission: any) => mission.missionId === missionId
+      (mission: TItemsMissionsProps) => mission.missionId === missionId
     );
 
-    const item = mission?.items.find((item: any) => item.id === itemId);
+    const item = mission?.items.find((item: TItemFinded) => item.id === itemId);
 
     if (mission && item) {
       setIncrement(item.count);
@@ -31,31 +43,32 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
     }
   }, [missionId, itemId]);
 
-  const handleIncrementItemQuantity = (id: string) => {
+  const handleIncrementItemQuantity = () => {
     const itemMission = localStorage.getItem("itemMission");
     const initialItemMission = itemMission ? JSON.parse(itemMission) : [];
 
     const missionIndex = initialItemMission.findIndex(
-      (item: any) => item.missionId === missionId
+      (item: TItemsMissionsProps) => item.missionId === missionId
     );
 
     if (missionIndex !== -1) {
       const itemIndex = initialItemMission[missionIndex]?.items.findIndex(
-        (item: any) => item.id === itemId
+        (item: TItemFinded) => item.id === itemId
       );
 
       if (itemIndex !== -1) {
-        const updatedStatusMissions = initialItemMission.map((item: any) =>
-          item.missionId === missionId
-            ? {
-                ...item,
-                items: item.items.map((missionItem: any) =>
-                  missionItem.id === itemId
-                    ? { ...missionItem, count: increment + 1 }
-                    : missionItem
-                ),
-              }
-            : item
+        const updatedStatusMissions = initialItemMission.map(
+          (item: TAllItemMission) =>
+            item.missionId === missionId
+              ? {
+                  ...item,
+                  items: item.items.map((missionItem: TItemFinded) =>
+                    missionItem.id === itemId
+                      ? { ...missionItem, count: increment + 1 }
+                      : missionItem
+                  ),
+                }
+              : item
         );
 
         localStorage.setItem(
@@ -63,13 +76,14 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
           JSON.stringify(updatedStatusMissions)
         );
       } else {
-        const updatedStatusMissions = initialItemMission.map((item: any) =>
-          item.missionId === missionId
-            ? {
-                ...item,
-                items: [...item.items, { id: itemId, count: 1 }],
-              }
-            : item
+        const updatedStatusMissions = initialItemMission.map(
+          (item: TAllItemMission) =>
+            item.missionId === missionId
+              ? {
+                  ...item,
+                  items: [...item.items, { id: itemId, count: 1 }],
+                }
+              : item
         );
 
         localStorage.setItem(
@@ -94,31 +108,32 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
     }
   };
 
-  const handleDecrementItemQuantity = (id: string) => {
+  const handleDecrementItemQuantity = () => {
     const itemMission = localStorage.getItem("itemMission");
     const initialItemMission = itemMission ? JSON.parse(itemMission) : [];
 
     const missionIndex = initialItemMission.findIndex(
-      (item: any) => item.missionId === missionId
+      (item: TItemsMissionsProps) => item.missionId === missionId
     );
 
     if (missionIndex !== -1) {
       const itemIndex = initialItemMission[missionIndex]?.items.findIndex(
-        (item: any) => item.id === itemId
+        (item: TItemFinded) => item.id === itemId
       );
 
       if (itemIndex !== -1) {
-        const updatedStatusMissions = initialItemMission.map((item: any) =>
-          item.missionId === missionId
-            ? {
-                ...item,
-                items: item.items.map((missionItem: any) =>
-                  missionItem.id === itemId
-                    ? { ...missionItem, count: increment - 1 }
-                    : missionItem
-                ),
-              }
-            : item
+        const updatedStatusMissions = initialItemMission.map(
+          (item: TAllItemMission) =>
+            item.missionId === missionId
+              ? {
+                  ...item,
+                  items: item.items.map((missionItem: TItemFinded) =>
+                    missionItem.id === itemId
+                      ? { ...missionItem, count: increment - 1 }
+                      : missionItem
+                  ),
+                }
+              : item
         );
 
         localStorage.setItem(
@@ -126,13 +141,14 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
           JSON.stringify(updatedStatusMissions)
         );
       } else {
-        const updatedStatusMissions = initialItemMission.map((item: any) =>
-          item.missionId === missionId
-            ? {
-                ...item,
-                items: [...item.items, { id: itemId, count: 1 }],
-              }
-            : item
+        const updatedStatusMissions = initialItemMission.map(
+          (item: TAllItemMission) =>
+            item.missionId === missionId
+              ? {
+                  ...item,
+                  items: [...item.items, { id: itemId, count: 1 }],
+                }
+              : item
         );
 
         localStorage.setItem(
@@ -162,7 +178,7 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
       {increment === 0 ? (
         <Button
           isDisabled
-          onClick={() => handleDecrementItemQuantity(itemId)}
+          onClick={() => handleDecrementItemQuantity()}
           borderRadius="2px"
           minW="12px"
           h="12px"
@@ -174,7 +190,7 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
         </Button>
       ) : (
         <Button
-          onClick={() => handleDecrementItemQuantity(itemId)}
+          onClick={() => handleDecrementItemQuantity()}
           borderRadius="2px"
           minW="12px"
           h="12px"
@@ -195,7 +211,7 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
       {increment === itemQuantity ? (
         <Button
           isDisabled
-          onClick={() => handleIncrementItemQuantity(itemId)}
+          onClick={() => handleIncrementItemQuantity()}
           borderRadius="2px"
           minW="12px"
           h="12px"
@@ -207,7 +223,7 @@ const HandleMissionItem: FC<TItemsMissionsProps> = ({
         </Button>
       ) : (
         <Button
-          onClick={() => handleIncrementItemQuantity(itemId)}
+          onClick={() => handleIncrementItemQuantity()}
           borderRadius="2px"
           minW="12px"
           h="12px"

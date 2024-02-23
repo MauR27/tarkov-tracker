@@ -1,27 +1,40 @@
+import { IQuests } from "../../types";
 import tarkovDataQuery from "./tarkovDataQuery";
 
-export const treeDataFunc: any = async () => {
+type TAccObject = {
+  [key: string]: IQuests[];
+};
+
+type TTaskRequirements = {
+  status: string[];
+  task: { id: string; name: string };
+};
+
+export const treeDataFunc = async () => {
   async function apiTarkov() {
     const { tasks } = await tarkovDataQuery();
     return tasks;
   }
   const tasks = await apiTarkov();
 
-  const filterTasksByTrader = tasks.reduce((acc: any, mission: any) => {
-    const traderName = mission.trader.name;
+  const filterTasksByTrader = tasks.reduce(
+    (acc: TAccObject, mission: IQuests) => {
+      const traderName = mission.trader.name;
 
-    if (!acc[traderName]) {
-      acc[traderName] = [];
-    }
+      if (!acc[traderName]) {
+        acc[traderName] = [];
+      }
 
-    acc[traderName].push(mission);
+      acc[traderName].push(mission);
 
-    return acc;
-  }, {});
+      return acc;
+    },
+    {}
+  );
 
   // sort missions by id, to keep an order ↓↓
 
-  const compareMissionsById = (a: any, b: any) => {
+  const compareMissionsById = (a: IQuests, b: IQuests) => {
     const idMissionA = parseInt(a.id, 16);
     const idMissionB = parseInt(b.id, 16);
 
@@ -52,7 +65,7 @@ export const treeDataFunc: any = async () => {
   const mechanicMissions = filterTasksByTrader.Mechanic;
 
   const lightkeeperMissions = filterTasksByTrader.Lightkeeper.map(
-    (mission: any) => {
+    (mission: IQuests) => {
       if (mission.id === "63966faeea19ac7ed845db2c") {
         return { ...mission, taskRequirements: [] };
       } else {
@@ -61,32 +74,30 @@ export const treeDataFunc: any = async () => {
     }
   );
 
-  const fenceMissions = filterTasksByTrader.Fence.map((mission: any) => {
+  const fenceMissions = filterTasksByTrader.Fence.map((mission: IQuests) => {
     return { ...mission, taskRequirements: [] };
   });
 
-  console.log(praporSortMissionsById);
-
-  const mechanicRequirements = jaegerMissions.flatMap((mission: any) =>
+  const mechanicRequirements = jaegerMissions.flatMap((mission: IQuests) =>
     mission.taskRequirements
-      .filter((req: any) => req.task.id !== mission.id)
-      .map((req: any) => req.task.id)
+      .filter((req: TTaskRequirements) => req.task.id !== mission.id)
+      .map((req: TTaskRequirements) => req.task.id)
   );
-  const skierRequirements = peacekeeperMissions.flatMap((mission: any) =>
+  const skierRequirements = peacekeeperMissions.flatMap((mission: IQuests) =>
     mission.taskRequirements
-      .filter((req: any) => req.task.id !== mission.id)
-      .map((req: any) => req.task.id)
+      .filter((req: TTaskRequirements) => req.task.id !== mission.id)
+      .map((req: TTaskRequirements) => req.task.id)
   );
 
-  const mechanicRequirementsMissions = mechanicMissions.filter((mission: any) =>
-    mechanicRequirements.includes(mission.id)
+  const mechanicRequirementsMissions = mechanicMissions.filter(
+    (mission: IQuests) => mechanicRequirements.includes(mission.id)
   );
 
-  const skierRequirementsMissions = skierMissions.filter((mission: any) =>
+  const skierRequirementsMissions = skierMissions.filter((mission: IQuests) =>
     skierRequirements.includes(mission.id)
   );
 
-  mechanicRequirementsMissions.forEach((mission: any) => {
+  mechanicRequirementsMissions.forEach((mission: IQuests) => {
     if (mission.id === "5d2495a886f77425cd51e403") {
       jaegerMissions.push({
         ...mission,
@@ -95,7 +106,7 @@ export const treeDataFunc: any = async () => {
     }
   });
 
-  skierRequirementsMissions.forEach((missions: any) => {
+  skierRequirementsMissions.forEach((missions: IQuests) => {
     if (missions.id === "5a27d2af86f7744e1115b323") {
       peacekeeperMissions.push({
         ...missions,
@@ -105,17 +116,17 @@ export const treeDataFunc: any = async () => {
   });
 
   function missionStructure(
-    data: any,
+    data: IQuests[],
     parentId = null,
     missionsAdded = new Set()
-  ) {
+  ): any {
     const missions = data
-      .filter((mission: any) => {
+      .filter((mission: IQuests) => {
         if (parentId === null) {
-          return mission.taskRequirements.length === 0;
+          return (mission.taskRequirements.length as 0) === 0;
         } else {
           const hasMatchingTaskReq = mission.taskRequirements.some(
-            (req: any) => {
+            (req: TTaskRequirements) => {
               return req.task.id === parentId;
             }
           );
@@ -126,6 +137,7 @@ export const treeDataFunc: any = async () => {
         if (missionsAdded.has(mission.id)) {
           return null;
         }
+
         const children = missionStructure(data, mission.id, missionsAdded);
         missionsAdded.add(mission.id);
 
@@ -142,7 +154,7 @@ export const treeDataFunc: any = async () => {
           children: children.length > 0 ? children : undefined,
         };
       })
-      .filter((mission: any) => mission !== null);
+      .filter((mission) => mission !== null);
 
     return missions;
   }

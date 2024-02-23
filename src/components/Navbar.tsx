@@ -1,37 +1,76 @@
+"use client";
+
 import React from "react";
-import styles from "../app/page.module.css";
 import PlayerLevel from "./PlayerLevel";
 import HandleMissionsSelector from "@/util/HandleMissionsSelector";
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <Flex
       as="nav"
-      bg="RGBA(0, 0, 0)"
+      bg="#1B2F33"
       minH="7rem"
+      boxShadow="lg"
       minW="100%"
       p="10px"
       align="center"
-      justifyContent="center"
       position="fixed"
       flexDir="column"
       gap={5}
       zIndex={1}
     >
-      {/* Header */}
-      <Flex minW="100%" bg="#447c92" minH="2rem" align="center" pl="10px">
-        <Link as={NextLink} _hover={{ textDecoration: "none" }} href="/map">
-          Mission Tree
-        </Link>
-      </Flex>
-
-      {/* Body */}
-      <PlayerLevel />
-
-      {/* Footer */}
-      <HandleMissionsSelector />
+      {pathname === "/" ? (
+        <>
+          <Flex
+            minW="100%"
+            minH="2rem"
+            align="center"
+            justify={"end"}
+            pl="10px"
+          >
+            <Link
+              as={NextLink}
+              _hover={{ textDecoration: "none", bg: "gray.300" }}
+              href="/map"
+              bg="white"
+              color="black"
+              p="5px"
+              borderRadius="3px"
+            >
+              Mission Tree
+            </Link>
+          </Flex>
+          <PlayerLevel />
+          <HandleMissionsSelector />
+        </>
+      ) : (
+        <>
+          <Flex
+            minW="100%"
+            minH="2rem"
+            align="center"
+            justify={"end"}
+            pl="10px"
+          >
+            <Link
+              as={NextLink}
+              _hover={{ textDecoration: "none", bg: "gray.300" }}
+              href="/"
+              bg="white"
+              color="black"
+              p="5px"
+              borderRadius="3px"
+            >
+              Go Home
+            </Link>
+          </Flex>
+        </>
+      )}
     </Flex>
   );
 };

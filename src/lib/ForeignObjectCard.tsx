@@ -13,13 +13,31 @@ import {
   Text,
   Tooltip,
 } from "@chakra-ui/react";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useState } from "react";
+import { IQuests, TaskObjectiveType } from "../../types";
 
 type TPropsForeingCard = {
-  nodeClassNameProp: any;
-  traderTreeClassNameProp: any;
-  foreignObjectProps: any;
-  nodeDatumProp: any;
+  nodeClassNameProp: string;
+  traderTreeClassNameProp: string;
+  foreignObjectProps: {
+    height: number;
+    width: number;
+    x: number;
+    y: number;
+  };
+  nodeDatumProp: {
+    attributes: {
+      kappaRequired: boolean;
+      level: number;
+      wikiLink: string;
+      objectives: TaskObjectiveType[];
+      traderImage: string;
+    };
+    children: [];
+    id: string;
+    name: string;
+    trader: string;
+  };
 };
 
 const ForeingObjectCard: FC<TPropsForeingCard> = ({
@@ -33,9 +51,8 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
   const nodeDatum = nodeDatumProp;
 
   const [forceRender, setForceRender] = useState<boolean>(false);
-  let stateOfMissions: any;
 
-  useEffect(() => {}, []);
+  let stateOfMissions: any;
 
   const handleForceRender = () => {
     setForceRender((prev) => !prev);
@@ -45,12 +62,11 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
 
   if (getMissionFromStorage) {
     const findMissionsById = JSON.parse(getMissionFromStorage).find(
-      (data: any) => data.id === nodeDatum.id
+      (data: IQuests) => data.id === nodeDatum.id
     );
 
     stateOfMissions = findMissionsById && findMissionsById.completed;
   }
-  // console.log(nodeDatum.attributes.level);
 
   return (
     <>
@@ -242,61 +258,63 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
               fontSize="x-small"
               boxShadow="lg"
             >
-              {nodeDatum.attributes.objectives.map((data: any) => (
-                <Flex
-                  key={data.id}
-                  align="center"
-                  mb="5px"
-                  justify="space-between"
-                >
-                  <Flex w="80%" textAlign="start">
-                    <Text mr="10px">{data.description}</Text>
-                    {data.type === "shoot" && (
-                      <Text textAlign="center" fontWeight="bold">
-                        {`"${data.count}"`}
-                      </Text>
-                    )}
-                  </Flex>
-                  {data.type === "giveItem" && data.item && (
-                    <Flex flexDir="row" gap={2} minH="100%" align="center">
-                      {stateOfMissions ? (
-                        <Image
-                          src={data.item.iconLink}
-                          alt={data.item.name}
-                          opacity={0.5}
-                          width={30}
-                          height={30}
-                        />
-                      ) : (
-                        <Image
-                          src={data.item.iconLink}
-                          alt={data.item.name}
-                          width={30}
-                          height={30}
-                        />
-                      )}
-
-                      {data.item.shortName !== "EUR" &&
-                      data.item.shortName !== "RUB" &&
-                      data.item.shortName !== "USD" ? (
-                        <>
-                          {!stateOfMissions ? (
-                            <HandleMissionItem
-                              missionId={nodeDatum.id}
-                              itemId={data.item.id}
-                              itemQuantity={data.count}
-                            />
-                          ) : (
-                            <Text>{data.count}</Text>
-                          )}
-                        </>
-                      ) : (
-                        <Text>{data.count}</Text>
+              {nodeDatum.attributes.objectives.map(
+                (data: TaskObjectiveType) => (
+                  <Flex
+                    key={data.id}
+                    align="center"
+                    mb="5px"
+                    justify="space-between"
+                  >
+                    <Flex w="80%" textAlign="start">
+                      <Text mr="10px">{data.description}</Text>
+                      {data.type === "shoot" && (
+                        <Text textAlign="center" fontWeight="bold">
+                          {`"${data.count}"`}
+                        </Text>
                       )}
                     </Flex>
-                  )}
-                </Flex>
-              ))}
+                    {data.type === "giveItem" && data.item && (
+                      <Flex flexDir="row" gap={2} minH="100%" align="center">
+                        {stateOfMissions ? (
+                          <Image
+                            src={data.item.iconLink}
+                            alt={data.item.name}
+                            opacity={0.5}
+                            width={30}
+                            height={30}
+                          />
+                        ) : (
+                          <Image
+                            src={data.item.iconLink}
+                            alt={data.item.name}
+                            width={30}
+                            height={30}
+                          />
+                        )}
+
+                        {data.item.shortName !== "EUR" &&
+                        data.item.shortName !== "RUB" &&
+                        data.item.shortName !== "USD" ? (
+                          <>
+                            {!stateOfMissions ? (
+                              <HandleMissionItem
+                                missionId={nodeDatum.id}
+                                itemId={data.item.id}
+                                itemQuantity={data.count}
+                              />
+                            ) : (
+                              <Text>{data.count}</Text>
+                            )}
+                          </>
+                        ) : (
+                          <Text>{data.count}</Text>
+                        )}
+                      </Flex>
+                    )}
+                  </Flex>
+                )
+              )}
             </CardBody>
 
             <CardFooter
@@ -332,28 +350,6 @@ const ForeingObjectCard: FC<TPropsForeingCard> = ({
         </>
       )}
     </>
-
-    // <>
-    //   <foreignObject
-    //     {...foreignObjectProps}
-    //     style={{ overflow: "visible" }}
-    //     data-node-name={nodeDatum.name} // keep track of each node using the name
-    //   >
-    //     <>
-    //       <div
-    //         style={{
-    //           border: "1px solid black",
-    //           backgroundColor: "#CCC9A1",
-    //           minWidth: "100%",
-    //           minHeight: "100%",
-    //         }}
-    //       >
-    //         <p style={{ textAlign: "center" }}>{nodeDatum.name}</p>
-    //       </div>
-    //       <button style={{ width: "100%" }}>complete</button>
-    //     </>
-    //   </foreignObject>
-    // </>
   );
 };
 

@@ -3,7 +3,6 @@ import "./ForeignObjectNode.css";
 import ForeingObjectCard from "./ForeignObjectCard";
 
 export interface ITreeData<T = Record<string, unknown>> {
-  taskRequired: string;
   id: string;
   trader: string;
   name: string;
@@ -12,11 +11,11 @@ export interface ITreeData<T = Record<string, unknown>> {
 }
 
 export const initialTreeData: ITreeData = {
-  taskRequired: "",
   id: "",
   trader: "",
   name: "Traders",
   attributes: {
+    traderImage: "",
     level: 0,
     kappaRequired: false,
     objectives: [],
@@ -25,7 +24,17 @@ export const initialTreeData: ITreeData = {
   children: [],
 };
 
-const RenderForeignObject = ({ nodeDatum, foreignObjectProps }: any) => {
+interface INodeDatum {
+  nodeDatum: any;
+  foreignObjectProps: {
+    height: number;
+    width: number;
+    x: number;
+    y: number;
+  };
+}
+
+const RenderForeignObject = ({ nodeDatum, foreignObjectProps }: INodeDatum) => {
   const nodeClassName = getTraderNodeClassName(nodeDatum.name);
   const traderTreeClassName = getTraderTreeClassName(nodeDatum.trader);
 
@@ -41,7 +50,7 @@ const RenderForeignObject = ({ nodeDatum, foreignObjectProps }: any) => {
 
 // Change nodeClassName for all branches traders
 
-const getTraderNodeClassName = (nodeName: any) => {
+const getTraderNodeClassName = (nodeName: string) => {
   switch (nodeName) {
     case "Therapist":
       return "quest-map-trader-card";
@@ -66,7 +75,7 @@ const getTraderNodeClassName = (nodeName: any) => {
       return "default-node";
   }
 };
-const getTraderTreeClassName = (nodeName: any) => {
+const getTraderTreeClassName = (nodeName: string) => {
   switch (nodeName) {
     case "Therapist":
       return "quest-map-trader-card_Therapist";
@@ -94,7 +103,12 @@ const getTraderTreeClassName = (nodeName: any) => {
 
 // Links that conect all nodes
 
-export const pathFuncOptions = ({ target, source }: any) => {
+interface IPathFuncOptions {
+  target: any;
+  source: any;
+}
+
+export const pathFuncOptions = ({ target, source }: IPathFuncOptions) => {
   if (source.data.attributes.level <= -1) {
     return "";
   } else {

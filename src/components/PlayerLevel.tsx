@@ -2,9 +2,8 @@
 
 import React, { useEffect, useContext } from "react";
 import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
-import styles from "../app/page.module.css";
 import GlobalContext from "@/context/GlobalContext";
-import { Box, Button, Flex, IconButton, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 
 const PlayerLevel = () => {
   const { playerLevel, setPlayerLevel } = useContext(GlobalContext);
@@ -43,7 +42,7 @@ const PlayerLevel = () => {
       <Flex
         as="p"
         minW="100%"
-        minH="40px"
+        minH="54px"
         align="center"
         justifyContent="center"
       >
@@ -51,19 +50,12 @@ const PlayerLevel = () => {
       </Flex>
     );
   return (
-    <Flex minW="100%" justifyContent="center" bg="#447c92">
+    <Flex minW="100%" justifyContent="center" align="center" flexDir="column">
+      <Text>Level</Text>
       <Flex align="center" gap={2}>
-        <IconButton
-          aria-label="arrow up"
-          icon={<IoMdArrowDropup />}
-          onClick={handlePlayerLevelUp}
-        />
+        <IoMdArrowDropup size="30px" onClick={handlePlayerLevelUp} />
         <Text>{playerLevel}</Text>
-        <IconButton
-          aria-label="arrow down"
-          icon={<IoMdArrowDropdown />}
-          onClick={handlePlayerLevelDown}
-        />
+        <IoMdArrowDropdown size="30px" onClick={handlePlayerLevelDown} />
       </Flex>
     </Flex>
   );

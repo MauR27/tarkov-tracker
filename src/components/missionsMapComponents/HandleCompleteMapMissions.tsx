@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@chakra-ui/react";
 import React, { FC, useEffect, useState } from "react";
+import { IQuests } from "../../../types";
 
 type TIdNode = {
   id: string;
@@ -12,14 +13,14 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id, forceRender }) => {
     useState<boolean>(false);
 
   useEffect(() => {
-    const currentID: any = id;
+    const currentID: string = id;
     const statusMissions = localStorage.getItem("mapMissionsStatus");
     const initialStatusMissions = statusMissions
       ? JSON.parse(statusMissions)
       : [];
 
     const mission = initialStatusMissions.find(
-      (mission: any) => mission.id === currentID
+      (mission: IQuests) => mission.id === currentID
     );
     setCompletedMissionsTree(mission ? mission.completed : false);
   }, [id]);
@@ -31,7 +32,7 @@ const HandleCompleteMapMissions: FC<TIdNode> = ({ id, forceRender }) => {
       : [];
 
     const missionIndex = statusMissionsFromStorage.findIndex(
-      (mission: any) => mission.id === id
+      (mission: IQuests) => mission.id === id
     );
     const updatedStatusMissions =
       missionIndex !== -1

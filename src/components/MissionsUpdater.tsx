@@ -7,7 +7,12 @@ import tarkovDataQuery from "@/util/tarkovDataQuery";
 import AvailableMissions from "./AvailableMissions";
 import CompletedMissions from "./CompletedMissions";
 import MissionsLocked from "./MissionsLocked";
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+
+// types
+
+type TActiveMissions = {
+  [missionId: string]: boolean;
+};
 
 const MissionsUpdater = () => {
   const {
@@ -25,7 +30,7 @@ const MissionsUpdater = () => {
       (async () => {
         if (playerLevel) {
           const { tasks } = await tarkovDataQuery();
-          const activeMissions: any = {};
+          const activeMissions: TActiveMissions = {};
 
           const storedCompleteMissions =
             localStorage.getItem("completeMissions");
@@ -83,9 +88,10 @@ const MissionsUpdater = () => {
           // Filtered missions availables
 
           const filteredAvailableMissions = filteredMissions.filter(
-            (mission: any) =>
+            (mission: IQuests) =>
               !completeMissionsFromStorage.some(
-                (completeMissions: any) => completeMissions.id === mission.id
+                (completeMissions: IQuests) =>
+                  completeMissions.id === mission.id
               )
           );
 
@@ -97,9 +103,9 @@ const MissionsUpdater = () => {
 
           // filtered missions locked
 
-          const missionsLocked = tasks.filter((mission: any) =>
+          const missionsLocked = tasks.filter((mission: IQuests) =>
             filteredMissions.every(
-              (completeMissions: any) => completeMissions.id !== mission.id
+              (completeMissions: IQuests) => completeMissions.id !== mission.id
             )
           );
 

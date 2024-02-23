@@ -18,7 +18,7 @@ import RenderForeignObject from "@/lib/RenderForeignObject";
 const MissionsRD3Tree = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [treeData, setTreeData] = useState<ITreeData>(initialTreeData);
-  const [translate, containerRef]: any = useCenteredTree();
+  const [translate, containerRef] = useCenteredTree();
 
   useEffect(() => {
     try {
@@ -34,6 +34,7 @@ const MissionsRD3Tree = () => {
       }
     }
   }, []);
+  // console.log(foreignObjectProps);
 
   // IN PROGRESS... ↓↓
 
@@ -122,7 +123,7 @@ const MissionsRD3Tree = () => {
         //   setTranslate(upd.translate);
         //   setZoom(upd.zoom);
         // }}
-        scaleExtent={{ min: 0.1, max: 1 }}
+        scaleExtent={{ min: 0.1, max: 2 }}
         separation={{ siblings: 1, nonSiblings: 2 }}
         data-name="tree"
         collapsible={false}

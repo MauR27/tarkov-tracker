@@ -1,5 +1,4 @@
 import GlobalContext from "@/context/GlobalContext";
-import Link from "next/link";
 import React, { useContext } from "react";
 import RemoveCompletedMissions from "@/util/RemoveCompletedMissions";
 import {
@@ -13,31 +12,35 @@ import {
   ListItem,
   Text,
   Image,
+  Link,
 } from "@chakra-ui/react";
+import { ArrowLeftIcon } from "@chakra-ui/icons";
 
 const CompletedMissions = () => {
   const { completeMissions } = useContext(GlobalContext);
   return (
-    <Flex gap={2} m="0 5px 0 5px" justify="center" flexDir="column">
+    <Flex gap={1} m="0 5px 0 5px" flexDir="column">
       {completeMissions.map((task) => (
         <Card
           as={Flex}
-          bg="blue.500"
+          bg="whiteAlpha.200"
           key={task.id}
           overflow="hidden"
           variant="outline"
-          borderRadius="none"
+          borderRadius="5px"
           p="1rem"
           flexDir="row"
           minH="250px"
-          minW="100%"
+          color="white"
+          border="none"
+          boxShadow="xl"
+          _hover={{ bg: "whiteAlpha.100" }}
         >
           <CardHeader
-            bg="red"
+            minW="25%"
             as={Flex}
             flexDir="column"
             justify="space-around"
-            minW="25%"
           >
             <Flex gap={2}>
               <Image
@@ -46,20 +49,37 @@ const CompletedMissions = () => {
                 src={task.trader.imageLink}
                 alt={task.trader.name}
               />
-              <Text>{task.trader.name}</Text>
+              <Text color="#00A3C4" fontSize="20px" fontWeight="bold">
+                {task.name}
+              </Text>
             </Flex>
-            <Text>{task.name}</Text>
-            <Link href={task.wikiLink} target="_blank">
+            <Link
+              href={task.wikiLink}
+              target="_blank"
+              bg="white"
+              color="black"
+              borderRadius={"3px"}
+              w="30%"
+              textAlign="center"
+              _hover={{ textDecor: "none", bg: "gray.300", color: "black" }}
+            >
               Wiki
             </Link>
           </CardHeader>
-          <CardBody bg={"green"} as={Flex} align="flex-start">
+          <CardBody as={Flex}>
             <List>
               {task.objectives.map((data) => (
                 <Box key={data.id}>
-                  <Box mb={3}>
+                  <Flex
+                    m="10px 0 10px 0"
+                    align="center"
+                    gap={2}
+                    _hover={{ bg: "gray.600" }}
+                  >
+                    <ArrowLeftIcon boxSize="10px" />
+
                     <ListItem>{data.description}</ListItem>
-                  </Box>
+                  </Flex>
                   {data.type === "giveItem" && data.item && (
                     <Flex gap={2} align="center">
                       <Image
@@ -76,7 +96,7 @@ const CompletedMissions = () => {
               ))}
             </List>
           </CardBody>
-          <CardFooter bg={"yellow"} alignItems="center" minW="15%">
+          <CardFooter alignItems="center" minW="15%">
             <RemoveCompletedMissions id={task.id} />
           </CardFooter>
         </Card>
